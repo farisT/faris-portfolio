@@ -1,0 +1,19 @@
+body,html {
+    font-family: $main-font;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color:$blue;
+    padding: 10px 20px;
+    &__item {
+        flex-grow: 2;
+    }
+    &__item-links {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+body, html {
+  font-family: "Poppins", sans-serif; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #3e3ec1;
+  padding: 10px 20px; }
+  .header__item {
+    flex-grow: 2; }
+  .header__item-links {
+    padding-left: 20px; }
+
+.homepage-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 10rem;
+  height: 100%; }
+
+.homepage-nested-grid {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.homepage-nested-grid-controlpanel {
+  display: grid;
+  grid-template-columns: auto 100px;
+  width: 100%;
+  height: 780px; }
+  .homepage-nested-grid-controlpanel__item-slide {
+    margin: auto; }
+
+.homepage-slide-container__slider {
+  margin: auto;
+  width: 40px;
+  height: 780px; }
+
+.homepage__image {
+  width: 100%;
+  padding-left: 20%;
+  z-index: -1; }
+
+.homepage__under-image-link {
+  text-align: center; }
+
+.homepage__title {
+  font-size: 165px; }
+
+.homepage__subtitle-container {
+  width: 67%; }
+
+.homepage__subtitle {
+  font-size: 38px;
+  font-weight: 300;
+  font-style: normal; }
+
+.homepage__subtitle-bold {
+  font-size: 38px;
+  font-weight: 500; }
+
+.project-grid {
+  display: grid; }
+
+.pink {
+  margin-left: 60px;
+  background: #fce4e0; }
+
+.slider-counter {
+  position: absolute;
+  margin-top: 5rem;
+  background: white;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
