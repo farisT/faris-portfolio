@@ -91,6 +91,7 @@ body, html {
     margin-bottom: 10rem; }
   .project-page__container-start-images {
     display: grid;
+    position: relative;
     grid-template-columns: 75% auto; }
   .project-page__first-image {
     margin: 0 auto; }
@@ -108,14 +109,17 @@ body, html {
   .project-page__subtitle {
     font-size: 45px; }
   .project-page__skills {
-    top: 53%;
+    top: 33%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 3;
     position: absolute;
     left: 10%; }
   .project-page__links {
-    position: absolute; }
+    position: absolute;
+    z-index: 3;
+    right: 6%;
+    bottom: 36%; }
   .project-page__triangle-one {
     width: 22%;
     bottom: -45%;
@@ -124,4 +128,5 @@ body, html {
   .project-page__triangle-two {
     width: 25%;
     z-index: 2;
-    position: absolute; }
+    position: absolute;
+    padding-top: 6rem; }
