@@ -87,8 +87,8 @@ body, html {
   .project-page__container-text {
     display: grid;
     position: relative;
-    grid-template-columns: auto 53%;
-    margin-bottom: 10rem; }
+    grid-template-columns: auto 52%;
+    margin-bottom: 20rem; }
   .project-page__container-start-images {
     display: grid;
     position: relative;
@@ -108,25 +108,73 @@ body, html {
     position: absolute; }
   .project-page__subtitle {
     font-size: 45px; }
-  .project-page__skills {
+  .project-page__subtitle-text {
+    width: 700px; }
+  .project-page__skills-one {
     top: 33%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 3;
     position: absolute;
     left: 10%; }
-  .project-page__links {
+  .project-page__skills-two {
+    top: 32%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    left: 10%; }
+  .project-page__skills-three {
+    top: 32%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    left: 8%; }
+  .project-page__links-one {
     position: absolute;
     z-index: 3;
     right: 6%;
     bottom: 36%; }
-  .project-page__triangle-one {
+  .project-page__links-two {
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    bottom: 47%; }
+  .project-page__links-three {
+    position: absolute;
+    z-index: 3;
+    right: 3%;
+    bottom: 57%; }
+  .project-page__pink-triangle-one {
     width: 22%;
     bottom: -45%;
     z-index: 2;
     position: absolute; }
-  .project-page__triangle-two {
+  .project-page__pink-triangle-two {
     width: 25%;
+    z-index: 2;
+    position: absolute;
+    padding-top: 6rem; }
+  .project-page__green-triangle-one {
+    width: 22%;
+    bottom: -54%;
+    z-index: 2;
+    position: absolute; }
+  .project-page__green-triangle-two {
+    width: 18%;
+    right: 0%;
+    z-index: 2;
+    position: absolute;
+    padding-top: 6rem; }
+  .project-page__blue-triangle-one {
+    width: 22%;
+    bottom: -25%;
+    z-index: 2;
+    position: absolute; }
+  .project-page__blue-triangle-two {
+    width: 18%;
+    right: 0%;
     z-index: 2;
     position: absolute;
     padding-top: 6rem; }

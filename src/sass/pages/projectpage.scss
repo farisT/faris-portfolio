@@ -9,8 +9,8 @@
     &__container-text {
         display: grid;
         position: relative;
-        grid-template-columns: auto 53%;
-        margin-bottom: 10rem;
+        grid-template-columns: auto 52%;
+        margin-bottom: 20rem;
     }
     &__container-start-images {
         display: grid;
@@ -36,7 +36,10 @@
     &__subtitle{
         font-size: 45px;
     }
-    &__skills {
+    &__subtitle-text{
+        width: 700px
+    }
+    &__skills-one {
         top: 33%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -44,20 +47,74 @@
         position: absolute;
         left: 10%;
     }
-    &__links {
+    &__skills-two {
+        top: 32%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 3;
+        position: absolute;
+        left: 10%;
+    }
+    &__skills-three {
+        top: 32%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 3;
+        position: absolute;
+        left: 8%;
+    }
+    &__links-one {
         position: absolute;
         z-index: 3;
         right: 6%;
         bottom: 36%;
     }
-    &__triangle-one {
+    &__links-two {
+        position: absolute;
+        z-index: 3;
+        right: 5%;
+        bottom: 47%;
+    }
+    &__links-three {
+        position: absolute;
+        z-index: 3;
+        right: 3%;
+        bottom: 57%;
+    }
+    &__pink-triangle-one {
         width: 22%;
         bottom: -45%;
         z-index: 2;
         position: absolute;
     }
-    &__triangle-two {
+    &__pink-triangle-two {
         width: 25%;
+        z-index: 2;
+        position: absolute;
+        padding-top: 6rem;
+    }
+    &__green-triangle-one {
+        width: 22%;
+        bottom: -54%;
+        z-index: 2;
+        position: absolute;
+    }
+    &__green-triangle-two {
+        width: 18%;
+        right: 0%;
+        z-index: 2;
+        position: absolute;
+        padding-top: 6rem;
+    }
+    &__blue-triangle-one {
+        width: 22%;
+        bottom: -25%;
+        z-index: 2;
+        position: absolute;
+    }
+    &__blue-triangle-two {
+        width: 18%;
+        right: 0%;
         z-index: 2;
         position: absolute;
         padding-top: 6rem;
