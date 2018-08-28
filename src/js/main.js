@@ -10,15 +10,15 @@ homePageTriangle.addEventListener('mouseleave', function(){
 });
 
 window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight + 2) {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight ) {
       // you're at the bottom of the page
       console.log("Bottom of page");
       sliderCounter.innerHTML = `2/3`
       sliderCounter.style.marginTop = '15rem'
 
     }
-    else {
-        sliderCounter.innerHTML = `1/3`
-        sliderCounter.style.marginTop = '5rem'
-    }
+    // else {
+    //     sliderCounter.innerHTML = `1/3`
+    //     sliderCounter.style.marginTop = '5rem'
+    // }
 };
