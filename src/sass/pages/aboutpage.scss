@@ -1,14 +1,175 @@
-
-.about-page{
+.about-page {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    &__mainphoto-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(3,auto);
+    grid-row-gap: 0rem;
+    @media (min-width: 600px){
+        grid-row-gap: 4rem;
+        }
+ 
+    &__container-main {
+        // text-align: center;
+        position: relative;
         display: grid;
-        grid-template-rows: 1fr;
+        @media (min-width: 600px){
+        grid-template-columns: 5% auto;
+        padding-right:5%;
+        }
+        grid-template-columns:auto;
+    }
+    &__container-main-photo {
+        // text-align: center;
+        overflow: hidden;
+        @media (min-width: 600px){
+        // grid-template-columns: 5% auto;
+        // padding-right:5%;
+        }
     }
     &__mainphoto {
+        display: none;
+        @media (min-width: 600px){
+            object-fit: cover;
+            width: 100%;
+            display: unset;
+            }
+    }
+    &__mainphoto-mobile {
         object-fit: cover;
+        width: 143%;
+        height: 641px;
+        @media (min-width: 600px){
+            display: none;
+            }
+    }
+
+    &__container-text {
+        display: grid;
+        position: relative;
+        grid-template-rows: auto 52%;
+        // grid-row-gap: 5rem;
+        @media (min-width: 600px){
+            grid-template-columns: auto 52%;
+            margin-bottom: 10rem;
+            }
+  
+    }
+    &__container-text-info {
+        margin-top: 20rem;
+        // grid-row-gap: 5rem;
+        @media (min-width: 600px){
+
+            }
+  
+    }
+    &__container-start-images {
+        grid-template-rows: auto auto;
+        display: grid;
+        position: relative;
+        grid-row-gap: 16rem;
+
+        @media (min-width: 600px){
+        grid-template-columns: 75% auto;
+        grid-row-gap: 0;
+        }
+    }
+    &__first-image-container {
+        margin: 0 auto;
+    }
+    &__first-image {
+        width:45%;
+        @media (min-width: 600px){
+            width:100%;
+        }
+
+    }
+    &__second-image-one {
+        width:100%;
+        @media (min-width: 600px){
+            width: 30%;
+            margin-right: 10rem;
+            float: right;
+        }
+    }
+    &__third-image-one {
+        // margin-left: 10rem;
+        float: left;
+        width: 30%;
+    }
+    &__fourth-image-one {
         width: 100%;
+        @media (min-width: 600px){
+            width:unset;
+            margin-left: 35rem;
+        }
+     
+    }
+    &__readmore {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 93%;
+        z-index: 3;
+        color: $blue;
+    }
+    &__side-links {
+        display: none;
+        @media (min-width: 600px){
+            display: unset;
+            line-height: 50;
+            margin: 0 auto;
+        }
+        
+    }
+    &__main-title { 
+        font-size: 18px;
+        left: 34%;
+        top: 27%;
+        width: 217px;
+        font-weight: 300;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        @media (min-width: 600px){
+            font-size: 24px;
+            width: 600px;
+            left: 32%;
+            top: 28%;
+            }
+
+        position: absolute;
+    }
+
+    &__subtitle-container{
+       padding-left: 1rem;
+       @media (min-width: 600px){
+        padding-left: 0;
+        }
+    }
+    &__sub-title{
+        font-size: 18px;
+        font-weight: 500;
+        left: 34%;
+        width: 217px;
+        top: 48%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        @media (min-width: 600px){
+            font-size: 24px;
+            width: 600px;
+            left: 32%;
+            top: 50%;
+            }
+        position:absolute;
+        transform: translate(-50%, -50%);
+    }
+    &__subtitle-text{
+        // width: 65%
+    }
+    &__row {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__text {
+    font-size: 18px;
+    font-weight: 300;
     }
 }

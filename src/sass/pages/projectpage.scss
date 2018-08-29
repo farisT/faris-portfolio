@@ -67,6 +67,7 @@
     &__second-image-one {
         width:100%;
         @media (min-width: 600px){
+            width: 30%;
             margin-right: 10rem;
             float: right;
         }
@@ -79,6 +80,7 @@
     &__fourth-image-one {
         width: 100%;
         @media (min-width: 600px){
+            width:unset;
             margin-left: 35rem;
         }
      
@@ -96,12 +98,13 @@
         @media (min-width: 600px){
             display: unset;
             line-height: 50;
+            margin: 0 auto;
         }
         
     }
     &__main-title { 
         font-size: 34px;
-        left: 57%;
+        left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         @media (min-width: 600px){
@@ -114,6 +117,9 @@
     }
     &__subtitle-container{
        padding-left: 1rem;
+       @media (min-width: 600px){
+        padding-left: 0;
+        }
     }
     &__subtitle{
         font-size: 45px;
@@ -150,12 +156,19 @@
 
     }
     &__skills-three {
-        top: 5%;
+        top: 14%;
         transform: translate(-50%, -50%);
-        text-align: center;
+        /* text-align: center; */
         z-index: 3;
         position: absolute;
-        left: 8%;
+        left: 29%;
+        @media (min-width: 600px){
+            top: 34%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            position: absolute;
+            left: 15%;
+            }
     }
     &__links-one {
         position: absolute;
@@ -238,14 +251,21 @@
         }
     }
     &__blue-triangle-one {
-        width: 22%;
-        bottom: 25%;
+        width: 70%;
+        bottom: 51%;
         z-index: 2;
         position: absolute;
+
+        @media (min-width: 600px){
+            width: 40%;
+            bottom: -50%;
+            z-index: 2;
+            position: absolute;
+            }
     }
     &__blue-triangle-two {
         width: 18%;
-        right: -1%;
+        right: 0%;
         z-index: 2;
         position: absolute;
         padding-top: 6rem;

@@ -12,21 +12,51 @@ body,html {
 
 .header {
     display: grid;
-    // margin-left: 3%;
-    
-    // margin: 0 auto;
-    width: 100vw;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: auto 25% 25%;
     @media (min-width: 600px){
         margin-left: 5%;
         }
     align-items: center;
     color:$blue;
-    // padding: 10px 67px;
-    &__item {
-        // flex-grow: 2;
+    &__name{
+        text-decoration: none;
+        color: $blue;
+        border-bottom: 3px $green solid;
+        width: 34%;
+        :visited {
+            text-decoration: none;
+            color: $blue;
+        }
+        :hover {
+        // border-bottom: 10px $green solid;  
+        }
+        padding-left: 13px;
+        @media (min-width: 600px){
+        padding-left: 0
+            }
+    }
+    &__projects  {
+        border-bottom: 3px $green solid;
+        width: 70%;
+    }
+    &__about  {
+        border-bottom: 3px $green solid;
+        width: 52%;
     }
     &__item-links {
-        padding-left: 20px;
+        text-decoration: none;
+        color: $blue;
+        line-height: 0.9em;
+        :visited {
+            text-decoration: none;
+            color: $blue;
+        }
+        :hover {
+            border-bottom: 10px $green solid;  
+            display: inline-block;
+            line-height: 0.3em;
+            // transition: 0.1s;
+            }
     }
+
 }
