@@ -35,9 +35,14 @@
 }
 .homepage-nested-grid-controlpanel {
     display: grid;
-    grid-template-columns: auto 100px;
-    width: 100%;
+    grid-template-rows: auto 60px;
+    grid-template-columns: auto;
     height: 780px;
+    @media (min-width: 600px){
+        grid-template-rows: auto;
+        grid-template-columns: auto 60px;
+        height: 780px;
+        }
     &__item-slide {
         margin: auto;
     }
@@ -93,7 +98,10 @@
     display: grid;
 }
 .pink {
-    margin-left: 60px;
+    @media (min-width: 600px){
+        margin-left: 60px;
+            }
+
     background: $pink;
 }
 .slider-counter{

@@ -8,6 +8,20 @@ body, html {
     body, html {
       position: relative; } }
 
+.arrow__about {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 89%;
+  z-index: 3;
+  color: #3e3ec1; }
+  @media (min-width: 600px) {
+    .arrow__about {
+      left: 50%;
+      top: 92%;
+      z-index: 3;
+      color: #3e3ec1; } }
+
 .header {
   display: grid;
   grid-template-columns: auto 25% 25%;
@@ -27,13 +41,20 @@ body, html {
       color: #3e3ec1; }
     @media (min-width: 600px) {
       .header__name {
-        padding-left: 0; } }
+        padding-left: 0;
+        width: 8%; } }
   .header__projects {
     border-bottom: 3px #e5ebd2 solid;
     width: 70%; }
+    @media (min-width: 600px) {
+      .header__projects {
+        width: 22%; } }
   .header__about {
     border-bottom: 3px #e5ebd2 solid;
     width: 52%; }
+    @media (min-width: 600px) {
+      .header__about {
+        width: 18%; } }
   .header__item-links {
     text-decoration: none;
     color: #3e3ec1;
@@ -74,9 +95,14 @@ body, html {
 
 .homepage-nested-grid-controlpanel {
   display: grid;
-  grid-template-columns: auto 100px;
-  width: 100%;
+  grid-template-rows: auto 60px;
+  grid-template-columns: auto;
   height: 780px; }
+  @media (min-width: 600px) {
+    .homepage-nested-grid-controlpanel {
+      grid-template-rows: auto;
+      grid-template-columns: auto 60px;
+      height: 780px; } }
   .homepage-nested-grid-controlpanel__item-slide {
     margin: auto; }
 
@@ -125,8 +151,10 @@ body, html {
   display: grid; }
 
 .pink {
-  margin-left: 60px;
   background: #fce4e0; }
+  @media (min-width: 600px) {
+    .pink {
+      margin-left: 60px; } }
 
 .slider-counter {
   position: unset;
@@ -434,9 +462,17 @@ body, html {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 93%;
+    top: 85%;
     z-index: 3;
     color: #3e3ec1; }
+    @media (min-width: 600px) {
+      .about-page__readmore {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 89%;
+        z-index: 3;
+        color: #3e3ec1; } }
   .about-page__side-links {
     display: none; }
     @media (min-width: 600px) {
@@ -488,11 +524,19 @@ body, html {
     font-weight: 300; }
 
 .vertical-slider-container__slider {
-  margin: auto;
-  width: 40px;
-  height: 780px; }
+  display: none; }
+  @media (min-width: 600px) {
+    .vertical-slider-container__slider {
+      margin: auto;
+      width: 40px;
+      height: 780px;
+      display: unset; } }
 
 .horizontal-slider-container__slider {
-  margin: auto;
-  width: 40px;
-  height: 780px; }
+  display: none; }
+  @media (min-width: 600px) {
+    .horizontal-slider-container__slider {
+      margin: auto;
+      width: 40px;
+      height: 780px;
+      display: unset; } }

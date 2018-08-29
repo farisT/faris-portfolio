@@ -10,6 +10,23 @@ body,html {
         }
 }
 
+.arrow {
+    &__about {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 89%;
+        z-index: 3;
+        color: #3e3ec1;
+        @media (min-width: 600px){
+            left: 50%;
+            top: 92%;
+            z-index: 3;
+            color: #3e3ec1;
+                }
+    }
+}
+
 .header {
     display: grid;
     grid-template-columns: auto 25% 25%;
@@ -27,21 +44,25 @@ body,html {
             text-decoration: none;
             color: $blue;
         }
-        :hover {
-        // border-bottom: 10px $green solid;  
-        }
         padding-left: 13px;
         @media (min-width: 600px){
-        padding-left: 0
+        padding-left: 0;
+        width:8%;
             }
     }
     &__projects  {
         border-bottom: 3px $green solid;
         width: 70%;
+        @media (min-width: 600px){
+            width:22%
+            }
     }
     &__about  {
         border-bottom: 3px $green solid;
         width: 52%;
+        @media (min-width: 600px){
+            width:18%
+            }
     }
     &__item-links {
         text-decoration: none;
