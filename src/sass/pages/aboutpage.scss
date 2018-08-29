@@ -1,0 +1,14 @@
+
+.about-page{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    &__mainphoto-container {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    &__mainphoto {
+        object-fit: cover;
+        width: 100%;
+    }
+}

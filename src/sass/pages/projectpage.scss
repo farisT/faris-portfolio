@@ -1,6 +1,8 @@
 .project-page {
     display: grid;
-    grid-template-rows: repeat(7, auto);
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(7,auto);
+    grid-row-gap: 1rem;
     @media (min-width: 600px){
         grid-row-gap: 4rem;
         }
@@ -16,10 +18,11 @@
         grid-template-columns:auto;
     }
     &__mainphoto {
-        width: 45%;
-        @media (min-width: 600px){
-            width:100%;
-            }
+        object-fit: cover;
+        width: 100%;
+        // @media (min-width: 600px){
+        //     width:100%;
+        //     }
     }
     &__container-text {
         display: grid;
@@ -33,7 +36,7 @@
   
     }
     &__container-text-info {
-        margin-top: 15rem;
+        margin-top: 20rem;
         // grid-row-gap: 5rem;
         @media (min-width: 600px){
 
@@ -41,9 +44,15 @@
   
     }
     &__container-start-images {
+        grid-template-rows: auto auto;
         display: grid;
         position: relative;
+        grid-row-gap: 16rem;
+
+        @media (min-width: 600px){
         grid-template-columns: 75% auto;
+        grid-row-gap: 0;
+        }
     }
     &__first-image-container {
         margin: 0 auto;
@@ -56,21 +65,31 @@
 
     }
     &__second-image-one {
-        margin-right: 10rem;
-        float: right;
+        width:100%;
+        @media (min-width: 600px){
+            margin-right: 10rem;
+            float: right;
+        }
     }
     &__third-image-one {
         // margin-left: 10rem;
+        float: left;
         width: 30%;
     }
     &__fourth-image-one {
-        margin-left: 35rem;
+        width: 100%;
+        @media (min-width: 600px){
+            margin-left: 35rem;
+        }
+     
     }
     &__readmore {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 95%;
+        top: 93%;
+        z-index: 3;
+        color: $blue;
     }
     &__side-links {
         display: none;
@@ -81,9 +100,10 @@
         
     }
     &__main-title { 
-        font-size: 47px;
-        top: 34%;
-        left: 2%;
+        font-size: 34px;
+        left: 57%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         @media (min-width: 600px){
             left: 50%;
             top: 50%;
@@ -92,19 +112,21 @@
 
         position: absolute;
     }
+    &__subtitle-container{
+       padding-left: 1rem;
+    }
     &__subtitle{
         font-size: 45px;
     }
     &__subtitle-text{
-        width: 65%
+        // width: 65%
     }
     &__skills-one {
         top: 18%;
         transform: translate(-50%, -50%);
-        text-align: center;
         z-index: 3;
         position: absolute;
-        left: 12%;
+        left: 28%;
         @media (min-width: 600px){
             top: 20%;
             transform: translate(-50%, -50%);
@@ -115,10 +137,17 @@
     &__skills-two {
         top: 15%;
         transform: translate(-50%, -50%);
-        text-align: center;
         z-index: 3;
+        left: 31%;
         position: absolute;
-        left: 10%;
+        @media (min-width: 600px){
+            top: 15%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 3;
+            left: 10%;
+            }
+
     }
     &__skills-three {
         top: 5%;
@@ -131,14 +160,27 @@
     &__links-one {
         position: absolute;
         z-index: 3;
-        right: 6%;
-        bottom: 36%;
+        right: 11%;
+        bottom: 52%;
+        @media (min-width: 600px){
+            position: absolute;
+            z-index: 3;
+            right: 6%;
+            bottom: 36%;
+            }
+
     }
     &__links-two {
         position: absolute;
         z-index: 3;
-        right: 5%;
-        bottom: 47%;
+        right: 11%;
+        bottom: 52%;
+        @media (min-width: 600px){
+            position: absolute;
+            z-index: 3;
+            right: 8%;
+            bottom: 60%;
+            }
     }
     &__links-three {
         position: absolute;
@@ -147,8 +189,8 @@
         bottom: 57%;
     }
     &__pink-triangle-one {
-        width: 27%;
-        bottom: 51%;
+        width: 61%;
+        bottom: 50%;
         z-index: 2;
         position: absolute;
         @media (min-width: 600px){
@@ -158,23 +200,42 @@
    
     }
     &__pink-triangle-two {
-        width: 25%;
+        width: 64%;
         z-index: 2;
+        right: 0%;
+        bottom: 34%;
         position: absolute;
-        padding-top: 6rem;
+    @media (min-width: 600px){
+        width: 25%;
+        bottom: 16%;
+        }
+    }
+    &__links-container {
+        grid-row-start: 1;
+        @media (min-width: 600px){
+            grid-row-start: unset;
+            }
     }
     &__green-triangle-one {
-        width: 22%;
-        bottom: -12%;
+        width: 61%;
+        bottom: 46%;
         z-index: 2;
         position: absolute;
+        @media (min-width: 600px){
+            width: 22%;
+            bottom: 0%;
+            }
     }
     &__green-triangle-two {
-        width: 18%;
-        right: 0%;
+        width: 54%;
         z-index: 2;
+        right: 0%;
+        bottom: 4%;
         position: absolute;
-        padding-top: 6rem;
+    @media (min-width: 600px){
+        width: 25%;
+        bottom: 0%;
+        }
     }
     &__blue-triangle-one {
         width: 22%;

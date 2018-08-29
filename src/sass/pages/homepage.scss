@@ -1,16 +1,32 @@
 .homepage-wrapper { 
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: 50% 50%;
-grid-row-gap: 10rem;
-height: 100%;
-    &__item {
-
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2,auto);
+    grid-row-gap: 10rem;
+@media (min-width: 600px){
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 10rem;
+    height: 100%;
     }
 }
 .homepage-nested-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows:auto auto;
+    @media (min-width: 600px){
+        grid-template-columns: 50% 50%;
+        }
+    &__item-one {
+        grid-row-start: 2;
+    }
+    &__item-two {
+        margin-left: 5%;
+        @media (min-width: 600px){
+            margin-left: 0%;
+            }
+
+    }
 }
 .homepage-nested-grid-controlpanel {
     display: grid;
@@ -26,25 +42,43 @@ height: 100%;
 .homepage {
     &__image {
         width: 100%;
-        padding-left: 20%;
+        top: 15%;
+        position: absolute;
         z-index: -1;
+        @media (min-width: 600px){
+            padding-left: 20%;
+            position: unset;
+                }
     }
     &__under-image-link {
         text-align: center;
+        padding-top: 15rem;
+        @media (min-width: 600px){
+            padding-top:0;
+                }
     }
     &__title {
-        font-size: 165px;
+        font-size: 64px;
+        @media (min-width: 600px){
+            font-size: 165px;
+                }
     }
     &__subtitle-container {
         width: 67%;
     }
     &__subtitle {
+        @media (min-width: 600px){
         font-size: 38px;
+            }
+        font-size: 22px;
         font-weight : 300;
         font-style: normal;
     }
     &__subtitle-bold {
-        font-size: 38px;
+        @media (min-width: 600px){
+            font-size: 38px;
+                }
+        font-size: 22px;
         font-weight : 500;
 
     }
@@ -58,10 +92,11 @@ height: 100%;
     background: $pink;
 }
 .slider-counter{
-    position: absolute;
+    position: unset;
     margin-top: 5rem;
     background: white;
     width: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
