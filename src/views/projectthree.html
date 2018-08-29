@@ -4,19 +4,32 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
 </head>
 <body>
     <header class="header">
-        <a class="header__item" href="/"><h3 >Faris</h3></a> <a class="header__item-links" href="/projectone">Projects</a> <a class="header__item-links" href="/about">About</a>
+        <div>
+            <a class="header__item" href="/"><h3 >Faris</h3></a> 
+        </div>
+        <div>
+            <a class="header__item-links" href="/projectone">Projects</a>
+        </div>
+        <div>
+            <a class="header__item-links" href="/about">About</a>
+        </div>
     </header>
     <div class="project-page">
-        <div class="project-page__container-mainphoto" >
-            <div class="project-page__main-title">Title of Project</div>
-            <img class="project-page__mainphoto" src="https://via.placeholder.com/1328x780">
-            <div class="project-page__readmore">Read more!</div>
-        </div>
+            <div class="project-page__container-mainphoto" >
+                    <div class="project-page__side-links">
+                        <div>Links</div>
+                    </div>
+                    <div>
+                        <div class="project-page__main-title">Title of Project</div>
+                        <img class="project-page__mainphoto" src="https://via.placeholder.com/1328x780">
+                        <div class="project-page__readmore">Read more!</div>
+                    </div>
+                </div>
         <div class="project-page__container-text">
             <div>
                 <div class="project-page__skills-three">
@@ -27,9 +40,11 @@
             </div>
             <div>
                 <h3 class="project-page__subtitle">Title of Project</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Id tenetur quisquam labore quaerat vero commodi reprehenderit delectus qui cupiditate pariatur.
-                Fugiat quibusdam odit ipsa molestias, ex aliquam officiis. Beatae, dolores.
+                <div  class="project-page__subtitle-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Id tenetur quisquam labore quaerat vero commodi reprehenderit delectus qui cupiditate pariatur.
+                    Fugiat quibusdam odit ipsa molestias, ex aliquam officiis. Beatae, dolores.
+                </div>
             </div>
         </div>
         <div class="project-page__container-start-images">
@@ -46,16 +61,16 @@
             </div>
         </div>
         <div>
-            <img class=""/>
+            <img class="project-page__second-image-one" src="https://via.placeholder.com/400x267"/>
         </div>
         <div>
-            <img class=""/>
+            <img class="project-page__third-image-one" src="https://via.placeholder.com/600x400"/>
         </div>
         <div>
-            <img class=""/>
+            <img class="project-page__fourth-image-one" src="https://via.placeholder.com/400x267"/>
         </div>
         <div>
-            <img class="project-slider-horizontal"/>
+            <img class="project-slider-horizontal" />
         </div>
     </div>
 </body>

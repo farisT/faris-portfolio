@@ -1,24 +1,70 @@
 .project-page {
     display: grid;
-    grid-template-rows: repeat(7, auto);
-
+    grid-template-rows: repeat(7, auto-fill);
+    @media (min-width: 600px){
+        grid-row-gap: 4rem;
+        }
+ 
     &__container-mainphoto {
-        text-align: center;
+        // text-align: center;
         position: relative;
+        display: grid;
+        @media (min-width: 600px){
+        grid-template-columns: 5% auto;
+        padding-right:5%;
+        }
+        grid-template-columns:auto;
+    }
+    &__mainphoto {
+        width: 45%;
+        @media (min-width: 600px){
+            width:100%;
+            }
     }
     &__container-text {
         display: grid;
         position: relative;
-        grid-template-columns: auto 52%;
-        margin-bottom: 20rem;
+        grid-template-rows: auto 52%;
+        // grid-row-gap: 5rem;
+        @media (min-width: 600px){
+            grid-template-columns: auto 52%;
+            margin-bottom: 10rem;
+            }
+  
+    }
+    &__container-text-info {
+        margin-top: 15rem;
+        // grid-row-gap: 5rem;
+        @media (min-width: 600px){
+
+            }
+  
     }
     &__container-start-images {
         display: grid;
         position: relative;
         grid-template-columns: 75% auto;
     }
-    &__first-image {
+    &__first-image-container {
         margin: 0 auto;
+    }
+    &__first-image {
+        width:45%;
+        @media (min-width: 600px){
+            width:100%;
+        }
+
+    }
+    &__second-image-one {
+        margin-right: 10rem;
+        float: right;
+    }
+    &__third-image-one {
+        // margin-left: 10rem;
+        width: 30%;
+    }
+    &__fourth-image-one {
+        margin-left: 35rem;
     }
     &__readmore {
         position: absolute;
@@ -26,29 +72,48 @@
         left: 50%;
         top: 95%;
     }
+    &__side-links {
+        display: none;
+        @media (min-width: 600px){
+            display: unset;
+            line-height: 50;
+        }
+        
+    }
     &__main-title { 
         font-size: 47px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 34%;
+        left: 2%;
+        @media (min-width: 600px){
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            }
+
         position: absolute;
     }
     &__subtitle{
         font-size: 45px;
     }
     &__subtitle-text{
-        width: 700px
+        width: 65%
     }
     &__skills-one {
-        top: 33%;
+        top: 18%;
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 3;
         position: absolute;
-        left: 10%;
+        left: 12%;
+        @media (min-width: 600px){
+            top: 20%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            left: 10%;
+            }
     }
     &__skills-two {
-        top: 32%;
+        top: 15%;
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 3;
@@ -56,7 +121,7 @@
         left: 10%;
     }
     &__skills-three {
-        top: 32%;
+        top: 5%;
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 3;
@@ -82,10 +147,15 @@
         bottom: 57%;
     }
     &__pink-triangle-one {
-        width: 22%;
-        bottom: -45%;
+        width: 27%;
+        bottom: 51%;
         z-index: 2;
         position: absolute;
+        @media (min-width: 600px){
+            width: 22%;
+            bottom: 0%;
+            }
+   
     }
     &__pink-triangle-two {
         width: 25%;
@@ -95,7 +165,7 @@
     }
     &__green-triangle-one {
         width: 22%;
-        bottom: -54%;
+        bottom: -12%;
         z-index: 2;
         position: absolute;
     }
@@ -108,13 +178,13 @@
     }
     &__blue-triangle-one {
         width: 22%;
-        bottom: -25%;
+        bottom: 25%;
         z-index: 2;
         position: absolute;
     }
     &__blue-triangle-two {
         width: 18%;
-        right: 0%;
+        right: -1%;
         z-index: 2;
         position: absolute;
         padding-top: 6rem;
