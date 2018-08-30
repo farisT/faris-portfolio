@@ -84,7 +84,8 @@
         width: 100%;
         @media (min-width: 600px){
             width:unset;
-            margin-left: 35rem;
+            float: right;
+            // margin-left: 35rem;
         }
      
     }
@@ -147,9 +148,9 @@
         transform: translate(-50%, -50%);
         z-index: 3;
         position: absolute;
-        left: 39%;    
+        left: 37%;    
         @media (min-width: 600px){
-            top: 33%;
+            top: 43%;
             transform: translate(-50%, -50%);
             text-align: left;
             left: 7%;
@@ -218,8 +219,8 @@
         bottom: 57%;
     }
     &__pink-triangle-one {
-        width: 72%;
-        bottom: 62%;    
+        width: 80%;
+        bottom: 58%; 
         z-index: 2;
         position: absolute;
         @media (min-width: 600px){

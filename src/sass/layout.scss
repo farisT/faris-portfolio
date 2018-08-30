@@ -47,8 +47,8 @@ body,html {
         z-index: 3;
         color: #3e3ec1;
         @media (min-width: 600px){
-            left: 50%;
-            top: 96%;
+            left: 25%;
+            top: 44%;
             z-index: 3;
             color: #3e3ec1;
                 }
@@ -109,3 +109,7 @@ body,html {
     }
 
 }
+#carousel {
+    position: absolute;
+    visibility: hidden;
+  }

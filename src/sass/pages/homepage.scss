@@ -39,7 +39,7 @@
     grid-template-columns: auto;
     height: 780px;
     @media (min-width: 600px){
-        grid-template-rows: auto;
+        grid-template-rows: 100%;
         grid-template-columns: auto 60px;
         height: 780px;
         }

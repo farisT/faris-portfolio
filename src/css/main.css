@@ -45,8 +45,8 @@ body, html {
   color: #3e3ec1; }
   @media (min-width: 600px) {
     .arrow__index {
-      left: 50%;
-      top: 96%;
+      left: 25%;
+      top: 44%;
       z-index: 3;
       color: #3e3ec1; } }
 
@@ -95,6 +95,10 @@ body, html {
       display: inline-block;
       line-height: 0.3em; }
 
+#carousel {
+  position: absolute;
+  visibility: hidden; }
+
 .homepage-wrapper {
   display: grid;
   grid-template-columns: 100vw;
@@ -128,7 +132,7 @@ body, html {
   height: 780px; }
   @media (min-width: 600px) {
     .homepage-nested-grid-controlpanel {
-      grid-template-rows: auto;
+      grid-template-rows: 100%;
       grid-template-columns: auto 60px;
       height: 780px; } }
   .homepage-nested-grid-controlpanel__item-slide {
@@ -254,7 +258,7 @@ body, html {
     @media (min-width: 600px) {
       .project-page__fourth-image-one {
         width: unset;
-        margin-left: 35rem; } }
+        float: right; } }
   .project-page__readmore {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -303,10 +307,10 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: 3;
     position: absolute;
-    left: 39%; }
+    left: 37%; }
     @media (min-width: 600px) {
       .project-page__skills-one {
-        top: 33%;
+        top: 43%;
         transform: translate(-50%, -50%);
         text-align: left;
         left: 7%;
@@ -366,8 +370,8 @@ body, html {
     right: 3%;
     bottom: 57%; }
   .project-page__pink-triangle-one {
-    width: 72%;
-    bottom: 62%;
+    width: 80%;
+    bottom: 58%;
     z-index: 2;
     position: absolute; }
     @media (min-width: 600px) {
