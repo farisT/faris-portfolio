@@ -39,6 +39,20 @@ body,html {
             color: #3e3ec1;
                 }
     }
+    &__index {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 25%;
+        top: 39.5%;
+        z-index: 3;
+        color: #3e3ec1;
+        @media (min-width: 600px){
+            left: 50%;
+            top: 96%;
+            z-index: 3;
+            color: #3e3ec1;
+                }
+    }
 }
 
 .header {

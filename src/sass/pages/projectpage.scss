@@ -29,8 +29,10 @@
         display: grid;
         position: relative;
         grid-template-rows: auto 52%;
+        grid-row-gap: 3rem;
         // grid-row-gap: 5rem;
         @media (min-width: 600px){
+            grid-row-gap: 0rem;
             grid-template-columns: auto 62%;
             margin-bottom: 1rem;
             }
@@ -90,9 +92,13 @@
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 93%;
+        top: 76%;
         z-index: 3;
         color: $blue;
+        @media (min-width: 600px){
+            left: 50%;
+            top: 93%;
+        }
     }
     &__side-links {
         display: none;
@@ -137,16 +143,17 @@
             }
     }
     &__skills-one {
-        top: 18%;
+        top: 17%;
         transform: translate(-50%, -50%);
         z-index: 3;
         position: absolute;
-        left: 28%;
+        left: 39%;    
         @media (min-width: 600px){
-            top: 20%;
+            top: 33%;
             transform: translate(-50%, -50%);
-            text-align: center;
-            left: 10%;
+            text-align: left;
+            left: 7%;
+            width: 100px;
             }
     }
     &__skills-two {
@@ -165,7 +172,7 @@
 
     }
     &__skills-three {
-        top: 14%;
+        top: 19%;
         transform: translate(-50%, -50%);
         /* text-align: center; */
         z-index: 3;
@@ -211,8 +218,8 @@
         bottom: 57%;
     }
     &__pink-triangle-one {
-        width: 61%;
-        bottom: 50%;
+        width: 72%;
+        bottom: 62%;    
         z-index: 2;
         position: absolute;
         @media (min-width: 600px){
@@ -260,8 +267,8 @@
         }
     }
     &__blue-triangle-one {
-        width: 70%;
-        bottom: 51%;
+        width: 84%;
+        bottom: 45%;    
         z-index: 2;
         position: absolute;
 
@@ -269,7 +276,6 @@
             width: 40%;
             bottom: -50%;
             z-index: 2;
-            position: absolute;
             }
     }
     &__blue-triangle-two {
@@ -298,4 +304,7 @@
     margin: 0 auto;
     display: block;
     height: 100%;
+}
+.skills-list {
+    font-weight: 300;
 }
