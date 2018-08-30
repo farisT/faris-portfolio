@@ -22,6 +22,20 @@ body, html {
       z-index: 3;
       color: #3e3ec1; } }
 
+.arrow__project {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 89%;
+  z-index: 3;
+  color: #3e3ec1; }
+  @media (min-width: 600px) {
+    .arrow__project {
+      left: 50%;
+      top: 96%;
+      z-index: 3;
+      color: #3e3ec1; } }
+
 .header {
   display: grid;
   grid-template-columns: auto 25% 25%;
@@ -189,8 +203,8 @@ body, html {
     grid-template-rows: auto 52%; }
     @media (min-width: 600px) {
       .project-page__container-text {
-        grid-template-columns: auto 52%;
-        margin-bottom: 10rem; } }
+        grid-template-columns: auto 62%;
+        margin-bottom: 1rem; } }
   .project-page__container-text-info {
     margin-top: 20rem; }
   .project-page__container-start-images {
@@ -237,18 +251,19 @@ body, html {
     @media (min-width: 600px) {
       .project-page__side-links {
         display: unset;
-        line-height: 50;
         margin: 0 auto; } }
   .project-page__main-title {
-    font-size: 34px;
+    font-size: 24px;
     left: 50%;
     top: 50%;
+    color: white;
     transform: translate(-50%, -50%);
     position: absolute; }
     @media (min-width: 600px) {
       .project-page__main-title {
+        font-size: 72px;
         left: 50%;
-        top: 50%;
+        top: 30%;
         transform: translate(-50%, -50%); } }
   .project-page__subtitle-container {
     padding-left: 1rem; }
@@ -257,6 +272,12 @@ body, html {
         padding-left: 0; } }
   .project-page__subtitle {
     font-size: 45px; }
+  .project-page__subtitle-text {
+    font-weight: 300;
+    width: 100%; }
+    @media (min-width: 600px) {
+      .project-page__subtitle-text {
+        width: 500px; } }
   .project-page__skills-one {
     top: 18%;
     transform: translate(-50%, -50%);
@@ -383,6 +404,23 @@ body, html {
     z-index: 2;
     position: absolute;
     padding-top: 6rem; }
+
+.side-link__container {
+  background: #3e3ec1;
+  border-radius: 50%;
+  width: 50px;
+  overflow: hidden;
+  height: 50px;
+  margin-top: 20px; }
+
+.side-link__wrapper {
+  margin-top: 280px; }
+
+.icon-link {
+  width: 58%;
+  margin: 0 auto;
+  display: block;
+  height: 100%; }
 
 .about-page {
   display: grid;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <link rel="icon" href="../images/favicon.png" type="image/png" />
     <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -24,7 +25,14 @@
     <div class="about-page">
         <div class="about-page__container-main" >
                 <div class="about-page__side-links">
-                    <div>Links</div>
+                    <div class="side-link__wrapper">
+                        <div class="side-link__container">
+                            <a href="https://www.linkedin.com/in/faristangastani/"><img class="icon-link" src="../images/icons/linkedin-in-brands.svg" /></a>
+                        </div>
+                        <div class="side-link__container">
+                            <a href="https://github.com/farisT"><img class="icon-link" src="../images/icons/github-alt-brands.svg" /></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-page__container-main-photo">
                     <div class="about-page__main-title">Nice to meet you!</div>
@@ -36,7 +44,7 @@
                     <img class="about-page__mainphoto" src="../images/about/groenfull.jpg">
                     <img class="about-page__mainphoto-mobile" src="../images/about/groen.jpg">
                     <div class="about-page__readmore">Read more</div>
-                    <img class="arrow__about" src="../images/etc/arrow.svg"/>
+                    <img  onclick="smoothScroll(document.getElementById('second'))" class="arrow__about" src="../images/etc/arrow.svg"/>
                 </div>
             </div>
         <div>
@@ -45,7 +53,7 @@
                     <img class="blue-triangle">
                 </div>
                 <div >
-                    <h2>About Faris</h2>
+                    <h2 >About Faris</h2>
                     <div class="about-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quod fugit eius animi consequatur quas quam amet placeat nesciunt 
                         repellendus similique voluptate repellat aut modi consectetur aliquam facere, explicabo tenetur tempora.
@@ -59,6 +67,7 @@
         </div>
     </div>
     <footer>
+        <div id="second">Scroll to here</div>
         <img class="triangle"/>
     </footer>
 </body>
