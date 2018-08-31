@@ -3,7 +3,7 @@
     grid-template-columns: 100vw;
     grid-template-rows: repeat(7,auto);
     grid-row-gap: 1rem;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         grid-row-gap: 4rem;
         }
  
@@ -11,7 +11,7 @@
         // text-align: center;
         position: relative;
         display: grid;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         grid-template-columns: 5% auto;
         padding-right:5%;
         }
@@ -20,10 +20,9 @@
     &__mainphoto {
         object-fit: cover;
         width: 100%;
-        // @media (min-width: 600px){
-        //     width: 1328px;
-        //     height: 780px;
-        //     }
+        @media (min-width: $mobile-breakpoint){
+        border: $blue 2px solid;
+            }
     }
     &__container-text {
         display: grid;
@@ -31,7 +30,7 @@
         grid-template-rows: auto 52%;
         grid-row-gap: 3rem;
         // grid-row-gap: 5rem;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             grid-row-gap: 0rem;
             grid-template-columns: auto 62%;
             margin-bottom: 1rem;
@@ -41,7 +40,7 @@
     &__container-text-info {
         margin-top: 20rem;
         // grid-row-gap: 5rem;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
 
             }
   
@@ -52,7 +51,7 @@
         position: relative;
         grid-row-gap: 16rem;
 
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         grid-template-columns: 75% auto;
         grid-row-gap: 0;
         }
@@ -62,14 +61,14 @@
     }
     &__first-image {
         width:45%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:100%;
         }
 
     }
     &__second-image-one {
         width:100%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width: 30%;
             margin-right: 10rem;
             float: right;
@@ -82,7 +81,7 @@
     }
     &__fourth-image-one {
         width: 100%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:unset;
             float: right;
             // margin-left: 35rem;
@@ -96,14 +95,26 @@
         top: 76%;
         z-index: 3;
         color: $blue;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             left: 50%;
             top: 93%;
         }
     }
+    &__readmore-two {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 76%;
+        z-index: 3;
+        color: $blue;
+        @media (min-width: $mobile-breakpoint){
+            left: 50%;
+            top: 90%;
+        }
+    }
     &__side-links {
         display: none;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             display: unset;
             // line-height: 50;
             margin: 0 auto;
@@ -116,7 +127,7 @@
         top: 50%;
         color: white;
         transform: translate(-50%, -50%);
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             font-size: 72px;
             left: 50%;
             top: 30%;
@@ -127,7 +138,7 @@
     }
     &__subtitle-container{
        padding-left: 1rem;
-       @media (min-width: 600px){
+       @media (min-width: $mobile-breakpoint){
         padding-left: 0;
         }
     }
@@ -138,7 +149,7 @@
         font-weight:300;
         width: 100%;
         // width: 65%
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
   
             width: 500px;
             }
@@ -149,7 +160,7 @@
         z-index: 3;
         position: absolute;
         left: 37%;    
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             top: 43%;
             transform: translate(-50%, -50%);
             text-align: left;
@@ -158,17 +169,18 @@
             }
     }
     &__skills-two {
-        top: 15%;
+        top: 20%;
         transform: translate(-50%, -50%);
         z-index: 3;
-        left: 31%;
+        left: 36%;
         position: absolute;
-        @media (min-width: 600px){
-            top: 15%;
+        @media (min-width: $mobile-breakpoint){
+            top: 10%;
             transform: translate(-50%, -50%);
-            text-align: center;
+            text-align: left;
+            width: 100px;
             z-index: 3;
-            left: 10%;
+            left: 7%;
             }
 
     }
@@ -179,7 +191,7 @@
         z-index: 3;
         position: absolute;
         left: 29%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             top: 34%;
             transform: translate(-50%, -50%);
             z-index: 3;
@@ -192,7 +204,7 @@
         z-index: 3;
         right: 11%;
         bottom: 52%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             position: absolute;
             z-index: 3;
             right: 6%;
@@ -205,7 +217,7 @@
         z-index: 3;
         right: 11%;
         bottom: 52%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             position: absolute;
             z-index: 3;
             right: 8%;
@@ -219,11 +231,11 @@
         bottom: 57%;
     }
     &__pink-triangle-one {
-        width: 80%;
+        width: 71%;
         bottom: 58%; 
         z-index: 2;
         position: absolute;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width: 22%;
             bottom: 0%;
             }
@@ -235,23 +247,24 @@
         right: 0%;
         bottom: 34%;
         position: absolute;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         width: 25%;
         bottom: 16%;
         }
     }
     &__links-container {
         grid-row-start: 1;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             grid-row-start: unset;
             }
     }
     &__green-triangle-one {
-        width: 61%;
-        bottom: 46%;
+        width: 84%;
+        bottom: 35%;
         z-index: 2;
+        transform: rotate(-47deg);
         position: absolute;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width: 22%;
             bottom: 0%;
             }
@@ -262,7 +275,7 @@
         right: 0%;
         bottom: 4%;
         position: absolute;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         width: 25%;
         bottom: 0%;
         }
@@ -273,7 +286,7 @@
         z-index: 2;
         position: absolute;
 
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width: 40%;
             bottom: -50%;
             z-index: 2;

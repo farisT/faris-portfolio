@@ -3,7 +3,7 @@
     grid-template-columns: 100vw;
     grid-template-rows: repeat(3,auto);
     grid-row-gap: 0rem;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         grid-row-gap: 4rem;
         }
  
@@ -11,7 +11,7 @@
         // text-align: center;
         position: relative;
         display: grid;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         grid-template-columns: 5% auto;
         padding-right:5%;
         }
@@ -20,14 +20,14 @@
     &__container-main-photo {
         // text-align: center;
         overflow: hidden;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         // grid-template-columns: 5% auto;
         // padding-right:5%;
         }
     }
     &__mainphoto {
         display: none;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             object-fit: cover;
             width: 100%;
             display: unset;
@@ -37,7 +37,7 @@
         object-fit: cover;
         width: 143%;
         height: 641px;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             display: none;
             }
     }
@@ -47,7 +47,7 @@
         position: relative;
         grid-template-rows: auto 52%;
         // grid-row-gap: 5rem;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             grid-template-columns: auto 52%;
             margin-bottom: 10rem;
             }
@@ -56,7 +56,7 @@
     &__container-text-info {
         margin-top: 20rem;
         // grid-row-gap: 5rem;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
 
             }
   
@@ -67,7 +67,7 @@
         position: relative;
         grid-row-gap: 16rem;
 
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         grid-template-columns: 75% auto;
         grid-row-gap: 0;
         }
@@ -77,14 +77,14 @@
     }
     &__first-image {
         width:45%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:100%;
         }
 
     }
     &__second-image-one {
         width:100%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width: 30%;
             margin-right: 10rem;
             float: right;
@@ -97,14 +97,14 @@
     }
     &__fourth-image-one {
         width: 100%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:unset;
             margin-left: 35rem;
         }
      
     }
     &__readmore {
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
@@ -121,7 +121,7 @@
     }
     &__side-links {
         display: none;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             display: unset;
             line-height: 50;
             margin: 0 auto;
@@ -136,7 +136,7 @@
         font-weight: 300;
         transform: translate(-50%, -50%);
         position: absolute;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             font-size: 24px;
             width: 600px;
             left: 32%;
@@ -148,7 +148,7 @@
 
     &__subtitle-container{
        padding-left: 1rem;
-       @media (min-width: 600px){
+       @media (min-width: $mobile-breakpoint){
         padding-left: 0;
         }
     }
@@ -160,7 +160,7 @@
         top: 48%;
         position: absolute;
         transform: translate(-50%, -50%);
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             font-size: 24px;
             width: 600px;
             left: 32%;

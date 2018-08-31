@@ -1,7 +1,7 @@
 .vertical-slider-container {
   &__slider {
     display: none;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
           margin: auto;
           width: 40px;
             height: 780px;
@@ -12,7 +12,7 @@
 .horizontal-slider-container {
     &__slider {
       display: none;
-          @media (min-width: 600px){
+          @media (min-width: $mobile-breakpoint){
             margin: auto;
             width: 40px;
               height: 780px;
@@ -20,4 +20,17 @@
             }
         }
         
+}
+.vertical-slider-counter{
+  position: unset;
+  background: white;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+.vertical-slider-line{
+  width: 34%;
+  height: 97%;  
+  
 }

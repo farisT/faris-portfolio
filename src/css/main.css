@@ -22,6 +22,19 @@ body, html {
       z-index: 3;
       color: #3e3ec1; } }
 
+.arrow__project-two {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 89%;
+  z-index: 3;
+  color: #3e3ec1; }
+  @media (min-width: 600px) {
+    .arrow__project-two {
+      left: 50%;
+      top: 93%;
+      color: #3e3ec1; } }
+
 .arrow__project {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -33,7 +46,6 @@ body, html {
     .arrow__project {
       left: 50%;
       top: 96%;
-      z-index: 3;
       color: #3e3ec1; } }
 
 .arrow__index {
@@ -132,7 +144,7 @@ body, html {
   height: 780px; }
   @media (min-width: 600px) {
     .homepage-nested-grid-controlpanel {
-      grid-template-rows: 100%;
+      grid-template-rows: 850px 850px 850px;
       grid-template-columns: auto 60px;
       height: 780px; } }
   .homepage-nested-grid-controlpanel__item-slide {
@@ -179,22 +191,40 @@ body, html {
     .homepage__subtitle-bold {
       font-size: 38px; } }
 
-.project-grid {
-  display: grid; }
-
 .pink {
   background: #fce4e0; }
   @media (min-width: 600px) {
     .pink {
-      margin-left: 60px; } }
+      margin-left: 60px;
+      margin-top: 50px; } }
 
-.slider-counter {
-  position: unset;
-  margin-top: 5rem;
-  background: white;
-  width: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+.green {
+  background: #e5ebd2; }
+  @media (min-width: 600px) {
+    .green {
+      margin-left: 60px;
+      margin-top: 50px; } }
+
+.blue {
+  background: #e4e9f8; }
+  @media (min-width: 600px) {
+    .blue {
+      margin-left: 60px;
+      margin-top: 50px; } }
+
+.container {
+  overflow-y: scroll;
+  background: #f1f1f1;
+  padding-top: 1000px; }
+
+.fake-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  height: 250px;
+  margin-bottom: 250px; }
 
 .project-page {
   display: grid;
@@ -215,6 +245,9 @@ body, html {
   .project-page__mainphoto {
     object-fit: cover;
     width: 100%; }
+    @media (min-width: 600px) {
+      .project-page__mainphoto {
+        border: #3e3ec1 2px solid; } }
   .project-page__container-text {
     display: grid;
     position: relative;
@@ -270,6 +303,17 @@ body, html {
       .project-page__readmore {
         left: 50%;
         top: 93%; } }
+  .project-page__readmore-two {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 76%;
+    z-index: 3;
+    color: #3e3ec1; }
+    @media (min-width: 600px) {
+      .project-page__readmore-two {
+        left: 50%;
+        top: 90%; } }
   .project-page__side-links {
     display: none; }
     @media (min-width: 600px) {
@@ -316,18 +360,19 @@ body, html {
         left: 7%;
         width: 100px; } }
   .project-page__skills-two {
-    top: 15%;
+    top: 20%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    left: 31%;
+    left: 36%;
     position: absolute; }
     @media (min-width: 600px) {
       .project-page__skills-two {
-        top: 15%;
+        top: 10%;
         transform: translate(-50%, -50%);
-        text-align: center;
+        text-align: left;
+        width: 100px;
         z-index: 3;
-        left: 10%; } }
+        left: 7%; } }
   .project-page__skills-three {
     top: 19%;
     transform: translate(-50%, -50%);
@@ -370,7 +415,7 @@ body, html {
     right: 3%;
     bottom: 57%; }
   .project-page__pink-triangle-one {
-    width: 80%;
+    width: 71%;
     bottom: 58%;
     z-index: 2;
     position: absolute; }
@@ -394,9 +439,10 @@ body, html {
       .project-page__links-container {
         grid-row-start: unset; } }
   .project-page__green-triangle-one {
-    width: 61%;
-    bottom: 46%;
+    width: 84%;
+    bottom: 35%;
     z-index: 2;
+    transform: rotate(-47deg);
     position: absolute; }
     @media (min-width: 600px) {
       .project-page__green-triangle-one {
@@ -605,3 +651,14 @@ body, html {
       width: 40px;
       height: 780px;
       display: unset; } }
+
+.vertical-slider-counter {
+  position: unset;
+  background: white;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.vertical-slider-line {
+  width: 34%;
+  height: 97%; }

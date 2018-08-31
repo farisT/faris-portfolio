@@ -5,7 +5,7 @@ body,html {
     width: 100vw;
     // overflow-x: hidden;
     // width:100%;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         position: relative;
         }
 }
@@ -18,10 +18,23 @@ body,html {
         top: 89%;
         z-index: 3;
         color: #3e3ec1;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             left: 50%;
             top: 92%;
             z-index: 3;
+            color: #3e3ec1;
+                }
+    }
+    &__project-two {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 89%;
+        z-index: 3;
+        color: #3e3ec1;
+        @media (min-width: $mobile-breakpoint){
+            left: 50%;
+            top: 93%;
             color: #3e3ec1;
                 }
     }
@@ -32,10 +45,9 @@ body,html {
         top: 89%;
         z-index: 3;
         color: #3e3ec1;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             left: 50%;
             top: 96%;
-            z-index: 3;
             color: #3e3ec1;
                 }
     }
@@ -46,7 +58,7 @@ body,html {
         top: 39.5%;
         z-index: 3;
         color: #3e3ec1;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             left: 25%;
             top: 44%;
             z-index: 3;
@@ -58,7 +70,7 @@ body,html {
 .header {
     display: grid;
     grid-template-columns: auto 25% 25%;
-    @media (min-width: 600px){
+    @media (min-width: $mobile-breakpoint){
         margin-left: 5%;
         }
     align-items: center;
@@ -73,7 +85,7 @@ body,html {
             color: $blue;
         }
         padding-left: 13px;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
         padding-left: 0;
         width:8%;
             }
@@ -81,14 +93,14 @@ body,html {
     &__projects  {
         border-bottom: 3px $green solid;
         width: 70%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:22%
             }
     }
     &__about  {
         border-bottom: 3px $green solid;
         width: 52%;
-        @media (min-width: 600px){
+        @media (min-width: $mobile-breakpoint){
             width:18%
             }
     }
