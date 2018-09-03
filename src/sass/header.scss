@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: auto 25% 25%;
     @media (min-width: $mobile-breakpoint){
-        margin-left: 5%;
+        margin-left: 10%;
         }
     align-items: center;
     color:$blue;
@@ -47,7 +47,6 @@
             border-bottom: 10px $green solid;  
             display: inline-block;
             line-height: 0.3em;
-            // transition: 0.1s;
             }
     }
 

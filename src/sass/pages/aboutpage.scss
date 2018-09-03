@@ -17,15 +17,21 @@
     &__links {
         position: absolute;
         z-index: 3;
-        right: 6%;
+        right: 20%;
         bottom: 3%;
+        @media (min-width: $mobile-breakpoint){
+            right: 6%;
+    
+            }
     }
+
+
     &__skills {
         position: absolute;
-        z-index: 3;
-        left: 3%;
-        bottom: 13%;
-        width: 300px;
+    z-index: 3;
+    left: 10%;
+    bottom: 10%;
+    width: 245px;
         @media (min-width: $mobile-breakpoint){
             position: absolute;
             z-index: 3;
@@ -202,6 +208,7 @@
     &__inner-grid {
         display: grid;
         grid-template-columns: auto;
+        margin-bottom: 30rem;
         @media (min-width: $mobile-breakpoint){
             grid-template-columns: 50vw 50vw;
             margin-bottom: 20rem;
@@ -220,8 +227,15 @@
     font-weight: 300;
     }
     &__triangle-one{
+        bottom: 2%;
+        width: 100%;
         position: absolute;
-        bottom: 0%;
+        @media (min-width: $mobile-breakpoint){
+            width: unset;
+            position: absolute;
+            bottom: 0%;
+            }
+
     }
     &__triangle-two{
         bottom: 0%;

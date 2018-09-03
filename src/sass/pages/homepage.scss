@@ -63,6 +63,8 @@
     &__under-image-link {
         text-align: center;
         padding-top: 10rem;
+        color: $blue;
+        // border-bottom: 3px $green solid;
         @media (min-width: $mobile-breakpoint){
             padding-top:0;
                 }

@@ -69,7 +69,7 @@
     &__second-image-one {
         width:100%;
         @media (min-width: $mobile-breakpoint){
-            width: 30%;
+            width: 60%;
             margin-right: 10rem;
             float: right;
         }
@@ -78,7 +78,14 @@
         // margin-left: 10rem;
         float: left;
         width: 30%;
+        @media (min-width: $mobile-breakpoint){
+            float: left;
+            width: 60%;
+            margin-left: 5rem;
+        }
+
     }
+
     &__fourth-image-one {
         width: 100%;
         @media (min-width: $mobile-breakpoint){
