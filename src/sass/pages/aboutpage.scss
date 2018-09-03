@@ -8,8 +8,31 @@
         }
  
 
-    &__link {
+    &__link-decoration {
         margin-top: 5rem;
+        :visited {
+            color: $blue;
+        }
+    }
+    &__links {
+        position: absolute;
+        z-index: 3;
+        right: 6%;
+        bottom: 3%;
+    }
+    &__skills {
+        position: absolute;
+        z-index: 3;
+        left: 3%;
+        bottom: 13%;
+        width: 300px;
+        @media (min-width: $mobile-breakpoint){
+            position: absolute;
+            z-index: 3;
+            left: 3%;
+            bottom: 13%;
+            width: 300px;
+            }
     }
     &__container-main {
         // text-align: center;

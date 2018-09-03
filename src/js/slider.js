@@ -44,3 +44,53 @@ arrowDown.addEventListener("click", function() {
 	}
 	console.log('next image', 'position', position,'slidenumber', slidesNumber);
 });
+
+function detectMouseWheelDirection( e )
+{
+    var delta = null,
+        direction = false
+    ;
+    if ( !e ) { // if the event is not provided, we get it from the window object
+        e = window.event;
+    }
+    if ( e.wheelDelta ) { // will work in most cases
+        delta = e.wheelDelta / 60;
+    } else if ( e.detail ) { // fallback for Firefox
+        delta = -e.detail / 2;
+    }
+    if ( delta !== null ) {
+        direction = delta > 0 ? 'up' : 'down';
+    }
+
+    return direction;
+}
+function handleMouseWheelDirection( direction )
+{
+    console.log( direction ); // see the direction in the console
+    if ( direction == 'down' ) {
+        // do something, like show the next page
+		if(position > (slidesNumber-1)*-100){
+			moveSlide(-1);
+		} else {
+				position = 0;
+				slider.style.top = position + '%'; 
+		}
+    } else if ( direction == 'up' ) {
+		if(position !== 0) {
+			moveSlide(1);
+	   } else {
+		   position = (slidesNumber-1)*-100;
+		   slider.style.top = position + '%';  
+	   }
+   console.log('previous image');
+        // do something, like show the previous page
+    }
+}
+container.onmousewheel = function( e ) {
+    handleMouseWheelDirection( detectMouseWheelDirection( e ) );
+};
+if ( window.addEventListener ) {
+    document.addEventListener( 'DOMMouseScroll', function( e ) {
+        handleMouseWheelDirection( detectMouseWheelDirection( e ) );
+    });
+}

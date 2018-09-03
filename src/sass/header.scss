@@ -1,0 +1,54 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 25% 25%;
+    @media (min-width: $mobile-breakpoint){
+        margin-left: 5%;
+        }
+    align-items: center;
+    color:$blue;
+    &__name{
+        text-decoration: none;
+        color: $blue;
+        border-bottom: 3px $green solid;
+        width: 34%;
+        :visited {
+            text-decoration: none;
+            color: $blue;
+        }
+        padding-left: 13px;
+        @media (min-width: $mobile-breakpoint){
+        padding-left: 0;
+        width:8%;
+            }
+    }
+    &__projects  {
+        border-bottom: 3px $green solid;
+        width: 70%;
+        @media (min-width: $mobile-breakpoint){
+            width:22%
+            }
+    }
+    &__about  {
+        border-bottom: 3px $green solid;
+        width: 52%;
+        @media (min-width: $mobile-breakpoint){
+            width:18%
+            }
+    }
+    &__item-links {
+        text-decoration: none;
+        color: $blue;
+        line-height: 0.9em;
+        :visited {
+            text-decoration: none;
+            color: $blue;
+        }
+        :hover {
+            border-bottom: 10px $green solid;  
+            display: inline-block;
+            line-height: 0.3em;
+            // transition: 0.1s;
+            }
+    }
+
+}
