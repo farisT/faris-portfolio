@@ -104,7 +104,7 @@
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 76%;
+        top: 100%;
         z-index: 3;
         color: $blue;
         @media (min-width: $mobile-breakpoint){
@@ -164,8 +164,8 @@
             top: 43%;
             transform: translate(-50%, -50%);
             text-align: left;
-            left: 7%;
-            width: 100px;
+            left: 11%;
+            width: 200px;
             }
     }
     &__skills-two {
@@ -185,12 +185,12 @@
 
     }
     &__skills-three {
-        top: 19%;
+        top: 26%;
         transform: translate(-50%, -50%);
         /* text-align: center; */
         z-index: 3;
         position: absolute;
-        left: 29%;
+        left: 42%;
         @media (min-width: $mobile-breakpoint){
             top: 34%;
             transform: translate(-50%, -50%);
@@ -221,14 +221,25 @@
             position: absolute;
             z-index: 3;
             right: 8%;
-            bottom: 60%;
+            // bottom: 60%; // animate this transition as well
+            bottom: 82%;
             }
     }
     &__links-three {
         position: absolute;
         z-index: 3;
-        right: 3%;
-        bottom: 57%;
+        right: 12%;
+        bottom: 51%;
+        width: 100px;
+        text-align: center;
+        
+ 
+        @media (min-width: $mobile-breakpoint){
+            right: 2%;
+            bottom: 51%;
+            width: 100px;
+            text-align: center;
+            }
     }
     &__pink-triangle-one {
         width: 71%;
@@ -259,8 +270,8 @@
             }
     }
     &__green-triangle-one {
-        width: 84%;
-        bottom: 35%;
+        width: 67%;
+        bottom: 50%;
         z-index: 2;
         transform: rotate(-47deg);
         position: absolute;
@@ -281,8 +292,8 @@
         }
     }
     &__blue-triangle-one {
-        width: 84%;
-        bottom: 45%;    
+        width: 90%;
+        bottom: 31%;
         z-index: 2;
         position: absolute;
 
@@ -293,11 +304,17 @@
             }
     }
     &__blue-triangle-two {
-        width: 18%;
-        right: 0%;
-        z-index: 2;
+        width: 78%;
         position: absolute;
-        padding-top: 6rem;
+        right: 0%;
+        @media (min-width: $mobile-breakpoint){
+            width: 18%;
+
+            z-index: 2;
+
+            padding-top: 6rem;
+            }
+
     }
 }
 .side-link {
@@ -311,6 +328,24 @@
     }
     &__wrapper {
         margin-top: 280px;
+    }
+}
+
+.sub-icon-link {
+    &__container {
+        background: $blue;
+        border-radius: 50%;
+        width: 50px;
+        overflow: hidden;
+        height: 50px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    &__image {
+        width: 58%;
+        margin: 0 auto;
+        display: block;
+        height: 100%;
     }
 }
 .icon-link {

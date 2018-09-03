@@ -37,39 +37,50 @@
                 <div class="about-page__container-main-photo">
                     <div class="about-page__main-title">Nice to meet you!</div>
                     <div class="about-page__sub-title">
-                            As a Full-stack Developer I work mainly with React.js, Redux, Node.js and JavaScript (ES6).
+                           " As a Full-stack Developer I work mainly with React.js, Redux, Node.js and JavaScript (ES6).
                             <!-- I have experience in the field of hosting, databases, authentication, building components and making websites / platforms SEO 'ready'. -->
-                            I ensure the delivery of a maintainable and scalable application with consistent code.
+                            I ensure the delivery of a maintainable and scalable application with consistent code."
                     </div>
                     <img class="about-page__mainphoto" src="../images/about/groenfull.jpg">
                     <img class="about-page__mainphoto-mobile" src="../images/about/groen.jpg">
                     <div class="about-page__readmore">Read more</div>
-                    <img  onclick="smoothScroll(document.getElementById('second'))" class="arrow__about" src="../images/etc/arrow.svg"/>
+                    <img  onclick="smoothScroll(document.getElementById('scroll'))" class="arrow__about" src="../images/etc/arrow.svg"/>
                 </div>
             </div>
-        <div>
-            <div class="about-page__row">
+        <div class="about-page__inner-grid">
                 <div>
-                    <img class="blue-triangle">
-                </div>
-                <div >
-                    <h2 >About Faris</h2>
-                    <div class="about-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod fugit eius animi consequatur quas quam amet placeat nesciunt 
-                        repellendus similique voluptate repellat aut modi consectetur aliquam facere, explicabo tenetur tempora.
+                        <img class="blue-triangle">
+                    </div>
+            <div class="about-page__row">
+          
+                <div id="scroll" >
+                    <h2 >About Faris.</h2>
+                    <div class="about-page__text">
+                        As a Full-stack Developer I have worked mainly with React.js, Redux, Node.js and JavaScript (ES6).
+                         I have experience in the field of hosting, databases, authentication, building components and making websites / platforms SEO 'ready'. 
+                         Here I take into account all the wishes of the customer, I ensure the delivery of a maintenance and scalable application with consistent code.
+                        As a developer I find it important to always develop myself further in the field of new techniques, tools but also fine-tuning or keeping current knowledge up-to-date. 
+                        I do this, among other things, by developing various apps to make everyday life a lot easier.                            
                     </div>
                 </div>
-                <a href="/projects">View projects</a>
+                <div class="about-page__link "> <a class="no-decoration-links" href="/projects">View projects</a> </div>
+               
             </div>
         </div>
         <div>
-            <img />
+            <div>
+                <img class="about-page__triangle-one" src="../images/about/triangleone.svg"/>
+            </div>
+            <div>
+                <img class="about-page__triangle-two"  src="../images/about/triangletwo.svg"/>
+            </div>
+            
         </div>
     </div>
-    <footer>
+    <!-- <footer>
         <div id="second">Scroll to here</div>
         <img class="triangle"/>
-    </footer>
+    </footer> -->
 </body>
 <script src="../js/main.js"></script>
 </html>

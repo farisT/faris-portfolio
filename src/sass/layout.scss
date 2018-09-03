@@ -9,6 +9,16 @@ body,html {
         position: relative;
         }
 }
+.no-decoration-links {
+    text-decoration: none;
+    border-bottom: 3px $green solid;
+
+}
+.link-container {
+    a:visited {
+        color: $blue;
+    }
+}
 
 .arrow {
     &__about {
@@ -29,7 +39,7 @@ body,html {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 89%;
+        top: 109%;
         z-index: 3;
         color: #3e3ec1;
         @media (min-width: $mobile-breakpoint){
@@ -55,12 +65,12 @@ body,html {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 25%;
-        top: 39.5%;
+        top: 78%;
         z-index: 3;
         color: #3e3ec1;
         @media (min-width: $mobile-breakpoint){
             left: 25%;
-            top: 44%;
+            top: 83%;
             z-index: 3;
             color: #3e3ec1;
                 }

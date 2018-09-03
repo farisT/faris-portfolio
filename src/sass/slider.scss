@@ -25,12 +25,64 @@
   position: unset;
   background: white;
   width: 20px;
-  padding-top: 5px;
+  padding-top: 100px;
   padding-bottom: 5px;
   
 }
 .vertical-slider-line{
   width: 34%;
-  height: 97%;  
+  height: 75%;
   
 }
+.container {
+  position: absolute; 
+  z-index: -1; 
+  margin: auto; 
+  left: 0; 
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  transition: 2s;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  margin: 0 -4px 0 0;
+}
+.pic1 {
+  background-position: center;
+  background-size: cover;
+  background: $pink;
+  // background-image: url("img/pic1.jpeg");
+}
+
+.pic2 {
+  background-position: center;
+  background-size: cover;
+  background: $green;
+  // background-image: url("img/pic2.jpeg");
+}
+
+.pic3 {
+  background-position: center;
+  background-size: cover;
+  background: $light-blue;
+  // background-image: url("img/pic3.jpeg");
+}
+.arrow-down {
+  width: 20%;
+}
+
+.arrow-up {
+  width: 20%;
+}
+

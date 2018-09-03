@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,21 +23,33 @@
         <div class="homepage-wrapper">
             <div class="homepage-wrapper__item homepage-nested-grid">
                 <div class="homepage-nested-grid__item-one">
-                    <img class="homepage__image" src='../images/homepage/home-face.png' />
-                    <div    onclick="smoothScroll(document.getElementById('second'))"  class="homepage__under-image-link">Projects</div>
-                    <img  onclick="smoothScroll(document.getElementById('second'))" class="arrow__index" src="../images/etc/arrow.svg"/>
+                    <div class="homeface-container">
+                        <img class="homepage__image" src='../images/homepage/home-face.png' />
+                    </div>
+                    <div  onclick="smoothScroll(document.getElementById('project-start'))"  class="homepage__under-image-link link-container"><a class="no-decoration-links" href="/projects">Projects</a></div>
+                    <img  onclick="smoothScroll(document.getElementById('project-start'))" class="arrow__index" src="../images/etc/arrow.svg"/>
                 </div>
                 <div class="homepage-nested-grid__item-two">
                     <div class="homepage__title">Faris.</div>
                     <div class="homepage__subtitle-container" >
                         <div class="homepage__subtitle" >Im a motivated Dutch</div>
                         <div class="homepage__subtitle-bold">FULL-STACK DEVELOPER</div>
-                        <div><a href="/about">More about me</a></div>
+                        <div class="under-text-link link-container"><a  class="no-decoration-links" href="/about">More about me</a></div>
                     </div>
                 </div>
             </div>
-            <div  id="second"  class="homepage-wrapper__item homepage-nested-grid-controlpanel">
-                <div class="pink project one">
+            <!-- <div class="container">
+                    <div class="slider">
+                        <div class="slide pic1"></div>
+                        <div class="slide pic2"></div>
+                        <div class="slide pic3"></div>
+                    </div>
+                </div>
+                <img src="../images/chevron-down.svg" class="arrow-down"/>
+                <img src="../images/chevron-up.svg" class="arrow-up"/> -->
+                
+            <!-- <div  class="homepage-wrapper__item homepage-nested-grid-controlpanel">
+                <div   id="project-start"  onclick="smoothScroll(document.getElementById('second'))" class="pink project one">
                     Projects
                 </div>
                 <div class="vertical-slider-container">
@@ -46,7 +58,7 @@
                             <img class="vertical-slider-line" src="../images/slider/Line.svg" />
                     </div>
                 </div>
-                <div class="green project two">
+                <div id="second" onclick="smoothScroll(document.getElementById('third'))" class="green project two">
                     Projects
                 </div>
                 <div class="vertical-slider-container">
@@ -55,43 +67,22 @@
                             <img class="vertical-slider-line" src="../images/slider/Line.svg" />
                     </div>
                 </div>
-                <div class="blue project three">
+                <div id="third" onclick="smoothScroll(document.getElementById('project-start'))" class="blue project three">
                     Projects
                 </div>
                 <div class="vertical-slider-container">
                     <div class="vertical-slider-container__slider">
-                            <div class="vertical-slider-counter">2/3</div>
+                            <div class="vertical-slider-counter">3/3</div>
                             <img class="vertical-slider-line" src="../images/slider/Line.svg" />
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
-        <!-- <div class="container">
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-                <div class="fake-image">
-                    <h2>Fake Image</h2>
-                </div>
-            </div> -->
     </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
+<script src="../js/slider.js"></script>
+
 </html>

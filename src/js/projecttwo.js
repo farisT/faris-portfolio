@@ -30,7 +30,7 @@ containerTwo.addEventListener('mouseenter', function(){
         greenTriangleTwo.style.transition= '0.2s';
         greenTriangleTwo.style.width= '30%';
         greenTriangleTwo.style.bottom= '6%';
-        greenTriangleTwo.style.transform= 'rotate(-20deg)';
+        // greenTriangleTwo.style.transform= 'rotate(20deg)';
     }
     
 });
@@ -48,7 +48,3 @@ containerTwo.addEventListener('mouseleave', function(){
 // bottom: -27%;
 // transform: rotate(-55deg);
 
-//home triangle change
-// top: 15%;
-// left: -8%;
-// transform: rotate(-11deg);

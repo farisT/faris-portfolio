@@ -21,6 +21,9 @@ app.get('/projectone', (req, res) => {
   app.get('/projectthree', (req, res) => {
     res.render('projectthree.html');
   });
+  app.get('/projects', (req, res) => {
+    res.render('projects.html');
+  });
   app.get('/about', (req, res) => {
     res.render('about.html');
   });

@@ -94,8 +94,12 @@
     }
 }
 
-.project-grid {
-    // display: grid;
+.under-text-link{
+
+    @media (min-width: $mobile-breakpoint){
+        float: right;
+        margin-right: 50px;
+            }
 }
 .pink {
     @media (min-width: $mobile-breakpoint){
@@ -120,15 +124,5 @@
     background: $light-blue;
 }
 .container {
-    overflow-y: scroll; background: #f1f1f1;
-    padding-top:1000px;
-}
-.fake-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    color:white;
-    height: 250px;
-    margin-bottom: 250px;
+    // padding-top:1000px;
 }

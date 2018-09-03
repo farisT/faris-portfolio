@@ -11,28 +11,6 @@
 // projectsNav.addEventListener('mouseleave', function(){
 //     console.log('leaving')
 // });
-const options = {
-  rootMargin:"25px",
-  threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ,0.8, 0.9 ,1]
-}
-
-const io = new IntersectionObserver(entries => {
-  entries.forEach(entry =>{
-    console.log("entry", entry.intersectionRatio);
-    entry.target.style.opacity = entry.intersectionRatio + 0.3;
-    if(entry.intersectionRatio === 1){
-      entry.target.innerHTML = "<h2>Loaded!</h2>";
-    }
-    else {
-      entry.target.innerHTML = "<h2>Unloaded!</h2>";
-    }
-  });
-}, options);
-
-const targetElements = document.querySelectorAll(".project ");
-for(let element of targetElements){
-  io.observe(element);
-}
 
 
 
@@ -58,6 +36,9 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+
+
 
 // window.onscroll = function(ev) {
 //     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight ) {
