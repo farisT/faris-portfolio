@@ -102,6 +102,9 @@
         float: right;
         margin-right: 50px;
             }
+    @media(min-width: $bigscreen-breakpoint){
+        float: left;
+    }
 }
 .pink {
     @media (min-width: $mobile-breakpoint){
