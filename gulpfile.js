@@ -61,7 +61,7 @@ gulp.task('js', function (cb) {
 	.pipe(gulp.dest('dist/css'))
   });
   gulp.task('html', function() {
-	gulp.src('src/views/**/*.html')
+	gulp.src('src/*.html')
 	.pipe(gulp.dest('dist'))
   });
   gulp.task('images', function () {

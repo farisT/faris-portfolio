@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.set('views', `src/views`);
+app.set('views', `src`);
 app.engine('html', require('ejs').renderFile);
 
 app.use(express.static(path.join(__dirname, 'src')));
