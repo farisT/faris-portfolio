@@ -5,6 +5,7 @@ var gulp          = require('gulp'),
 	uglify = require('gulp-uglify-es').default,
 	concat = require('gulp-concat'),
 	pump = require('pump');
+	image = require('gulp-image');
 
 
 
@@ -61,9 +62,14 @@ gulp.task('js', function (cb) {
   });
   gulp.task('html', function() {
 	gulp.src('src/views/**/*.html')
-	.pipe(gulp.dest('dist/views'))
+	.pipe(gulp.dest('dist'))
+  });
+  gulp.task('images', function () {
+	gulp.src('src/images/*')
+	  .pipe(image())
+	  .pipe(gulp.dest('dist/images'));
   });
 
-gulp.task('build', ['js','css','html'])
+gulp.task('build', ['js','css','html', 'images'])
 
 gulp.task('default', ['serve', 'nodemon']);
