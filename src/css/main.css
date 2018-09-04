@@ -889,6 +889,17 @@ body, html {
   width: 100vw;
   height: 100vh;
   position: fixed; }
+  .project-slider-page__side-links {
+    display: none; }
+    @media (min-width: 600px) {
+      .project-slider-page__side-links {
+        display: unset;
+        line-height: 50;
+        margin: 0 auto; } }
+  .project-slider-page__side-link-wrapper {
+    position: absolute;
+    left: 3%;
+    padding-top: 260px; }
   .project-slider-page__main-title-one {
     font-size: 24px;
     left: 50%;

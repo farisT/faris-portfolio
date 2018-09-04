@@ -198,6 +198,22 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+
+&__side-links {
+  display: none;
+  @media (min-width: $mobile-breakpoint){
+      display: unset;
+      line-height: 50;
+      margin: 0 auto;
+  }
+
+  
+}
+&__side-link-wrapper {
+  position: absolute;
+  left: 3%;
+  padding-top: 260px;
+}
   &__main-title-one {
     font-size: 24px;
     left: 50%;
