@@ -1,7 +1,11 @@
 var gulp          = require('gulp'),
     browserSync   = require('browser-sync').create(),
     sass          = require('gulp-sass'),
-    nodemon 	  = require('gulp-nodemon');
+	nodemon 	  = require('gulp-nodemon'),
+	uglify = require('gulp-uglify-es').default,
+	concat = require('gulp-concat'),
+	pump = require('pump');
+
 
 
 // Static Server + watching scss/html files
@@ -34,13 +38,32 @@ gulp.task('nodemon', function (cb) {
 	return nodemon({
 		script: 'index.js'
 	}).on('start', function () {
-		// to avoid nodemon being started multiple times
-		// thanks @matthisk
 		if (!started) {
 			cb();
 			started = true; 
 		} 
 	});
 });
+
+
+gulp.task('js', function (cb) {
+	pump([
+		  gulp.src('src/js/*.js'),
+		  uglify(),
+		  gulp.dest('dist/js')
+	  ],
+	  cb
+	);
+  });
+  gulp.task('css', function() {
+	gulp.src('src/css/*.css')
+	.pipe(gulp.dest('dist/css'))
+  });
+  gulp.task('html', function() {
+	gulp.src('src/views/**/*.html')
+	.pipe(gulp.dest('dist/views'))
+  });
+
+gulp.task('build', ['js','css','html'])
 
 gulp.task('default', ['serve', 'nodemon']);

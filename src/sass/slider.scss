@@ -156,9 +156,14 @@
   width: 5%;
   z-index: 4;
   text-align: center;
-  vertical-align: middle;
   display: block;
   margin: 0 auto;
+  margin-top: 1rem;
+  &__container {
+    @media (min-width: $mobile-breakpoint){
+      margin-top: 0rem;
+      }
+  }
 
 }
 .arrow-up-home {
@@ -313,8 +318,11 @@
     vertical-align: middle;
     line-height: 540px;
     color: white;
-    font-size: 669px;
+    font-size: 500px;
     padding-top: 5rem;
+    @media (min-width: $mobile-breakpoint){
+      font-size: 669px;
+    }
   }
   &__two {
     width: 100%;
@@ -322,8 +330,11 @@
     vertical-align: middle;
     line-height: 540px;
     color: white;
-    font-size: 669px;
+    font-size: 500px;
     padding-top: 5rem;
+    @media (min-width: $mobile-breakpoint){
+      font-size: 669px;
+    }
   }
   &__three {
     width: 100%;
@@ -331,7 +342,10 @@
     vertical-align: middle;
     line-height: 540px;
     color: white;
-    font-size: 669px;
+    font-size: 500px;
     padding-top: 5rem;
+    @media (min-width: $mobile-breakpoint){
+      font-size: 669px;
+    }
   }
 }
