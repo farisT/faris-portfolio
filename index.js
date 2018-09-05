@@ -27,7 +27,12 @@ app.get('/projectone', (req, res) => {
   app.get('/about', (req, res) => {
     res.render('about.html');
   });
+  app.get('/404', (req, res) => {
+    res.render('404.html');
+  });
 
+
+  
 app.listen(3000, () => {
   console.log('listening at 3000');
 });

@@ -94,3 +94,42 @@ body,html {
                 }
     }
 }
+
+.four-o-four {
+    
+    &__body {
+        position: fixed;
+    }
+    font-size: 200px;
+    
+    color: $pink;
+    position: relative;
+    text-align: center;
+
+    margin-top: 50%;
+    @media (min-width: $mobile-breakpoint){
+        font-size: 607px;
+     margin-top: 0;
+    }
+    &__text-container {
+        position: absolute;
+        left: 0;
+        position:absolute;
+        text-align:center;
+        top: 63%;
+        width: 100%;
+        font-size: 35px;
+        color: $blue;
+        @media (min-width: $mobile-breakpoint){
+        font-size:72px;
+        top: 30%;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        text-decoration: none;
+        color: $blue;
+        border-bottom: 3px solid $light-blue;
+    }
+ 
+}

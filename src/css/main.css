@@ -82,6 +82,37 @@ body, html {
       z-index: 3;
       color: #3e3ec1; } }
 
+.four-o-four {
+  font-size: 200px;
+  color: #fce4e0;
+  position: relative;
+  text-align: center;
+  margin-top: 50%; }
+  .four-o-four__body {
+    position: fixed; }
+  @media (min-width: 600px) {
+    .four-o-four {
+      font-size: 607px;
+      margin-top: 0; } }
+  .four-o-four__text-container {
+    position: absolute;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 63%;
+    width: 100%;
+    font-size: 35px;
+    color: #3e3ec1; }
+    @media (min-width: 600px) {
+      .four-o-four__text-container {
+        font-size: 72px;
+        top: 30%; } }
+  .four-o-four__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #3e3ec1;
+    border-bottom: 3px solid #e4e9f8; }
+
 .header {
   display: grid;
   grid-template-columns: auto 25% 25%;
