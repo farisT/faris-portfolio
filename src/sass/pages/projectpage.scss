@@ -198,13 +198,6 @@
         position: absolute;
         left: 12%;
         width: 100px;
-        @media (min-width: $tablet-breakpoint){
-            top: 34%;
-            z-index: 3;
-            width: 100px;
-            position: absolute;
-            left: 15%;
-            }
         @media (min-width: $standard-breakpoint){
             top: 34%;
             transform: translate(-50%, -50%);

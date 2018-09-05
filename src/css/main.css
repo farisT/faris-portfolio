@@ -428,13 +428,6 @@ body, html {
     position: absolute;
     left: 12%;
     width: 100px; }
-    @media (min-width: 800px) {
-      .project-page__skills-three {
-        top: 34%;
-        z-index: 3;
-        width: 100px;
-        position: absolute;
-        left: 15%; } }
     @media (min-width: 1200px) {
       .project-page__skills-three {
         top: 34%;
