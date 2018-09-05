@@ -192,16 +192,24 @@
 
     }
     &__skills-three {
-        top: 26%;
-        transform: translate(-50%, -50%);
+        top: 21%;
         /* text-align: center; */
         z-index: 3;
         position: absolute;
-        left: 42%;
-        @media (min-width: $mobile-breakpoint){
+        left: 12%;
+        width: 100px;
+        @media (min-width: $tablet-breakpoint){
+            top: 34%;
+            z-index: 3;
+            width: 100px;
+            position: absolute;
+            left: 15%;
+            }
+        @media (min-width: $standard-breakpoint){
             top: 34%;
             transform: translate(-50%, -50%);
             z-index: 3;
+            width: 100px;
             position: absolute;
             left: 15%;
             }
