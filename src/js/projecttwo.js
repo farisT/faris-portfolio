@@ -1,15 +1,18 @@
 const greenTriangleOne = document.querySelector('.project-page__green-triangle-one');
 const greenTriangleTwo = document.querySelector('.project-page__green-triangle-two');
+const linksTwo = document.querySelector('.project-page__links-two');
 const containerOne = document.querySelector('.animation-container-one');
 const containerTwo = document.querySelector('.animation-container-two');
+
 
 containerOne.addEventListener('mouseenter', function(){
     console.log('entering')
     console.log(window.innerWidth);
     if(window.innerWidth > 600){
-        greenTriangleOne.style.transition= '0.2s';
+        greenTriangleOne.style.transition= '0.5s';
         greenTriangleOne.style.width= '32%';
         greenTriangleOne.style.bottom= '-27%';
+     
         greenTriangleOne.style.transform= 'rotate(-55deg)';
     }
    
@@ -20,6 +23,7 @@ containerOne.addEventListener('mouseleave', function(){
         greenTriangleOne.style.transition= '0.2s';
         greenTriangleOne.style.width= '22%';
         greenTriangleOne.style.bottom= '0%';
+        
         greenTriangleOne.style.transform= 'unset';  
     }
 
@@ -27,6 +31,7 @@ containerOne.addEventListener('mouseleave', function(){
 containerTwo.addEventListener('mouseenter', function(){
     console.log('entering')
     if(window.innerWidth > 600){
+        linksTwo.style.bottom = '67%';
         greenTriangleTwo.style.transition= '0.2s';
         greenTriangleTwo.style.width= '30%';
         greenTriangleTwo.style.bottom= '6%';
@@ -40,6 +45,7 @@ containerTwo.addEventListener('mouseleave', function(){
         greenTriangleTwo.style.transition= '0.3s';
         greenTriangleTwo.style.width= '25%';
         greenTriangleTwo.style.bottom= '16%';
+        linksTwo.style.bottom = '67%';
         greenTriangleTwo.style.transform= 'unset';
     }
 });

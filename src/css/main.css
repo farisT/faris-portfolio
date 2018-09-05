@@ -379,7 +379,7 @@ body, html {
       .project-page__main-title {
         font-size: 72px;
         left: 50%;
-        top: 30%;
+        top: 35%;
         transform: translate(-50%, -50%); } }
   .project-page__subtitle-container {
     padding-left: 1rem; }
@@ -938,6 +938,7 @@ body, html {
     font-size: 24px;
     left: 50%;
     top: 50%;
+    z-index: 3;
     color: #3e3ec1;
     position: absolute;
     transform: translate(-50%, -50%); }
@@ -1025,7 +1026,8 @@ body, html {
   line-height: 540px;
   color: white;
   font-size: 500px;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  z-index: 3; }
   @media (min-width: 600px) {
     .project-slider-number__one {
       font-size: 669px; } }
@@ -1053,3 +1055,47 @@ body, html {
   @media (min-width: 600px) {
     .project-slider-number__three {
       font-size: 669px; } }
+
+.bedrijven-portal-triangle-one {
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  width: 90%; }
+  @media (min-width: 600px) {
+    .bedrijven-portal-triangle-one {
+      top: 0%;
+      width: 50%; } }
+
+.bedrijven-portal-triangle-two {
+  position: absolute;
+  z-index: 2;
+  right: 5%;
+  width: 70%;
+  bottom: 5%; }
+  @media (min-width: 600px) {
+    .bedrijven-portal-triangle-two {
+      right: 5%;
+      width: unset;
+      bottom: 15%; } }
+
+.swop-triangle-one {
+  position: absolute;
+  z-index: 2;
+  top: 105%;
+  width: 81%; }
+  @media (min-width: 600px) {
+    .swop-triangle-one {
+      top: 108%;
+      width: 41%; } }
+
+.swop-triangle-two {
+  position: absolute;
+  z-index: 2;
+  width: 63%;
+  top: 179%;
+  right: 0%; }
+  @media (min-width: 600px) {
+    .swop-triangle-two {
+      top: 135%;
+      right: 0%;
+      width: 40%; } }
