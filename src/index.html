@@ -10,28 +10,30 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <a class="header__item-links" href="/"><h3 class="header__name">Faris</h3></a> 
-        </div>
-        <div>
-            <a class="header__item-links" href="/projects"><h4 class="header__projects">PROJECTS</h4></a>
-        </div>
-        <div>
-            <a class="header__item-links" href="/about"><h4 class="header__about">ABOUT</h4></a>
-        </div>
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="/" class="nav__link">Faris</a>
+            </li>
+            <li class="nav__item">
+                <a href="/projects" class="nav__link">PROJECTS</a>
+            </li>
+            <li class="nav__item">
+                <a href="/about" class="nav__link">ABOUT</a>
+            </li>
+        </ul>
     </header>
-        <div class="container">
-            <div class="homepage-wrapper__item homepage-nested-grid">
-                <div class="homepage-nested-grid__item-one">
-                    <div class="homeface-container">
-                        <img class="homepage__image" src='images/homepage/home-face.png' />
+        <div class="homepage">
+            <div class="nestedGrid">
+                <div class="nestedGrid__item">
+                    <div class="face-container">
+                        <img class="face-container__image" src='images/homepage/home-face.png' />
                     </div>
                     <div  onclick="smoothScroll(document.getElementById('project-start'))"  class="homepage__under-image-link link-container">
-                        
+                        Projects
                     </div>
-                    <img  onclick="smoothScroll(document.getElementById('project-start'))" class="arrow__index" src="images/etc/arrow.svg"/>
+                    <img  onclick="smoothScroll(document.getElementById('project-start'))" class="arrow--index" src="images/etc/arrow.svg"/>
                 </div>
-                <div class="homepage-nested-grid__item-two">
+                <div class="nestedGrid__item">
                     <div class="homepage__title">Faris.</div>
                     <div class="homepage__subtitle-container" >
                         <div class="homepage__subtitle" >Im a motivated Dutch</div>
@@ -40,37 +42,38 @@
                     </div>
                 </div>
             </div>
-            <div id="project-start" class="vertical-slider__container">
-                    <div class="slider-container-home">
+            <div class="vertical-slider">
+                    <div class="slider-container--home">
                             <div class="slider">
-                                <div class="slide pic1">
+                                <div class="slide__pic1">
                                         <div class="project-slider-page__main-title-one">Bedrijvenportal</div>
                                         <div class="project-slider-page__subtitle-one link-container"><a class="no-decoration-links__pink" href="/projectone">VIEW PROJECT</a></div>
                                 </div>
-                                <div class="slide pic2">
+                                <div class="slide__pic2">
                                         <div class="project-slider-page__main-title-two">Swop</div>
                                         <div class="project-slider-page__subtitle-two link-container"><a class="no-decoration-links__green"  href="/projecttwo">VIEW PROJECT</a></div>
                                 </div>
-                                <div class="slide pic3">
+                                <div class="slide__pic3">
                                         <div class="project-slider-page__main-title-three">ReactStack</div>
                                         <div class="project-slider-page__subtitle-three link-container"><a class="no-decoration-links__blue"  href="/projectthree">VIEW PROJECT</a></div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                                <img class="vertical-slider-line-home" src="images/slider/Line.svg" />
-                                <div class="vertical-slider-counter-home"><sup>1</sup>&frasl;<sub>3</sub></div>
-                                <img class="horizontal-slider-line-home" src="images/slider/Linehorizontal.svg" />
-                                <div class="horizontal-slider-counter-home"><sup>1</sup>&frasl;<sub>3</sub></div>
+                                <img class="vertical-slider-line--home" src="images/slider/Line.svg" />
+                                <div class="vertical-slider-counter--home"><sup>1</sup>&frasl;<sub>3</sub></div>
+                                <img class="horizontal-slider-line--home" src="images/slider/Linehorizontal.svg" />
+                                <div class="horizontal-slider-counter--home"><sup>1</sup>&frasl;<sub>3</sub></div>
                         </div>
-                        <img src="images/chevron-down.svg" class="arrow-down-home"/>
-                        <img src="images/chevron-up.svg" class="arrow-up-home"/>
+                        <img src="images/chevron-down.svg" class="arrow-down--home"/>
+                        <img src="images/chevron-up.svg" class="arrow-up--home"/>
             </div>
 
         </div>
     </div>
+    <script src="js/animations.js"></script>
+    <script src="js/home-slider.js"></script>
 </body>
-<script src="js/animations.js"></script>
-<script src="js/home-slider.js"></script>
+
 
 </html>
