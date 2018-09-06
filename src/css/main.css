@@ -764,31 +764,6 @@ body, html {
 .vertical-slider__counter-container {
   position: absolute; }
 
-.vertical-slider-counter {
-  display: none; }
-  @media (min-width: 600px) {
-    .vertical-slider-counter {
-      display: unset;
-      position: absolute;
-      background: white;
-      width: 20px;
-      color: #3e3ec1;
-      padding-bottom: 5px;
-      right: 4.55%;
-      top: 5%; } }
-  @media (min-width: 1550px) {
-    .vertical-slider-counter {
-      right: 5.55%; } }
-
-.vertical-slider-line {
-  display: none; }
-  @media (min-width: 600px) {
-    .vertical-slider-line {
-      display: unset;
-      position: absolute;
-      right: 6%;
-      height: 85vh; } }
-
 .horizontal-slider-line {
   display: none; }
   @media (max-width: 600px) {
@@ -810,7 +785,7 @@ body, html {
       position: absolute;
       color: #3e3ec1; } }
 
-.slider-container-home {
+.slider-container {
   z-index: -1;
   left: 0;
   right: 0;
@@ -821,7 +796,7 @@ body, html {
   white-space: nowrap;
   overflow: hidden; }
   @media (max-width: 600px) {
-    .slider-container-home {
+    .slider-container {
       width: 100%; } }
 
 .vertical-slider-line-home {
@@ -867,22 +842,7 @@ body, html {
       position: absolute;
       color: #3e3ec1; } }
 
-.slider-container {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  top: 0%;
-  height: 85vh;
-  width: 80%;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden; }
-  @media (max-width: 600px) {
-    .slider-container {
-      width: 100%; } }
-
-.slider {
+.slides {
   position: relative;
   transition: 2s;
   height: 100%; }
