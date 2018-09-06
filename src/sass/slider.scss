@@ -1,26 +1,4 @@
-.vertical-slider-container {
-  &__slider {
-    display: none;
-        @media (min-width: $mobile-breakpoint){
-          margin: auto;
-          width: 40px;
-            height: 780px;
-            display: unset;
-          }
-      }
-}
-.horizontal-slider-container {
-    &__slider {
-      display: none;
-          @media (min-width: $mobile-breakpoint){
-            margin: auto;
-            width: 40px;
-              height: 780px;
-              display: unset;
-            }
-        }
-        
-}
+
 .vertical-slider {
   &__container {
     margin-bottom: 50px;
@@ -29,23 +7,60 @@
     position: absolute;
   }
 }
+
 .vertical-slider-counter{
-  position: absolute;
-  background: white;
-  width: 20px;
-  // padding-top: 100px;
-  color: $blue;
-  padding-bottom: 5px;
-  right: 4.55%;
-  top: 5%;
+  display: none;
+  @media (min-width: $mobile-breakpoint){
+    display: unset;
+    position: absolute;
+    background: white;
+    width: 20px;
+    // padding-top: 100px;
+    color: $blue;
+    padding-bottom: 5px;
+    right: 4.55%;
+    top: 5%;
+  }
+  @media (min-width: $bigscreen-breakpoint){
+    right: 5.55%;
+  }
+  
+
 }
 .vertical-slider-line{
-  position: absolute;
-  right: 6%;
-  height: 85vh;
+  display: none;
+  @media (min-width: $mobile-breakpoint){
+    display: unset;
+    position: absolute;
+    right: 6%;
+    height: 85vh;
+    }
+
   
 }
 
+.horizontal-slider-line {
+  display: none;
+  @media (max-width: $mobile-breakpoint){
+    display: unset;
+    bottom: 12%;
+    width: 100%;
+    position: absolute;
+    }
+}
+
+.horizontal-slider-counter {
+  display: none;
+  @media (max-width: $mobile-breakpoint){
+    display: unset;
+    width: 20px;
+    background: white;
+    bottom: 10.5%;
+    left: 15%;
+    position: absolute;
+    color:$blue;
+    }
+}
 
 .slider-container-home {
   z-index: -1;
@@ -57,22 +72,53 @@
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
+  @media (max-width: $mobile-breakpoint){
+    width: 100%;
+    }
 }
 .vertical-slider-line-home{
-  position: absolute;
-  right: 6%;
-  bottom: 3%;
-  height: 80vh;
-  
+display: none;
+  @media (min-width: $mobile-breakpoint){
+    position: absolute;
+    display: unset;
+    right: 6%;
+    bottom: 3%;
+    height: 80vh;
+    }
 }
 .vertical-slider-counter-home{
-  position: absolute;
-  background: white;
-  width: 20px;
-  color: $blue;
-  padding-bottom: 5px;
-  right: 4.55%;
-  top: 65%;
+display: none;
+  @media (min-width: $mobile-breakpoint){
+    position: absolute;
+    background: white;
+    width: 20px;
+    color: $blue;
+    padding-bottom: 5px;
+    right: 4.55%;
+    top: 65%;
+    }
+}
+.horizontal-slider-line-home {
+  display: none;
+  @media (max-width: $mobile-breakpoint){
+    display: unset;
+    bottom: 2%;
+    width: 100%;
+    position: absolute;
+    }
+}
+
+.horizontal-slider-counter-home {
+  display: none;
+  @media (max-width: $mobile-breakpoint){
+    display: unset;
+    width: 20px;
+    background: white;
+    bottom: 1%;
+    left: 15%;
+    position: absolute;
+    color:$blue;
+    }
 }
 .slider-container {
   position: absolute;
@@ -82,6 +128,9 @@
   top: 0%;
   height: 85vh;
   width: 80%;
+  @media (max-width: $mobile-breakpoint){
+    width: 100%;
+    }
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -120,28 +169,29 @@
   // background-image: url("img/pic3.jpeg");
 }
 .arrow-down {
-  // width: 5%;
-  // right: 50%;
-  // position:absolute;
+  width: 5%;
+  z-index: 4;
+
+  position:absolute;
+  left: 49%;
+  bottom:18%;
+  @media (min-width: $mobile-breakpoint){
+  position: relative;
+  width: 2%;
+    }
   // bottom: 15%;
   &__container {
-    margin-top: 38rem;
     @media (min-width: $tablet-breakpoint){
       margin-top: 36rem;
       }
       @media (min-width: $standard-breakpoint){
-        margin-top: 33rem;
+        margin-top: 38rem;
         }
         @media (min-width: $bigscreen-breakpoint){
           margin-top: 30rem;
           }
   }
-  width: 5%;
-  z-index: 4;
-  text-align: center;
-  vertical-align: middle;
-  display: block;
-  margin: 0 auto;
+
   @media (min-width: $standard-breakpoint){
     // padding-top: 24rem;
     }
@@ -159,6 +209,9 @@
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
+  @media (min-width: $mobile-breakpoint){
+    width: 2%;
+      }
   &__container {
     @media (min-width: $mobile-breakpoint){
       margin-top: 0rem;
@@ -355,8 +408,8 @@
 .bedrijven-portal-triangle-one {
   position: absolute;
   z-index: 2;
-  top: 0%;  
-    width: 90%;
+  top: 0%;
+  width: 67%;
   @media (min-width: $mobile-breakpoint){
     top: 0%;
     width: 50%;
@@ -365,9 +418,9 @@
 .bedrijven-portal-triangle-two {
   position: absolute;
   z-index: 2;
-  right: 5%;
-  width: 70%;
-  bottom: 5%;
+  right: 0%;
+  width: 53%;
+  bottom: 2%;
   @media (min-width: $mobile-breakpoint){
     right: 5%;
     width: unset;

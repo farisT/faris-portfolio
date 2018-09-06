@@ -9,30 +9,30 @@
     &__name{
         text-decoration: none;
         color: $blue;
-        border-bottom: 3px $green solid;
-        width: 34%;
+        border-bottom: 3px $pink solid;
+        width: 24%;
         :visited {
             text-decoration: none;
             color: $blue;
         }
-        padding-left: 13px;
+        margin-left: 13px;
         @media (min-width: $mobile-breakpoint){
-        padding-left: 0;
-        width:8%;
+        margin-left: 0;
+        width:7%;
             }
     }
     &__projects  {
-        border-bottom: 3px $green solid;
-        width: 70%;
+        border-bottom: 3px $pink solid;
+        width: 84%;
         @media (min-width: $mobile-breakpoint){
-            width:22%
+            width:24%
             }
     }
     &__about  {
-        border-bottom: 3px $green solid;
-        width: 52%;
+        border-bottom: 3px $pink solid;
+        width: 56%;
         @media (min-width: $mobile-breakpoint){
-            width:18%
+            width:16%
             }
     }
     &__item-links {
@@ -44,7 +44,7 @@
             color: $blue;
         }
         :hover {
-            border-bottom: 10px $green solid;  
+            border-bottom: 10px $pink solid;  
             display: inline-block;
             line-height: 0.3em;
             }

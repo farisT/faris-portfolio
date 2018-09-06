@@ -281,9 +281,9 @@
         width: 67%;
         bottom: 50%;
         z-index: 2;
-        transform: rotate(-47deg);
         position: absolute;
         @media (min-width: $mobile-breakpoint){
+            transform: rotate(-47deg);
             width: 22%;
             bottom: 0%;
             }
