@@ -3,6 +3,7 @@
     grid-template-columns: 100vw;
     grid-template-rows: repeat(7,auto);
     grid-row-gap: 1rem;
+
     @media (min-width: $mobile-breakpoint){
         grid-row-gap: 4rem;
         }
@@ -17,13 +18,62 @@
         }
         grid-template-columns:auto;
     }
+    &__number {
+        position: absolute;
+        font-size: 400px;
+        top: -15%;
+        left: 31%;
+        color: rgba(255, 255, 255, 0.5);
+        @media (min-width: $mobile-breakpoint){
+            position: absolute;
+            font-size: 669px;
+            top: -26%;
+            left: 42%;
+            color: rgba(255, 255, 255, 0.5);
+            }
+
+    }
     &__mainphoto {
         object-fit: cover;
         width: 100%;
-        @media (min-width: $mobile-breakpoint){
-        border: $blue 2px solid;
+        &--one {
+            height:500px;
+            width: 100%;
+            object-fit: cover;
             }
+        &--two {
+                height:500px;
+                width: 100%;
+                object-fit: cover;
+                }
+        &--three {
+                    height:500px;
+                    width: 100%;
+                    object-fit: cover;
+                    }
+        @media (min-width: $mobile-breakpoint){
+        // border: $blue 2px solid;
+        &--one {
+            height:700px;
+            width: 100%;
+            object-fit: cover;
+            }
+            &--two {
+                height:700px;
+                width: 100%;
+                object-fit: cover;
+                }
+        &--three {
+            height:700px;
+            width: 100%;
+            object-fit: cover;
+            }
+
+            }
+
     }
+
+    
     &__container-text {
         display: grid;
         position: relative;
@@ -114,6 +164,7 @@
         top: 100%;
         z-index: 3;
         color: $blue;
+        @include border-green;
         @media (min-width: $mobile-breakpoint){
             left: 50%;
             top: 90%;
@@ -145,11 +196,18 @@
     }
     &__subtitle-container{
        padding-left: 1rem;
+   
+       @media (max-width: $baby-breakpoint){
+        padding-left: 0.5rem;
+        }
        @media (min-width: $mobile-breakpoint){
         padding-left: 0;
         }
     }
     &__subtitle{
+        @media (max-width: $baby-breakpoint){
+            font-size: 30px;
+            }
         font-size: 45px;
     }
     &__subtitle-text{
@@ -202,9 +260,9 @@
             top: 34%;
             transform: translate(-50%, -50%);
             z-index: 3;
-            width: 100px;
+            width: 200px;
             position: absolute;
-            left: 15%;
+            left: 12%;
             }
     }
     &__links-one {
@@ -251,9 +309,13 @@
     }
     &__pink-triangle-one {
         width: 71%;
-        bottom: 58%; 
+        bottom: 61%; 
         z-index: 2;
         position: absolute;
+        @media (max-width: $baby-breakpoint){
+            width: 71%;
+            bottom: 62%; 
+            }
         @media (min-width: $mobile-breakpoint){
             width: 22%;
             bottom: 0%;
@@ -307,8 +369,8 @@
         position: absolute;
 
         @media (min-width: $mobile-breakpoint){
-            width: 40%;
-            bottom: -50%;
+            width: 30%;
+            bottom: -21%;
             z-index: 2;
             }
     }
@@ -330,9 +392,9 @@
     &__container {
     background: $blue;
     border-radius: 50%;
-    width: 50px;
+    width: 40px;
     overflow: hidden;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
     }
     &__wrapper {
@@ -358,11 +420,27 @@
     }
 }
 .icon-link {
-    width: 58%;
+    width: 40%;
     margin: 0 auto;
     display: block;
     height: 100%;
 }
 .skills-list {
     font-weight: 300;
+}
+
+.projects-scroll {
+    width: 77px;
+    margin: 0 auto;
+    border-bottom: 3px $pink solid;
+    line-height: 1em;
+    // :visited {
+    //     text-decoration: none;
+    //     color: $blue;
+    // }
+    &:hover {
+        border-bottom: 12px $pink solid;  
+        line-height: 0.5em;
+        }
+
 }

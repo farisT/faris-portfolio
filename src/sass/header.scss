@@ -7,47 +7,133 @@
     align-items: center;
     color:$blue;
     &__name{
-        text-decoration: none;
         color: $blue;
-        border-bottom: 3px $pink solid;
+        @include border-pink;
         width: 24%;
-        :visited {
-            text-decoration: none;
-            color: $blue;
-        }
         margin-left: 13px;
         @media (min-width: $mobile-breakpoint){
-        margin-left: 0;
-        width:7%;
+            width:7%;   
+            margin-left: 0;
             }
+        &--one {
+            margin-left: 13px;
+                width: 24%;
+               @include border-pink;
+                @media (min-width: $mobile-breakpoint){
+                    width:7%;
+                    margin-left: 0;
+                    }
+        }
+        &--two {
+            margin-left: 13px;
+            width: 24%;
+           @include border-green;
+            @media (min-width: $mobile-breakpoint){
+                width:7%;
+                margin-left: 0;
+                }
+            }
+        &--three {
+            margin-left: 13px;
+                width: 24%;
+               @include border-lightblue;
+                @media (min-width: $mobile-breakpoint){
+                    width:7%;
+                    margin-left: 0;
+                    }
+                }
+        &--about {
+            margin-left: 13px;
+                width: 24%;
+                @include border-green;
+                @media (min-width: $mobile-breakpoint){
+                    width:7%;
+                    margin-left: 0;
+                    }
+                }
     }
     &__projects  {
-        border-bottom: 3px $pink solid;
         width: 84%;
+        @include border-pink;
         @media (min-width: $mobile-breakpoint){
             width:24%
             }
+            &--one {
+                @include border-pink;
+                width: 80%;
+                @media (min-width: $mobile-breakpoint){
+                    width:24%
+                    }
+            }
+        &--two {
+            @include border-green;
+            width: 80%;
+            @media (min-width: $mobile-breakpoint){
+                width:24%
+                }
+        }
+        &--three {
+            @include border-lightblue;
+            width: 80%;
+            @media (min-width: $mobile-breakpoint){
+                width:24%
+                }
+        }
+        &--about {
+            @include border-green;
+            width: 80%;
+            @media (min-width: $mobile-breakpoint){
+                width:24%
+                }
+        }
     }
     &__about  {
-        border-bottom: 3px $pink solid;
+        @include border-pink;
         width: 56%;
         @media (min-width: $mobile-breakpoint){
             width:16%
+            }
+            &--one {
+                @include border-pink;
+                width: 56%;
+                @media (min-width: $mobile-breakpoint){
+                    width:16%
+                    }
+            }
+            &--two {
+                @include border-green;
+                width: 56%;
+                @media (min-width: $mobile-breakpoint){
+                    width:16%
+                    }
+            }
+            &--three {
+                @include border-lightblue;
+                width: 56%;
+                @media (min-width: $mobile-breakpoint){
+                    width:16%
+                    }
+            }
+            &--about {
+                @include border-green;
+                width: 56%;
+                @media (min-width: $mobile-breakpoint){
+                    width:16%
+                    }
             }
     }
     &__item-links {
         text-decoration: none;
         color: $blue;
-        line-height: 0.9em;
-        :visited {
-            text-decoration: none;
-            color: $blue;
-        }
-        :hover {
-            border-bottom: 10px $pink solid;  
-            display: inline-block;
-            line-height: 0.3em;
-            }
+        // line-height: 1em;
+        // :visited {
+        //     text-decoration: none;
+        //     color: $blue;
+        // }
+        // &:hover {
+        //     border-bottom: 12px $green solid;  
+        //     line-height: 0.5em;
+        //     }
     }
 
 }

@@ -1,0 +1,24 @@
+@mixin border-pink {
+    border-bottom: 3px $pink solid;
+    line-height: 1em;
+    &:hover{
+        border-bottom: 10px $pink solid;
+        line-height: 0.3em;
+    }
+}
+@mixin border-green {
+    border-bottom: 3px $green solid;
+    line-height: 1em;
+    &:hover{
+        border-bottom: 10px $green solid;
+        line-height: 0.3em;
+    }
+}
+@mixin border-lightblue {
+    border-bottom: 3px $light-blue solid;
+    line-height: 1em;
+    &:hover{
+        border-bottom: 10px $light-blue solid;
+        line-height: 0.3em;
+    }
+}

@@ -15,22 +15,35 @@ body,html {
         text-decoration: none;
         color: $blue;
         border-bottom: 3px $green solid;
+
     }
-    border-bottom: 3px $green solid;
+
     &__blue {
         text-decoration: none;
         color: $blue;
         border-bottom: 3px $light-blue solid;
+        :hover {
+            border-bottom: 10px $light-blue solid;
+            line-height: 0.3em
+        }
     }
     &__pink {
         text-decoration: none;
         color: $blue;
         border-bottom: 3px $pink solid;
+        line-height: 1em;
+        :hover {
+            border-bottom: 10px $pink solid;
+            line-height: 0.3em
+        }
     }
-
-
-
+    &__pink:hover {
+        border-bottom: 10px $pink solid;
+        line-height: 0.3em;
+        display:inline-block;
+    }
 }
+
 .link-container {
     a:visited {
         color: $blue;
