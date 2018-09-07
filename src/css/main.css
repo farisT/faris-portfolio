@@ -1031,9 +1031,10 @@ body, html {
       position: absolute;
       background: white;
       width: 20px;
+      font-size: 20px;
       color: #3e3ec1;
       padding-bottom: 5px;
-      right: 4.55%;
+      right: 5.55%;
       top: 5%; } }
   @media (min-width: 1550px) {
     .vertical-slider-counter {
