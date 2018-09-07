@@ -151,7 +151,15 @@
         top: 85%;
         z-index: 3;
         color: $blue;
+        border-bottom: 3px $pink solid;
+        line-height: 1em;
+
     }
+    &__readmore:hover{
+        border-bottom: 10px $pink solid;
+        line-height: 0.5em;
+    }
+
     &__side-links {
         display: none;
         @media (min-width: $mobile-breakpoint){
