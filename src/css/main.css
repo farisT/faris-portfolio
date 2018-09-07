@@ -758,12 +758,6 @@ body, html {
     right: 0%;
     position: absolute; }
 
-.vertical-slider__container {
-  margin-bottom: 50px; }
-
-.vertical-slider__counter-container {
-  position: absolute; }
-
 .horizontal-slider-line {
   display: none; }
   @media (max-width: 600px) {
@@ -901,20 +895,20 @@ body, html {
     .arrow-up__container {
       margin-top: 0rem; } }
 
-.arrow-up-home {
+.arrow-up--homepage {
   width: 5%;
   bottom: 43%;
   z-index: 4;
   position: absolute;
   left: 47.5%; }
   @media (min-width: 600px) {
-    .arrow-up-home {
+    .arrow-up--homepage {
       width: 5%;
       bottom: 40%;
       position: absolute;
       left: 47.5%; } }
   @media (min-width: 1550px) {
-    .arrow-up-home {
+    .arrow-up--homepage {
       width: 5%;
       bottom: 34%;
       left: 47.5%; } }
