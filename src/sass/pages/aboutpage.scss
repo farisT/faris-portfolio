@@ -10,6 +10,10 @@
 
     &__link-decoration {
         margin-top: 5rem;
+        width: 21%;
+        @include border-green;
+        display: inline-block;
+        text-decoration: none;
         :visited {
             color: $blue;
         }

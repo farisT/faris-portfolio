@@ -31,6 +31,34 @@
             left: 42%;
             color: rgba(255, 255, 255, 0.5);
             }
+        &--two {
+                position: absolute;
+                font-size: 400px;
+                top: -15%;
+                left: 20%;
+                color: rgba(255, 255, 255, 0.5);
+                @media (min-width: $mobile-breakpoint){
+                    position: absolute;
+                    font-size: 669px;
+                    top: -26%;
+                    left: 35%;
+                    color: rgba(255, 255, 255, 0.5);
+                    }
+            }
+        &--three {
+            position: absolute;
+            font-size: 400px;
+            top: -15%;
+            left: 19%;
+            color: rgba(255, 255, 255, 0.5);
+            @media (min-width: $mobile-breakpoint){
+                position: absolute;
+                font-size: 669px;
+                top: -26%;
+                left: 35%;
+                color: rgba(255, 255, 255, 0.5);
+                }
+        }
 
     }
     &__mainphoto {

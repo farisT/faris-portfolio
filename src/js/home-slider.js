@@ -5,8 +5,10 @@ const slides = document.querySelectorAll('.slide');
 let position = 0;
 
 var slidesNumber = slides.length;
-var CounterTop = null;
+var counterLeft = null;
+var counterTop = null;
 const sliderCounter = document.querySelector('.vertical-slider-counter-home');
+const horizontalSliderCounter = document.querySelector('.horizontal-slider-counter-home');
 const arrowDown = document.querySelector('.arrow-down-home');
 const arrowUp = document.querySelector('.arrow-up-home');
 // function that moves the slides,
@@ -15,22 +17,29 @@ const moveSlide = function (value) {
 	position += value*100; // value is * by 100 in order to use position for the slider styling (as the % so top:-100% would be the first picture)
 	console.log(position);
 	if(position === 0) {
-		counterTop = 65
-		sliderCounter.innerHTML = '1/3';
+		counterLeft = 15;
+		counterTop = 65;
+		sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
 	}
 	if(position === -100) {
+		counterLeft = 45;
 		counterTop = 75;
-		sliderCounter.innerHTML = '2/3';
+		sliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
 		
 	}
 	if(position === -200) {
+		counterLeft = 85;
 		counterTop = 90;
-		sliderCounter.innerHTML = '3/3';
+		sliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
 	}
 
 	console.log(counterTop)
 	slider.style.top = position + '%';
 	sliderCounter.style.top = counterTop + '%'
+	horizontalSliderCounter.style.left = counterLeft + '%'
 };
 
 var intervalHandle = null; // this variable controls the starting and stopping of the sliders.
@@ -51,9 +60,12 @@ arrowUp.addEventListener("click",function() {
 			slider.style.top = position + '%';
 			if(position === -200) {
 				counterTop = 90;
+				counterLeft = 85;
 				sliderCounter.innerHTML = '3/3';
+				horizontalSliderCounter.innerHTML  = '<sup>3</sup>&frasl;<sub>3</sub>';
 			}
-			sliderCounter.style.top = counterTop + '%'
+			sliderCounter.style.top = counterTop + '%';
+			horizontalSliderCounter.style.left = counterLeft + '%';
 		}
 	console.log('previous image');
 });
@@ -67,8 +79,10 @@ arrowDown.addEventListener("click", function() {
 	} else {
 			position = 0;
 			slider.style.top = position + '%'; 
-			sliderCounter.style.top = 65 + '%'
-			sliderCounter.innerHTML = '1/3';
+			sliderCounter.style.top = 65 + '%';
+			horizontalSliderCounter.style.left = 15 + '%'
+			sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+			horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
 	}
 	console.log('next image', 'position', position,'slidenumber', slidesNumber);
 });

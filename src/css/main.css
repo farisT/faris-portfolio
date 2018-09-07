@@ -438,6 +438,32 @@ body, html {
         top: -26%;
         left: 42%;
         color: rgba(255, 255, 255, 0.5); } }
+    .project-page__number--two {
+      position: absolute;
+      font-size: 400px;
+      top: -15%;
+      left: 20%;
+      color: rgba(255, 255, 255, 0.5); }
+      @media (min-width: 600px) {
+        .project-page__number--two {
+          position: absolute;
+          font-size: 669px;
+          top: -26%;
+          left: 35%;
+          color: rgba(255, 255, 255, 0.5); } }
+    .project-page__number--three {
+      position: absolute;
+      font-size: 400px;
+      top: -15%;
+      left: 19%;
+      color: rgba(255, 255, 255, 0.5); }
+      @media (min-width: 600px) {
+        .project-page__number--three {
+          position: absolute;
+          font-size: 669px;
+          top: -26%;
+          left: 35%;
+          color: rgba(255, 255, 255, 0.5); } }
   .project-page__mainphoto {
     object-fit: cover;
     width: 100%; }
@@ -799,7 +825,15 @@ body, html {
     .about-page {
       grid-row-gap: 4rem; } }
   .about-page__link-decoration {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    width: 21%;
+    border-bottom: 3px #e5ebd2 solid;
+    line-height: 1em;
+    display: inline-block;
+    text-decoration: none; }
+    .about-page__link-decoration:hover {
+      border-bottom: 10px #e5ebd2 solid;
+      line-height: 0.3em; }
     .about-page__link-decoration :visited {
       color: #3e3ec1; }
   .about-page__links {
@@ -1003,6 +1037,8 @@ body, html {
       top: 5%; } }
   @media (min-width: 1550px) {
     .vertical-slider-counter {
+      display: unset;
+      position: absolute;
       right: 5.55%; } }
 
 .vertical-slider-line {
@@ -1064,8 +1100,10 @@ body, html {
   @media (min-width: 600px) {
     .vertical-slider-counter-home {
       position: absolute;
+      display: unset;
       background: white;
-      width: 20px;
+      width: 33px;
+      font-size: 20px;
       color: #3e3ec1;
       padding-bottom: 5px;
       right: 4.55%;
