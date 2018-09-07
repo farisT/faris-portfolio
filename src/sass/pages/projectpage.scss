@@ -274,6 +274,10 @@
             left: 11%;
             width: 200px;
             }
+        @media (min-width: $bigscreen-breakpoint){
+            top: 35%;
+        }
+           
     }
     &__skills-two {
         top: 20%;
@@ -360,6 +364,7 @@
             }
         @media (min-width: $mobile-breakpoint){
             width: 22%;
+            max-width: 388px;
             bottom: 0%;
             }
    

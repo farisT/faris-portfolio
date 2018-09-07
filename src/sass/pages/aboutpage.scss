@@ -9,7 +9,6 @@
  
 
     &__link-decoration {
-        margin-top: 5rem;
         width: 21%;
         @include border-green;
         display: inline-block;
@@ -237,6 +236,7 @@
     &__text {
     font-size: 18px;
     font-weight: 300;
+    padding-bottom: 100px;
     }
     &__triangle-one{
         bottom: 2%;

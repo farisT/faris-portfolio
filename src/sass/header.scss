@@ -12,7 +12,7 @@
         width: 24%;
         margin-left: 13px;
         @media (min-width: $mobile-breakpoint){
-            width:7%;   
+            width: 45px;
             margin-left: 0;
             }
         &--one {
@@ -20,7 +20,7 @@
                 width: 24%;
                @include border-pink;
                 @media (min-width: $mobile-breakpoint){
-                    width:7%;
+                    width: 45px;
                     margin-left: 0;
                     }
         }
@@ -38,7 +38,7 @@
                 width: 24%;
                @include border-lightblue;
                 @media (min-width: $mobile-breakpoint){
-                    width:7%;
+                    width: 45px;
                     margin-left: 0;
                     }
                 }
@@ -47,7 +47,7 @@
                 width: 24%;
                 @include border-green;
                 @media (min-width: $mobile-breakpoint){
-                    width:7%;
+                    width: 45px;
                     margin-left: 0;
                     }
                 }
@@ -56,34 +56,34 @@
         width: 84%;
         @include border-pink;
         @media (min-width: $mobile-breakpoint){
-            width:24%
+            width: 77px;
             }
             &--one {
                 @include border-pink;
                 width: 80%;
                 @media (min-width: $mobile-breakpoint){
-                    width:24%
+                    width: 77px;
                     }
             }
         &--two {
             @include border-green;
             width: 80%;
             @media (min-width: $mobile-breakpoint){
-                width:24%
+                width: 77px;
                 }
         }
         &--three {
             @include border-lightblue;
             width: 80%;
             @media (min-width: $mobile-breakpoint){
-                width:24%
+                width: 77px;
                 }
         }
         &--about {
             @include border-green;
             width: 80%;
             @media (min-width: $mobile-breakpoint){
-                width:24%
+                width: 77px;
                 }
         }
     }
@@ -91,34 +91,34 @@
         @include border-pink;
         width: 56%;
         @media (min-width: $mobile-breakpoint){
-            width:16%
+            width: 54px;
             }
             &--one {
                 @include border-pink;
                 width: 56%;
                 @media (min-width: $mobile-breakpoint){
-                    width:16%
+                    width: 54px;
                     }
             }
             &--two {
                 @include border-green;
                 width: 56%;
                 @media (min-width: $mobile-breakpoint){
-                    width:16%
+                    width: 54px;
                     }
             }
             &--three {
                 @include border-lightblue;
                 width: 56%;
                 @media (min-width: $mobile-breakpoint){
-                    width:16%
+                    width: 54px;
                     }
             }
             &--about {
                 @include border-green;
                 width: 56%;
                 @media (min-width: $mobile-breakpoint){
-                    width:16%
+                    width: 54px;
                     }
             }
     }

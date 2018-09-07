@@ -19,21 +19,21 @@ const moveSlide = function (value) {
 	if(position === 0) {
 		counterLeft = 15;
 		counterTop = 65;
-		sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 		horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
 	}
 	if(position === -100) {
 		counterLeft = 45;
 		counterTop = 75;
-		sliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
-		horizontalSliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">2</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup class="fraction-style">2</sup>&frasl;<sub>3</sub>';
 		
 	}
 	if(position === -200) {
 		counterLeft = 85;
 		counterTop = 90;
-		sliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
-		horizontalSliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
 	}
 
 	console.log(counterTop)
@@ -62,7 +62,7 @@ arrowUp.addEventListener("click",function() {
 				counterTop = 90;
 				counterLeft = 85;
 				sliderCounter.innerHTML = '3/3';
-				horizontalSliderCounter.innerHTML  = '<sup>3</sup>&frasl;<sub>3</sub>';
+				horizontalSliderCounter.innerHTML  = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
 			}
 			sliderCounter.style.top = counterTop + '%';
 			horizontalSliderCounter.style.left = counterLeft + '%';
@@ -81,8 +81,8 @@ arrowDown.addEventListener("click", function() {
 			slider.style.top = position + '%'; 
 			sliderCounter.style.top = 65 + '%';
 			horizontalSliderCounter.style.left = 15 + '%'
-			sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
-			horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+			sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
+			horizontalSliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 	}
 	console.log('next image', 'position', position,'slidenumber', slidesNumber);
 });

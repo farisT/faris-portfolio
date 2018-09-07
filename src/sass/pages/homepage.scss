@@ -71,6 +71,7 @@
     }
     &__title {
         font-size: 64px;
+        font-weight: 800;
         @media (min-width: $mobile-breakpoint){
             font-size: 165px;
                 }
@@ -103,7 +104,8 @@
         margin-right: 50px;
             }
     @media(min-width: $bigscreen-breakpoint){
-        float: left;
+        float: right;
+        margin-right: 40%;
     }
 }
 .pink {
