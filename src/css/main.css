@@ -14,25 +14,27 @@ body, html {
     text-decoration: none;
     color: #3e3ec1;
     border-bottom: 3px #e5ebd2 solid; }
+    .no-decoration-links__green:hover {
+      border-bottom: 10px #e5ebd2 solid;
+      line-height: 0.3em;
+      display: inline-block; }
   .no-decoration-links__blue {
     text-decoration: none;
     color: #3e3ec1;
     border-bottom: 3px #e4e9f8 solid; }
-    .no-decoration-links__blue :hover {
+    .no-decoration-links__blue:hover {
       border-bottom: 10px #e4e9f8 solid;
-      line-height: 0.3em; }
+      line-height: 0.3em;
+      display: inline-block; }
   .no-decoration-links__pink {
     text-decoration: none;
     color: #3e3ec1;
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em; }
-    .no-decoration-links__pink :hover {
+    .no-decoration-links__pink:hover {
       border-bottom: 10px #fce4e0 solid;
-      line-height: 0.3em; }
-  .no-decoration-links__pink:hover {
-    border-bottom: 10px #fce4e0 solid;
-    line-height: 0.3em;
-    display: inline-block; }
+      line-height: 0.3em;
+      display: inline-block; }
 
 .link-container a:visited {
   color: #3e3ec1; }
@@ -519,7 +521,12 @@ body, html {
     left: 50%;
     top: 76%;
     z-index: 3;
-    color: #3e3ec1; }
+    color: #3e3ec1;
+    border-bottom: 3px #fce4e0 solid;
+    line-height: 1em; }
+    .project-page__readmore:hover {
+      border-bottom: 10px #fce4e0 solid;
+      line-height: 0.3em; }
     @media (min-width: 600px) {
       .project-page__readmore {
         left: 50%;
@@ -540,6 +547,22 @@ body, html {
       .project-page__readmore-two {
         left: 50%;
         top: 90%; } }
+  .project-page__readmore-three {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 76%;
+    z-index: 3;
+    color: #3e3ec1;
+    border-bottom: 3px #e4e9f8 solid;
+    line-height: 1em; }
+    .project-page__readmore-three:hover {
+      border-bottom: 10px #e4e9f8 solid;
+      line-height: 0.3em; }
+    @media (min-width: 600px) {
+      .project-page__readmore-three {
+        left: 50%;
+        top: 93%; } }
   .project-page__side-links {
     display: none; }
     @media (min-width: 600px) {

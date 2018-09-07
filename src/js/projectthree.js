@@ -9,7 +9,7 @@ containerOne.addEventListener('mouseenter', function(){
     console.log(window.innerWidth);
     if(window.innerWidth > 600){
         blueTriangleOne.style.transition= '0.2s';
-        blueTriangleOne.style.width= '42%';
+        blueTriangleOne.style.width= '30%';
         blueTriangleOne.style.bottom= '-27%';
         blueTriangleOne.style.transform= 'rotate(-10deg)';
     }
@@ -19,8 +19,8 @@ containerOne.addEventListener('mouseleave', function(){
     console.log('leaving');
     if(window.innerWidth > 600){
         blueTriangleOne.style.transition= '0.2s';
-        blueTriangleOne.style.width= '40%';
-        blueTriangleOne.style.bottom= '-50%';
+        blueTriangleOne.style.width= '30%';
+        blueTriangleOne.style.bottom= '-20%';
         blueTriangleOne.style.transform= 'unset';  
     }
 
