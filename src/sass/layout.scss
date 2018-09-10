@@ -11,6 +11,7 @@ body,html {
 }
 .no-decoration-links {
     text-decoration: none;
+    color: $blue;
     &__green{
         text-decoration: none;
         color: $blue;
