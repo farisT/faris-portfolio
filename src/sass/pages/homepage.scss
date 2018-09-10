@@ -88,12 +88,11 @@
         font-style: normal;
     }
     &__subtitle-bold {
+        font-size: 22px;
+        font-weightx: 500;
         @media (min-width: $mobile-breakpoint){
             font-size: 38px;
                 }
-        font-size: 22px;
-        font-weight : 500;
-
     }
 }
 
@@ -130,3 +129,90 @@
 
     background: $light-blue;
 }
+
+.image {
+    &__outline {
+        position: absolute;
+        top: 5%;
+        left: 7%;
+        width: 42%;
+        @media (max-width: $mobile-breakpoint){
+            position: absolute;
+            top: 16%;
+            left: 4%;
+            width: 77%;  
+                }
+    }
+}
+
+.project-slider-skills{
+    &--one{
+    width: 177px;
+    position: absolute;
+    padding-left: 59px;
+    bottom: 19%;
+    white-space: normal;
+    @media (max-width: $mobile-breakpoint){
+        padding-left: 30px;
+            }
+    }
+    &--two{
+        
+    width: 177px;
+    position: absolute;
+    padding-left: 59px;
+    bottom: -81%;
+    white-space: normal;
+    @media (max-width: $mobile-breakpoint){
+        padding-left: 30px;
+            }
+    }
+    &--three{
+        
+    width: 177px;
+    position: absolute;
+    padding-left: 59px;
+    bottom: -181%;
+    white-space: normal;
+    @media (max-width: $mobile-breakpoint){
+        padding-left: 30px;
+            }
+    }
+    &__text{
+        &--one{
+            width: 177px;
+            position: absolute;
+            padding-left: 59px;
+            bottom: 5%;
+            white-space: normal;
+            font-weight: 300;
+            @media (max-width: $mobile-breakpoint){
+                padding-left: 30px;
+                    }
+        }
+        &--two{
+            width: 177px;
+            position: absolute;
+            padding-left: 59px;
+            bottom: -95%;
+            white-space: normal;
+            font-weight: 300;
+            @media (max-width: $mobile-breakpoint){
+                padding-left: 30px;
+                    }
+        }
+        &--three{
+            width: 177px;
+            position: absolute;
+            padding-left: 59px;
+            bottom: -192%;
+            white-space: normal;
+            font-weight: 300;
+            @media (max-width: $mobile-breakpoint){
+                padding-left: 30px;
+                    }
+        }
+
+    }
+}
+

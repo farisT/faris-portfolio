@@ -19,22 +19,22 @@ const moveSlide = function (value) {
 	if(position === 0) {
 		counterTop = 5;
 		counterLeft = 15;
-		sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
-		horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 		
 	}
 	if(position === -100) {
 		counterTop = 40;
 		counterLeft = 45;
-		sliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
-		horizontalSliderCounter.innerHTML = '<sup>2</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">2</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup class="fraction-style">2</sup>&frasl;<sub>3</sub>';
 		
 	}
 	if(position === -200) {
 		counterTop = 70;
 		counterLeft = 85;
-		sliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
-		horizontalSliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
+		sliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
+		horizontalSliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
 	}
 	console.log(counterTop)
 	slider.style.top = position + '%';
@@ -57,13 +57,13 @@ arrowUp.addEventListener("click",function() {
 			position = (slidesNumber-1)*-100;
 			slider.style.top = position + '%';
 			counterLeft = 85;
-			sliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
-			horizontalSliderCounter.innerHTML  = '<sup>3</sup>&frasl;<sub>3</sub>';
+			sliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
+			horizontalSliderCounter.innerHTML  = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
 			if(position === -200) {
 				counterTop = 70;
 				counterLeft = 85;
-				sliderCounter.innerHTML = '<sup>3</sup>&frasl;<sub>3</sub>';
-				horizontalSliderCounter.innerHTML  = '<sup>3</sup>&frasl;<sub>3</sub>';
+				sliderCounter.innerHTML = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
+				horizontalSliderCounter.innerHTML  = '<sup class="fraction-style">3</sup>&frasl;<sub>3</sub>';
 			}
 		}
 		sliderCounter.style.top = counterTop + '%';
@@ -82,8 +82,8 @@ arrowDown.addEventListener("click", function() {
 			slider.style.top = position + '%'; 
 			sliderCounter.style.top = 5 + '%';
 			horizontalSliderCounter.style.left = 15 + '%'
-			sliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
-			horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
+			sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
+			horizontalSliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 	}
 	console.log('next image', 'position', position,'slidenumber', slidesNumber);
 });
