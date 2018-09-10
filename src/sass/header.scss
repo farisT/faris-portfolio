@@ -3,6 +3,7 @@
     grid-template-columns: auto 25% 25%;
         margin-top: 2rem;
     margin-bottom: 2rem;
+    max-height: 10px;
     @media (min-width: $mobile-breakpoint){
         margin-left: 5%;
 
@@ -16,6 +17,7 @@
         margin-left: 13px;
         font-size: 19px;
         font-weight: 800;
+
         @media (min-width: $mobile-breakpoint){
             width: 45px;
             margin-left: 0;
@@ -24,6 +26,7 @@
         &--home {
             width: 45px;
             margin-left: 13px;
+            color: $blue;
             border-bottom: 10px $pink solid;
             line-height: 0.3em;
             font-size: 19px;
