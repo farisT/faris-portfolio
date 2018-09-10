@@ -189,8 +189,14 @@
             font-size: 24px;
             width: 600px;
             left: 32%;
-            top: 39%;
+            top: 37%;
             }
+        @media (min-width: $bigscreen-breakpoint){
+                font-size: 24px;
+                width: 600px;
+                left: 32%;
+                top: 39%;
+                }
 
         position: absolute;
     }

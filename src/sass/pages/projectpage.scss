@@ -427,9 +427,7 @@
         right: 0%;
         @media (min-width: $mobile-breakpoint){
             width: 18%;
-
             z-index: 2;
-
             padding-top: 6rem;
             }
 
@@ -445,7 +443,13 @@
     margin-top: 20px;
     }
     &__wrapper {
-        margin-top: 280px;
+       
+        @media (min-width: $mobile-breakpoint){
+            margin-top: 12rem;
+            }
+        @media (min-width: $standard-breakpoint){
+            margin-top: 20rem;
+                }
     }
 }
 
