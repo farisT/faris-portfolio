@@ -19,6 +19,7 @@
 
         @media (min-width: $mobile-breakpoint){
             width: 45px;
+            font-size: 18px;
             margin-left: 0;
 
             }
@@ -26,6 +27,7 @@
             width: 45px;
             margin-left: 13px;
             color: $blue;
+            font-size: 18px;
             border-bottom: 10px $pink solid;
             line-height: 0.3em;
             font-weight: 800;
@@ -39,7 +41,6 @@
         &--one {
             margin-left: 13px;
             width: 45px;
-            font-size: 19px;
             font-weight: 800;
                @include border-pink;
                 @media (min-width: $mobile-breakpoint){
@@ -149,8 +150,8 @@
             }
             &--about {
                 @include border-green;
-                    width: 57px;
-                    font-size:18px;
+                width: 57px;
+                font-size:18px;
                 border-bottom: 10px $green solid;
                 line-height: 0.3em;
                 @media (min-width: $mobile-breakpoint){

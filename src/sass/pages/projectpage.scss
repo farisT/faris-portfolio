@@ -26,9 +26,10 @@
         color: rgba(255, 255, 255, 0.5);
         @media (min-width: $mobile-breakpoint){
             position: absolute;
-            font-size: 669px;
-            top: -26%;
-            left: 42%;
+            font-size: 514px;
+            margin-top: 80px;
+            /* top: -28%; */
+            left: 43%;
             color: rgba(255, 255, 255, 0.5);
             }
         &--two {
@@ -39,10 +40,10 @@
                 color: rgba(255, 255, 255, 0.5);
                 @media (min-width: $mobile-breakpoint){
                     position: absolute;
-                    font-size: 669px;
-                    top: -26%;
-                    left: 35%;
-                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 514px;
+                    margin-top: 80px;
+                    /* top: -28%; */
+                    left: 40%;
                     }
             }
         &--three {
@@ -53,9 +54,10 @@
             color: rgba(255, 255, 255, 0.5);
             @media (min-width: $mobile-breakpoint){
                 position: absolute;
-                font-size: 669px;
-                top: -26%;
-                left: 35%;
+                font-size: 514px;
+                margin-top: 80px;
+                /* top: -28%; */
+                left: 38%;
                 color: rgba(255, 255, 255, 0.5);
                 }
         }
@@ -463,19 +465,95 @@
         margin-top: 20px;
         display: inline-block;
     }
-    &__image {
+    &__image-github{
         width: 58%;
         margin: 0 auto;
         display: block;
         height: 100%;
+        &:hover {
+            content: url("../../images/icons/github-alt-brands-pink.svg");
+            background-repeat: no-repeat;
+        }
+        &:active {
+            content: url("../../images/icons/github-clicked.svg");
+            background-repeat: no-repeat;
+        }
+    }
+    &__image-link {
+        width: 58%;
+        margin: 0 auto;
+        display: block;
+        height: 100%;
+        &:hover {
+            content: url("../../images/icons/link-pink.svg");
+            background-repeat: no-repeat;
+        }
+        &:active {
+            content: url("../../images/icons/link-clicked.svg");
+            background-repeat: no-repeat;
+        }
+    }
+    &__image-linkdin {
+        width: 58%;
+        margin: 0 auto;
+        display: block;
+        height: 100%;
+        &:hover {
+            content: url("../../images/icons/linkedin-in-brands-pink.svg");
+            background-repeat: no-repeat;
+        }
+        &:active {
+            content: url("../../images/icons/linkedin-clicked.svg");
+            background-repeat: no-repeat;
+        }
     }
 }
-.icon-link {
+.icon-link-linkdin {
     width: 40%;
     margin: 0 auto;
     display: block;
     height: 100%;
+    &:hover {
+        content: url("../../images/icons/linkedin-in-brands-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../../images/icons/linkedin-clicked.svg");
+        background-repeat: no-repeat;
+    }
+
 }
+.icon-link-github {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    &:hover {
+        content: url("../../images/icons/github-alt-brands-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../../images/icons/github-clicked.svg");
+        background-repeat: no-repeat;
+    }
+
+}
+.icon-link-link {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    &:hover {
+        content: url("../../images/icons/link-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../../images/icons/github-alt-brands-pink.svg");
+        background-repeat: no-repeat;
+    }
+
+}
+
 .skills-list {
     font-weight: 300;
 }

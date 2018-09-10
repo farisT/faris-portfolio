@@ -35,6 +35,11 @@ body, html {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em;
       display: inline-block; }
+    .no-decoration-links__pink:active {
+      color: #26269e;
+      border-bottom: 10px #fce4e0 solid;
+      line-height: 0.3em;
+      display: inline-block; }
 
 .link-container a:visited {
   color: #3e3ec1; }
@@ -148,17 +153,19 @@ body, html {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
     .header__name:active {
-      border-bottom: 10px #e5ebd2 solid;
+      border-bottom: 10px #fce4e0 solid;
       color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .header__name {
         width: 45px;
+        font-size: 18px;
         margin-left: 0; } }
     .header__name--home {
       width: 45px;
       margin-left: 13px;
       color: #3e3ec1;
+      font-size: 18px;
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em;
       font-weight: 800; }
@@ -171,7 +178,6 @@ body, html {
     .header__name--one {
       margin-left: 13px;
       width: 45px;
-      font-size: 19px;
       font-weight: 800;
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em;
@@ -180,7 +186,7 @@ body, html {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
       .header__name--one:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #fce4e0 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -216,7 +222,7 @@ body, html {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
       .header__name--three:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #e4e9f8 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -250,7 +256,7 @@ body, html {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
     .header__projects:active {
-      border-bottom: 10px #e5ebd2 solid;
+      border-bottom: 10px #fce4e0 solid;
       color: #26269e;
       line-height: 0.3em; }
     .header__projects--projects {
@@ -270,7 +276,7 @@ body, html {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
       .header__projects--one:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #fce4e0 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -300,7 +306,7 @@ body, html {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
       .header__projects--three:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #e4e9f8 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -330,7 +336,7 @@ body, html {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
     .header__about:active {
-      border-bottom: 10px #e5ebd2 solid;
+      border-bottom: 10px #fce4e0 solid;
       color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
@@ -345,7 +351,7 @@ body, html {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
       .header__about--one:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #fce4e0 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -375,7 +381,7 @@ body, html {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
       .header__about--three:active {
-        border-bottom: 10px #e5ebd2 solid;
+        border-bottom: 10px #e4e9f8 solid;
         color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
@@ -616,9 +622,10 @@ body, html {
     @media (min-width: 600px) {
       .project-page__number {
         position: absolute;
-        font-size: 669px;
-        top: -26%;
-        left: 42%;
+        font-size: 514px;
+        margin-top: 80px;
+        /* top: -28%; */
+        left: 43%;
         color: rgba(255, 255, 255, 0.5); } }
     .project-page__number--two {
       position: absolute;
@@ -629,10 +636,10 @@ body, html {
       @media (min-width: 600px) {
         .project-page__number--two {
           position: absolute;
-          font-size: 669px;
-          top: -26%;
-          left: 35%;
-          color: rgba(255, 255, 255, 0.5); } }
+          font-size: 514px;
+          margin-top: 80px;
+          /* top: -28%; */
+          left: 40%; } }
     .project-page__number--three {
       position: absolute;
       font-size: 400px;
@@ -642,9 +649,10 @@ body, html {
       @media (min-width: 600px) {
         .project-page__number--three {
           position: absolute;
-          font-size: 669px;
-          top: -26%;
-          left: 35%;
+          font-size: 514px;
+          margin-top: 80px;
+          /* top: -28%; */
+          left: 38%;
           color: rgba(255, 255, 255, 0.5); } }
   .project-page__mainphoto {
     object-fit: cover;
@@ -737,7 +745,7 @@ body, html {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
     .project-page__readmore:active {
-      border-bottom: 10px #e5ebd2 solid;
+      border-bottom: 10px #fce4e0 solid;
       color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
@@ -779,7 +787,7 @@ body, html {
       border-bottom: 10px #e4e9f8 solid;
       line-height: 0.3em; }
     .project-page__readmore-three:active {
-      border-bottom: 10px #e5ebd2 solid;
+      border-bottom: 10px #e4e9f8 solid;
       color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
@@ -998,17 +1006,77 @@ body, html {
   margin-top: 20px;
   display: inline-block; }
 
-.sub-icon-link__image {
+.sub-icon-link__image-github {
   width: 58%;
   margin: 0 auto;
   display: block;
   height: 100%; }
+  .sub-icon-link__image-github:hover {
+    content: url("../../images/icons/github-alt-brands-pink.svg");
+    background-repeat: no-repeat; }
+  .sub-icon-link__image-github:active {
+    content: url("../../images/icons/github-clicked.svg");
+    background-repeat: no-repeat; }
 
-.icon-link {
+.sub-icon-link__image-link {
+  width: 58%;
+  margin: 0 auto;
+  display: block;
+  height: 100%; }
+  .sub-icon-link__image-link:hover {
+    content: url("../../images/icons/link-pink.svg");
+    background-repeat: no-repeat; }
+  .sub-icon-link__image-link:active {
+    content: url("../../images/icons/link-clicked.svg");
+    background-repeat: no-repeat; }
+
+.sub-icon-link__image-linkdin {
+  width: 58%;
+  margin: 0 auto;
+  display: block;
+  height: 100%; }
+  .sub-icon-link__image-linkdin:hover {
+    content: url("../../images/icons/linkedin-in-brands-pink.svg");
+    background-repeat: no-repeat; }
+  .sub-icon-link__image-linkdin:active {
+    content: url("../../images/icons/linkedin-clicked.svg");
+    background-repeat: no-repeat; }
+
+.icon-link-linkdin {
   width: 40%;
   margin: 0 auto;
   display: block;
   height: 100%; }
+  .icon-link-linkdin:hover {
+    content: url("../../images/icons/linkedin-in-brands-pink.svg");
+    background-repeat: no-repeat; }
+  .icon-link-linkdin:active {
+    content: url("../../images/icons/linkedin-clicked.svg");
+    background-repeat: no-repeat; }
+
+.icon-link-github {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  height: 100%; }
+  .icon-link-github:hover {
+    content: url("../../images/icons/github-alt-brands-pink.svg");
+    background-repeat: no-repeat; }
+  .icon-link-github:active {
+    content: url("../../images/icons/github-clicked.svg");
+    background-repeat: no-repeat; }
+
+.icon-link-link {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  height: 100%; }
+  .icon-link-link:hover {
+    content: url("../../images/icons/link-pink.svg");
+    background-repeat: no-repeat; }
+  .icon-link-link:active {
+    content: url("../../images/icons/github-alt-brands-pink.svg");
+    background-repeat: no-repeat; }
 
 .skills-list {
   font-weight: 300; }
