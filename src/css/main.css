@@ -831,7 +831,6 @@ body, html {
     .about-page {
       grid-row-gap: 4rem; } }
   .about-page__link-decoration {
-    width: 21%;
     border-bottom: 3px #e5ebd2 solid;
     line-height: 1em;
     display: inline-block;
@@ -1207,6 +1206,9 @@ body, html {
   @media (min-width: 1550px) {
     .arrow-down__container {
       margin-top: 30rem; } }
+  @media (min-width: 2000px) {
+    .arrow-down__container {
+      margin-top: 46rem; } }
 
 .arrow-up {
   width: 5%;

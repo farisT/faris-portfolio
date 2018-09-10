@@ -206,6 +206,9 @@ display: none;
         @media (min-width: $bigscreen-breakpoint){
           margin-top: 30rem;
           }
+          @media (min-width: 2000px){
+            margin-top: 46rem;
+            }
   }
 
   @media (min-width: $standard-breakpoint){
