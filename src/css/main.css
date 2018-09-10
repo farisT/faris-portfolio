@@ -140,12 +140,16 @@ body, html {
     color: #3e3ec1;
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em;
+    font-size: 18px;
     width: 45px;
     margin-left: 13px;
-    font-size: 19px;
     font-weight: 800; }
     .header__name:hover {
       border-bottom: 10px #fce4e0 solid;
+      line-height: 0.3em; }
+    .header__name:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .header__name {
@@ -157,7 +161,6 @@ body, html {
       color: #3e3ec1;
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em;
-      font-size: 19px;
       font-weight: 800; }
       @media (min-width: 600px) {
         .header__name--home {
@@ -171,9 +174,14 @@ body, html {
       font-size: 19px;
       font-weight: 800;
       border-bottom: 3px #fce4e0 solid;
-      line-height: 1em; }
+      line-height: 1em;
+      font-size: 18px; }
       .header__name--one:hover {
         border-bottom: 10px #fce4e0 solid;
+        line-height: 0.3em; }
+      .header__name--one:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__name--one {
@@ -182,12 +190,16 @@ body, html {
     .header__name--two {
       margin-left: 13px;
       width: 45px;
-      font-size: 19px;
       font-weight: 800;
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em; }
       .header__name--two:hover {
         border-bottom: 10px #e5ebd2 solid;
+        line-height: 0.3em; }
+      .header__name--two:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__name--two {
@@ -196,12 +208,16 @@ body, html {
     .header__name--three {
       margin-left: 13px;
       width: 45px;
-      font-size: 19px;
       font-weight: 800;
+      font-size: 18px;
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em; }
       .header__name--three:hover {
         border-bottom: 10px #e4e9f8 solid;
+        line-height: 0.3em; }
+      .header__name--three:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__name--three {
@@ -210,123 +226,179 @@ body, html {
     .header__name--about {
       margin-left: 13px;
       width: 45px;
-      font-size: 19px;
       font-weight: 800;
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em; }
       .header__name--about:hover {
         border-bottom: 10px #e5ebd2 solid;
+        line-height: 0.3em; }
+      .header__name--about:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
         line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__name--about {
           width: 45px;
           margin-left: 0; } }
   .header__projects {
-    width: 77px;
+    width: 87px;
     border-bottom: 3px #fce4e0 solid;
-    line-height: 1em; }
+    line-height: 1em;
+    font-size: 18px; }
     .header__projects:hover {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
+    .header__projects:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
+      line-height: 0.3em; }
     .header__projects--projects {
-      width: 77px;
+      width: 87px;
+      font-size: 18px;
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .header__projects {
-        width: 77px; } }
+        width: 87px; } }
     .header__projects--one {
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em;
-      width: 77px; }
+      font-size: 18px;
+      width: 87px; }
       .header__projects--one:hover {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
+      .header__projects--one:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__projects--one {
-          width: 77px; } }
+          width: 87px; } }
     .header__projects--two {
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 77px; }
+      width: 87px; }
       .header__projects--two:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
+      .header__projects--two:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__projects--two {
-          width: 77px; } }
+          width: 87px; } }
     .header__projects--three {
+      font-size: 18px;
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em;
-      width: 77px; }
+      width: 87px; }
       .header__projects--three:hover {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
+      .header__projects--three:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__projects--three {
-          width: 77px; } }
+          width: 87px; } }
     .header__projects--about {
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 77px; }
+      width: 87px; }
       .header__projects--about:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
+      .header__projects--about:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__projects--about {
-          width: 77px; } }
+          width: 87px; } }
   .header__about {
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em;
-    width: 54px; }
+    font-size: 18px;
+    width: 57px; }
     .header__about:hover {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
+    .header__about:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
+      line-height: 0.3em; }
     @media (min-width: 600px) {
       .header__about {
-        width: 54px; } }
+        width: 57px; } }
     .header__about--one {
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em;
-      width: 54px; }
+      font-size: 18px;
+      width: 57px; }
       .header__about--one:hover {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
+      .header__about--one:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__about--one {
-          width: 54px; } }
+          width: 57px; } }
     .header__about--two {
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 54px; }
+      width: 57px; }
       .header__about--two:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
+      .header__about--two:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__about--two {
-          width: 54px; } }
+          width: 57px; } }
     .header__about--three {
+      font-size: 18px;
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em;
-      width: 54px; }
+      width: 57px; }
       .header__about--three:hover {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
+      .header__about--three:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__about--three {
-          width: 54px; } }
+          width: 57px; } }
     .header__about--about {
+      font-size: 18px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 54px;
+      width: 57px;
+      font-size: 18px;
       border-bottom: 10px #e5ebd2 solid;
       line-height: 0.3em; }
       .header__about--about:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
+      .header__about--about:active {
+        border-bottom: 10px #e5ebd2 solid;
+        color: #26269e;
+        line-height: 0.3em; }
       @media (min-width: 600px) {
         .header__about--about {
-          width: 54px; } }
+          width: 57px; } }
   .header__item-links {
     text-decoration: none;
     color: #3e3ec1; }
@@ -659,9 +731,14 @@ body, html {
     z-index: 3;
     color: #3e3ec1;
     border-bottom: 3px #fce4e0 solid;
-    line-height: 1em; }
+    line-height: 1em;
+    font-size: 18px; }
     .project-page__readmore:hover {
       border-bottom: 10px #fce4e0 solid;
+      line-height: 0.3em; }
+    .project-page__readmore:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .project-page__readmore {
@@ -674,10 +751,15 @@ body, html {
     top: 100%;
     z-index: 3;
     color: #3e3ec1;
+    font-size: 18px;
     border-bottom: 3px #e5ebd2 solid;
     line-height: 1em; }
     .project-page__readmore-two:hover {
       border-bottom: 10px #e5ebd2 solid;
+      line-height: 0.3em; }
+    .project-page__readmore-two:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .project-page__readmore-two {
@@ -690,10 +772,15 @@ body, html {
     top: 76%;
     z-index: 3;
     color: #3e3ec1;
+    font-size: 18px;
     border-bottom: 3px #e4e9f8 solid;
     line-height: 1em; }
     .project-page__readmore-three:hover {
       border-bottom: 10px #e4e9f8 solid;
+      line-height: 0.3em; }
+    .project-page__readmore-three:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
       line-height: 0.3em; }
     @media (min-width: 600px) {
       .project-page__readmore-three {
@@ -944,12 +1031,17 @@ body, html {
     .about-page {
       grid-row-gap: 4rem; } }
   .about-page__link-decoration {
+    font-size: 18px;
     border-bottom: 3px #e5ebd2 solid;
     line-height: 1em;
     display: inline-block;
     text-decoration: none; }
     .about-page__link-decoration:hover {
       border-bottom: 10px #e5ebd2 solid;
+      line-height: 0.3em; }
+    .about-page__link-decoration:active {
+      border-bottom: 10px #e5ebd2 solid;
+      color: #26269e;
       line-height: 0.3em; }
     .about-page__link-decoration :visited {
       color: #3e3ec1; }

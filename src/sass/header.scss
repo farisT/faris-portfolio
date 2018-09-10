@@ -15,7 +15,6 @@
         @include border-pink;
         width: 45px;
         margin-left: 13px;
-        font-size: 19px;
         font-weight: 800;
 
         @media (min-width: $mobile-breakpoint){
@@ -29,7 +28,6 @@
             color: $blue;
             border-bottom: 10px $pink solid;
             line-height: 0.3em;
-            font-size: 19px;
             font-weight: 800;
             @media (min-width: $mobile-breakpoint){
                 width: 45px;
@@ -52,7 +50,6 @@
         &--two {
             margin-left: 13px;
             width: 45px;
-            font-size: 19px;
             font-weight: 800;
            @include border-green;
             @media (min-width: $mobile-breakpoint){
@@ -63,7 +60,6 @@
         &--three {
             margin-left: 13px;
             width: 45px;
-            font-size: 19px;
             font-weight: 800;
                @include border-lightblue;
                 @media (min-width: $mobile-breakpoint){
@@ -74,7 +70,6 @@
         &--about {
             margin-left: 13px;
             width: 45px;
-            font-size: 19px;
             font-weight: 800;
                 @include border-green;
                 @media (min-width: $mobile-breakpoint){
@@ -84,80 +79,82 @@
                 }
     }
     &__projects  {
-        width: 77px;
+        width: 87px;
         @include border-pink;
         &--projects {
-            width: 77px;
+            width: 87px;
+            font-size: 18px;
             border-bottom: 10px $pink solid;
             line-height: 0.3em;
         }
         @media (min-width: $mobile-breakpoint){
-            width: 77px;
+            width: 87px;
             }
             &--one {
                 @include border-pink;
-                width: 77px;
+                width: 87px;
                 @media (min-width: $mobile-breakpoint){
-                    width: 77px;
+                    width: 87px;
                     }
             }
         &--two {
             @include border-green;
-            width: 77px;
+            width: 87px;
             @media (min-width: $mobile-breakpoint){
-                width: 77px;
+                width: 87px;
                 }
         }
         &--three {
             @include border-lightblue;
-            width: 77px;
+           width: 87px;
             @media (min-width: $mobile-breakpoint){
-                width: 77px;
+               width: 87px;
                 }
         }
         &--about {
             @include border-green;
-            width: 77px;
+           width: 87px;
             @media (min-width: $mobile-breakpoint){
-                width: 77px;
+               width: 87px;
                 }
         }
     }
     &__about  {
         @include border-pink;
-        width: 54px;
+            width: 57px;
 
         @media (min-width: $mobile-breakpoint){
-            width: 54px;
+                width: 57px;
             }
             &--one {
                 @include border-pink;
-                width: 54px;
+                    width: 57px;
                 @media (min-width: $mobile-breakpoint){
-                    width: 54px;
+                        width: 57px;
                     }
             }
             &--two {
                 @include border-green;
-                width: 54px;
+                    width: 57px;
                 @media (min-width: $mobile-breakpoint){
-                    width: 54px;
+                        width: 57px;
                     }
             }
             &--three {
                 @include border-lightblue;
-                width: 54px;
+                    width: 57px;
                 @media (min-width: $mobile-breakpoint){
-                    width: 54px;
+                        width: 57px;
                     }
             }
             &--about {
                 @include border-green;
-                width: 54px;
+                    width: 57px;
+                    font-size:18px;
                 border-bottom: 10px $green solid;
                 line-height: 0.3em;
                 @media (min-width: $mobile-breakpoint){
-                    width: 54px;
+                        width: 57px;
                     }
             }
     }

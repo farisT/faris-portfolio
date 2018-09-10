@@ -1,24 +1,42 @@
 @mixin border-pink {
     border-bottom: 3px $pink solid;
     line-height: 1em;
+    font-size: 18px;
     &:hover{
         border-bottom: 10px $pink solid;
         line-height: 0.3em;
     }
+    &:active{
+        border-bottom: 10px $green solid;
+        color:$active-blue;
+        line-height: 0.3em;
+    }
 }
 @mixin border-green {
+    font-size: 18px;
     border-bottom: 3px $green solid;
     line-height: 1em;
     &:hover{
         border-bottom: 10px $green solid;
         line-height: 0.3em;
     }
+    &:active{
+        border-bottom: 10px $green solid;
+        color:$active-blue;
+        line-height: 0.3em;
+    }
 }
 @mixin border-lightblue {
+    font-size: 18px;
     border-bottom: 3px $light-blue solid;
     line-height: 1em;
     &:hover{
         border-bottom: 10px $light-blue solid;
+        line-height: 0.3em;
+    }
+    &:active{
+        border-bottom: 10px $green solid;
+        color:$active-blue;
         line-height: 0.3em;
     }
 }
