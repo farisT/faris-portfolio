@@ -9,7 +9,7 @@
     &__name{
         color: $blue;
         @include border-pink;
-        width: 24%;
+        width: 45px;
         margin-left: 13px;
         @media (min-width: $mobile-breakpoint){
             width: 45px;
@@ -17,7 +17,7 @@
             }
         &--one {
             margin-left: 13px;
-                width: 24%;
+            width: 45px;
                @include border-pink;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -26,7 +26,7 @@
         }
         &--two {
             margin-left: 13px;
-            width: 24%;
+            width: 45px;
            @include border-green;
             @media (min-width: $mobile-breakpoint){
                 width:7%;
@@ -35,7 +35,7 @@
             }
         &--three {
             margin-left: 13px;
-                width: 24%;
+            width: 45px;
                @include border-lightblue;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -44,7 +44,7 @@
                 }
         &--about {
             margin-left: 13px;
-                width: 24%;
+            width: 45px;
                 @include border-green;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -53,35 +53,35 @@
                 }
     }
     &__projects  {
-        width: 84%;
+        width: 77px;
         @include border-pink;
         @media (min-width: $mobile-breakpoint){
             width: 77px;
             }
             &--one {
                 @include border-pink;
-                width: 80%;
+                width: 77px;
                 @media (min-width: $mobile-breakpoint){
                     width: 77px;
                     }
             }
         &--two {
             @include border-green;
-            width: 80%;
+            width: 77px;
             @media (min-width: $mobile-breakpoint){
                 width: 77px;
                 }
         }
         &--three {
             @include border-lightblue;
-            width: 80%;
+            width: 77px;
             @media (min-width: $mobile-breakpoint){
                 width: 77px;
                 }
         }
         &--about {
             @include border-green;
-            width: 80%;
+            width: 77px;
             @media (min-width: $mobile-breakpoint){
                 width: 77px;
                 }
@@ -89,34 +89,34 @@
     }
     &__about  {
         @include border-pink;
-        width: 56%;
+        width: 54px;
         @media (min-width: $mobile-breakpoint){
             width: 54px;
             }
             &--one {
                 @include border-pink;
-                width: 56%;
+                width: 54px;
                 @media (min-width: $mobile-breakpoint){
                     width: 54px;
                     }
             }
             &--two {
                 @include border-green;
-                width: 56%;
+                width: 54px;
                 @media (min-width: $mobile-breakpoint){
                     width: 54px;
                     }
             }
             &--three {
                 @include border-lightblue;
-                width: 56%;
+                width: 54px;
                 @media (min-width: $mobile-breakpoint){
                     width: 54px;
                     }
             }
             &--about {
                 @include border-green;
-                width: 56%;
+                width: 54px;
                 @media (min-width: $mobile-breakpoint){
                     width: 54px;
                     }

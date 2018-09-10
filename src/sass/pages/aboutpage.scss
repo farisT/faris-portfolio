@@ -180,6 +180,12 @@
         transform: translate(-50%, -50%);
         position: absolute;
         @media (min-width: $mobile-breakpoint){
+            font-size: 18px;
+            width: 300px;
+            left: 32%;
+            top: 21%;
+            }
+        @media (min-width: $standard-breakpoint){
             font-size: 24px;
             width: 600px;
             left: 32%;
@@ -204,6 +210,12 @@
         position: absolute;
         transform: translate(-50%, -50%);
         @media (min-width: $mobile-breakpoint){
+            font-size: 18px;
+            width: 300px;
+            left: 32%;
+            top: 50%;
+            }
+        @media (min-width: $standard-breakpoint){
             font-size: 24px;
             width: 600px;
             left: 32%;

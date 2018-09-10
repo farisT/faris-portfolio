@@ -18,7 +18,7 @@ const moveSlide = function (value) {
 	console.log(position);
 	if(position === 0) {
 		counterLeft = 15;
-		counterTop = 65;
+		counterTop = 57;
 		sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 		horizontalSliderCounter.innerHTML = '<sup>1</sup>&frasl;<sub>3</sub>';
 	}
@@ -79,7 +79,7 @@ arrowDown.addEventListener("click", function() {
 	} else {
 			position = 0;
 			slider.style.top = position + '%'; 
-			sliderCounter.style.top = 65 + '%';
+			sliderCounter.style.top = 57 + '%';
 			horizontalSliderCounter.style.left = 15 + '%'
 			sliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';
 			horizontalSliderCounter.innerHTML = '<sup class="fraction-style">1</sup>&frasl;<sub>3</sub>';

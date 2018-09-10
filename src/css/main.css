@@ -137,7 +137,7 @@ body, html {
     color: #3e3ec1;
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em;
-    width: 24%;
+    width: 45px;
     margin-left: 13px; }
     .header__name:hover {
       border-bottom: 10px #fce4e0 solid;
@@ -148,7 +148,7 @@ body, html {
         margin-left: 0; } }
     .header__name--one {
       margin-left: 13px;
-      width: 24%;
+      width: 45px;
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em; }
       .header__name--one:hover {
@@ -160,7 +160,7 @@ body, html {
           margin-left: 0; } }
     .header__name--two {
       margin-left: 13px;
-      width: 24%;
+      width: 45px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em; }
       .header__name--two:hover {
@@ -172,7 +172,7 @@ body, html {
           margin-left: 0; } }
     .header__name--three {
       margin-left: 13px;
-      width: 24%;
+      width: 45px;
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em; }
       .header__name--three:hover {
@@ -184,7 +184,7 @@ body, html {
           margin-left: 0; } }
     .header__name--about {
       margin-left: 13px;
-      width: 24%;
+      width: 45px;
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em; }
       .header__name--about:hover {
@@ -195,7 +195,7 @@ body, html {
           width: 45px;
           margin-left: 0; } }
   .header__projects {
-    width: 84%;
+    width: 77px;
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em; }
     .header__projects:hover {
@@ -207,7 +207,7 @@ body, html {
     .header__projects--one {
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em;
-      width: 80%; }
+      width: 77px; }
       .header__projects--one:hover {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
@@ -217,7 +217,7 @@ body, html {
     .header__projects--two {
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 80%; }
+      width: 77px; }
       .header__projects--two:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
@@ -227,7 +227,7 @@ body, html {
     .header__projects--three {
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em;
-      width: 80%; }
+      width: 77px; }
       .header__projects--three:hover {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
@@ -237,7 +237,7 @@ body, html {
     .header__projects--about {
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 80%; }
+      width: 77px; }
       .header__projects--about:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
@@ -247,7 +247,7 @@ body, html {
   .header__about {
     border-bottom: 3px #fce4e0 solid;
     line-height: 1em;
-    width: 56%; }
+    width: 54px; }
     .header__about:hover {
       border-bottom: 10px #fce4e0 solid;
       line-height: 0.3em; }
@@ -257,7 +257,7 @@ body, html {
     .header__about--one {
       border-bottom: 3px #fce4e0 solid;
       line-height: 1em;
-      width: 56%; }
+      width: 54px; }
       .header__about--one:hover {
         border-bottom: 10px #fce4e0 solid;
         line-height: 0.3em; }
@@ -267,7 +267,7 @@ body, html {
     .header__about--two {
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 56%; }
+      width: 54px; }
       .header__about--two:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
@@ -277,7 +277,7 @@ body, html {
     .header__about--three {
       border-bottom: 3px #e4e9f8 solid;
       line-height: 1em;
-      width: 56%; }
+      width: 54px; }
       .header__about--three:hover {
         border-bottom: 10px #e4e9f8 solid;
         line-height: 0.3em; }
@@ -287,7 +287,7 @@ body, html {
     .header__about--about {
       border-bottom: 3px #e5ebd2 solid;
       line-height: 1em;
-      width: 56%; }
+      width: 54px; }
       .header__about--about:hover {
         border-bottom: 10px #e5ebd2 solid;
         line-height: 0.3em; }
@@ -965,6 +965,12 @@ body, html {
     position: absolute; }
     @media (min-width: 600px) {
       .about-page__main-title {
+        font-size: 18px;
+        width: 300px;
+        left: 32%;
+        top: 21%; } }
+    @media (min-width: 1200px) {
+      .about-page__main-title {
         font-size: 24px;
         width: 600px;
         left: 32%;
@@ -985,6 +991,12 @@ body, html {
     position: absolute;
     transform: translate(-50%, -50%); }
     @media (min-width: 600px) {
+      .about-page__sub-title {
+        font-size: 18px;
+        width: 300px;
+        left: 32%;
+        top: 50%; } }
+    @media (min-width: 1200px) {
       .about-page__sub-title {
         font-size: 24px;
         width: 600px;
@@ -1113,7 +1125,7 @@ body, html {
       color: #3e3ec1;
       padding-bottom: 5px;
       right: 4.55%;
-      top: 65%; } }
+      top: 57%; } }
   @media (min-width: 1550px) {
     .vertical-slider-counter-home {
       position: absolute;
