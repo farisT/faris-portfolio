@@ -346,6 +346,7 @@
         bottom: 51%;
         width: 100px;
         text-align: center;
+        bottom: -3%;
         
  
         @media (min-width: $mobile-breakpoint){
@@ -427,6 +428,7 @@
         width: 78%;
         position: absolute;
         right: 0%;
+        bottom:-4rem;
         @media (min-width: $mobile-breakpoint){
             width: 18%;
             z-index: 2;

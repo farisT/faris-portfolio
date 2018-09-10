@@ -905,7 +905,8 @@ body, html {
     right: 12%;
     bottom: 51%;
     width: 100px;
-    text-align: center; }
+    text-align: center;
+    bottom: -3%; }
     @media (min-width: 600px) {
       .project-page__links-three {
         right: 2%;
@@ -974,7 +975,8 @@ body, html {
   .project-page__blue-triangle-two {
     width: 78%;
     position: absolute;
-    right: 0%; }
+    right: 0%;
+    bottom: -4rem; }
     @media (min-width: 600px) {
       .project-page__blue-triangle-two {
         width: 18%;
