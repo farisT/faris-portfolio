@@ -208,7 +208,7 @@ display: none;
           margin-top: 36rem;
           }
           @media (min-width: 2000px){
-            margin-top: 46rem;
+            margin-top: 51rem;
             }
   }
 
@@ -251,11 +251,22 @@ display: none;
     position:absolute;
     left: 50%;
     }
-    @media (min-width: 1550px){
+    @media (min-width: $standard-breakpoint){
       width: 2%;
-      bottom: 37%;
+      bottom: 43%;
+      position:absolute;
       left: 50%;
       }
+    @media (min-width: $bigscreen-breakpoint){
+      width: 2%;
+      bottom: 50%;
+      left: 50%;
+      }
+      @media (min-width: 1800px){
+        width: 2%;
+        bottom: 46%;
+        left: 50%;
+        }
       
 }
 .arrow-down-home{
@@ -268,8 +279,20 @@ display: none;
     width: 2%;
     left: 50%;
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     }
+    @media (min-width: $standard-breakpoint){
+      width: 2%;
+      left: 50%;
+      position: absolute;
+      bottom: 8%;
+      }
+    @media (min-width: $bigscreen-breakpoint){
+      width: 2%;
+      left: 50%;
+      position: absolute;
+      bottom: 5%;
+      }
 }
 
 .project-slider-page {
@@ -298,6 +321,7 @@ display: none;
 }
   &__main-title-one {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 50%;
     z-index: 3;
@@ -305,6 +329,7 @@ display: none;
     position: absolute;
     transform: translate(-50%, -50%);
     @media (min-width: $mobile-breakpoint){
+        font-weight: 800;
         font-size: 72px;
         left: 50%;
         top: 50%;
@@ -313,12 +338,14 @@ display: none;
   }
   &__main-title-two {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 150%;
     color: $blue;
     position: absolute;
     transform: translate(-50%, -50%);
     @media (min-width: $mobile-breakpoint){
+      font-weight: 800;
         font-size: 72px;
         position: absolute;
         left: 51%;
@@ -328,12 +355,14 @@ display: none;
   }
   &__main-title-three {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 250%;
     color: $blue;
     position: absolute;
     transform: translate(-50%, -50%);
     @media (min-width: $mobile-breakpoint){
+      font-weight: 800;
         font-size: 72px;
         position: absolute;
         left: 52%;

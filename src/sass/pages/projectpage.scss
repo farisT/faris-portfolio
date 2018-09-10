@@ -29,9 +29,29 @@
             font-size: 514px;
             margin-top: 80px;
             /* top: -28%; */
-            left: 43%;
-            color: rgba(255, 255, 255, 0.5);
+            left: 40%;
             }
+        @media (min-width: $standard-breakpoint){
+            position: absolute;
+            font-size: 514px;
+            margin-top: 80px;
+            /* top: -28%; */
+            left: 44%;
+            }
+            @media (min-width: $bigscreen-breakpoint){
+                position: absolute;
+                font-size: 514px;
+                margin-top: 80px;
+                /* top: -28%; */
+                left: 45.5%;
+                }
+                @media (min-width: 2200px){
+                    position: absolute;
+                    font-size: 514px;
+                    margin-top: 80px;
+                    /* top: -28%; */
+                    left: 46.5%;
+                    }
         &--two {
                 position: absolute;
                 font-size: 400px;
@@ -112,7 +132,7 @@
         // grid-row-gap: 5rem;
         @media (min-width: $mobile-breakpoint){
             grid-row-gap: 0rem;
-            grid-template-columns: auto 62%;
+            grid-template-columns: auto 50%;
             margin-bottom: 1rem;
             }
   
@@ -142,14 +162,15 @@
     &__first-image {
         width:45%;
         @media (min-width: $mobile-breakpoint){
-            width:100%;
+            width:60%;
+            padding-left: 5rem;
         }
 
     }
     &__second-image-one {
         width:100%;
         @media (min-width: $mobile-breakpoint){
-            width: 60%;
+            width: 40%;
             margin-right: 10rem;
             float: right;
         }
@@ -270,14 +291,18 @@
         position: absolute;
         left: 37%;    
         @media (min-width: $mobile-breakpoint){
-            top: 43%;
+            top: 3%;
             transform: translate(-50%, -50%);
             text-align: left;
             left: 11%;
             width: 200px;
             }
         @media (min-width: $bigscreen-breakpoint){
-            top: 35%;
+            top: 6%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            left: 11%;
+            width: 200px;
         }
            
     }
@@ -367,8 +392,9 @@
             }
         @media (min-width: $mobile-breakpoint){
             width: 22%;
+            bottom: 41%;
             max-width: 388px;
-            bottom: 0%;
+
             }
    
     }

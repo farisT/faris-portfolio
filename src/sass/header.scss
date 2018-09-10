@@ -8,6 +8,23 @@
         margin-left: 5%;
 
         }
+    &--fixed {
+        z-index: 50;
+        margin-left: 0%;
+        position: fixed;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 25% 25%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-height: 10px;
+        @media (min-width: $mobile-breakpoint){
+            margin-top: -3rem;
+            margin-left: 5%;
+            }
+     
+
+    }
     align-items: center;
     color:$blue;
     &__name{

@@ -8,7 +8,7 @@ containerOne.addEventListener('mouseenter', function(){
     if(window.innerWidth > 600){
     pinkTriangleOne.style.transition= '0.2s';
     pinkTriangleOne.style.width= '30%';
-    pinkTriangleOne.style.bottom= '-19%';
+    pinkTriangleOne.style.bottom= '39%';
     }
     if(window.innerWidth < 600){
         
@@ -19,7 +19,7 @@ containerOne.addEventListener('mouseleave', function(){
     if(window.innerWidth > 600){
     pinkTriangleOne.style.transition= '0.2s';
     pinkTriangleOne.style.width= '22%';
-    pinkTriangleOne.style.bottom= '0%';
+    pinkTriangleOne.style.bottom= '41%';
     }
     if(window.innerWidth < 600){
 

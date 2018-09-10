@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700,800");
 body, html {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -141,6 +141,20 @@ body, html {
   @media (min-width: 600px) {
     .header {
       margin-left: 5%; } }
+  .header--fixed {
+    z-index: 50;
+    margin-left: 0%;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 25% 25%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 10px; }
+    @media (min-width: 600px) {
+      .header--fixed {
+        margin-top: -3rem;
+        margin-left: 5%; } }
   .header__name {
     color: #3e3ec1;
     border-bottom: 3px #fce4e0 solid;
@@ -413,7 +427,8 @@ body, html {
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: repeat(2, auto);
-  grid-row-gap: 10rem; }
+  grid-row-gap: 10rem;
+  margin-top: 5rem; }
   @media (min-width: 600px) {
     .homepage-wrapper {
       display: grid;
@@ -524,7 +539,7 @@ body, html {
 
 .image__outline {
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 7%;
   width: 42%; }
   @media (max-width: 600px) {
@@ -625,8 +640,28 @@ body, html {
         font-size: 514px;
         margin-top: 80px;
         /* top: -28%; */
-        left: 43%;
-        color: rgba(255, 255, 255, 0.5); } }
+        left: 40%; } }
+    @media (min-width: 1200px) {
+      .project-page__number {
+        position: absolute;
+        font-size: 514px;
+        margin-top: 80px;
+        /* top: -28%; */
+        left: 44%; } }
+    @media (min-width: 1550px) {
+      .project-page__number {
+        position: absolute;
+        font-size: 514px;
+        margin-top: 80px;
+        /* top: -28%; */
+        left: 45.5%; } }
+    @media (min-width: 2200px) {
+      .project-page__number {
+        position: absolute;
+        font-size: 514px;
+        margin-top: 80px;
+        /* top: -28%; */
+        left: 46.5%; } }
     .project-page__number--two {
       position: absolute;
       font-size: 400px;
@@ -690,7 +725,7 @@ body, html {
     @media (min-width: 600px) {
       .project-page__container-text {
         grid-row-gap: 0rem;
-        grid-template-columns: auto 62%;
+        grid-template-columns: auto 50%;
         margin-bottom: 1rem; } }
   .project-page__container-text-info {
     margin-top: 20rem; }
@@ -709,12 +744,13 @@ body, html {
     width: 45%; }
     @media (min-width: 600px) {
       .project-page__first-image {
-        width: 100%; } }
+        width: 60%;
+        padding-left: 5rem; } }
   .project-page__second-image-one {
     width: 100%; }
     @media (min-width: 600px) {
       .project-page__second-image-one {
-        width: 60%;
+        width: 40%;
         margin-right: 10rem;
         float: right; } }
   .project-page__third-image-one {
@@ -840,14 +876,18 @@ body, html {
     left: 37%; }
     @media (min-width: 600px) {
       .project-page__skills-one {
-        top: 43%;
+        top: 3%;
         transform: translate(-50%, -50%);
         text-align: left;
         left: 11%;
         width: 200px; } }
     @media (min-width: 1550px) {
       .project-page__skills-one {
-        top: 35%; } }
+        top: 6%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        left: 11%;
+        width: 200px; } }
   .project-page__skills-two {
     top: 20%;
     transform: translate(-50%, -50%);
@@ -925,8 +965,8 @@ body, html {
     @media (min-width: 600px) {
       .project-page__pink-triangle-one {
         width: 22%;
-        max-width: 388px;
-        bottom: 0%; } }
+        bottom: 41%;
+        max-width: 388px; } }
   .project-page__pink-triangle-two {
     width: 64%;
     z-index: 2;
@@ -1502,7 +1542,7 @@ body, html {
       margin-top: 36rem; } }
   @media (min-width: 2000px) {
     .arrow-down__container {
-      margin-top: 46rem; } }
+      margin-top: 51rem; } }
 
 .arrow-up {
   width: 5%;
@@ -1530,10 +1570,21 @@ body, html {
       bottom: 43%;
       position: absolute;
       left: 50%; } }
+  @media (min-width: 1200px) {
+    .arrow-up-home {
+      width: 2%;
+      bottom: 43%;
+      position: absolute;
+      left: 50%; } }
   @media (min-width: 1550px) {
     .arrow-up-home {
       width: 2%;
-      bottom: 37%;
+      bottom: 50%;
+      left: 50%; } }
+  @media (min-width: 1800px) {
+    .arrow-up-home {
+      width: 2%;
+      bottom: 46%;
       left: 50%; } }
 
 .arrow-down-home {
@@ -1547,7 +1598,19 @@ body, html {
       width: 2%;
       left: 50%;
       position: absolute;
-      bottom: 7%; } }
+      bottom: 5%; } }
+  @media (min-width: 1200px) {
+    .arrow-down-home {
+      width: 2%;
+      left: 50%;
+      position: absolute;
+      bottom: 8%; } }
+  @media (min-width: 1550px) {
+    .arrow-down-home {
+      width: 2%;
+      left: 50%;
+      position: absolute;
+      bottom: 5%; } }
 
 .project-slider-page {
   width: 100vw;
@@ -1570,6 +1633,7 @@ body, html {
     padding-top: 260px; }
   .project-slider-page__main-title-one {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 50%;
     z-index: 3;
@@ -1578,12 +1642,14 @@ body, html {
     transform: translate(-50%, -50%); }
     @media (min-width: 600px) {
       .project-slider-page__main-title-one {
+        font-weight: 800;
         font-size: 72px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); } }
   .project-slider-page__main-title-two {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 150%;
     color: #3e3ec1;
@@ -1591,6 +1657,7 @@ body, html {
     transform: translate(-50%, -50%); }
     @media (min-width: 600px) {
       .project-slider-page__main-title-two {
+        font-weight: 800;
         font-size: 72px;
         position: absolute;
         left: 51%;
@@ -1598,6 +1665,7 @@ body, html {
         transform: translate(-50%, -50%); } }
   .project-slider-page__main-title-three {
     font-size: 24px;
+    font-weight: 800;
     left: 50%;
     top: 250%;
     color: #3e3ec1;
@@ -1605,6 +1673,7 @@ body, html {
     transform: translate(-50%, -50%); }
     @media (min-width: 600px) {
       .project-slider-page__main-title-three {
+        font-weight: 800;
         font-size: 72px;
         position: absolute;
         left: 52%;
