@@ -46,7 +46,7 @@
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    bottom: 12%;
+    bottom: 9%;
     width: 100%;
     position: absolute;
     }
@@ -58,7 +58,7 @@
     display: unset;
     width: 20px;
     background: white;
-    bottom: 7.5%;
+    bottom: 4.5%;
     left: 15%;
     position: absolute;
     color:$blue;

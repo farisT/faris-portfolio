@@ -1,8 +1,11 @@
 .header {
     display: grid;
     grid-template-columns: auto 25% 25%;
+        margin-top: 2rem;
+    margin-bottom: 2rem;
     @media (min-width: $mobile-breakpoint){
-        margin-left: 10%;
+        margin-left: 5%;
+
         }
     align-items: center;
     color:$blue;
@@ -11,13 +14,32 @@
         @include border-pink;
         width: 45px;
         margin-left: 13px;
+        font-size: 19px;
+        font-weight: 800;
         @media (min-width: $mobile-breakpoint){
             width: 45px;
             margin-left: 0;
+
             }
+        &--home {
+            width: 45px;
+            margin-left: 13px;
+            border-bottom: 10px $pink solid;
+            line-height: 0.3em;
+            font-size: 19px;
+            font-weight: 800;
+            @media (min-width: $mobile-breakpoint){
+                width: 45px;
+                margin-left: 0;
+                border-bottom: 10px $pink solid;
+                line-height: 0.3em;
+                }
+        }
         &--one {
             margin-left: 13px;
             width: 45px;
+            font-size: 19px;
+            font-weight: 800;
                @include border-pink;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -27,6 +49,8 @@
         &--two {
             margin-left: 13px;
             width: 45px;
+            font-size: 19px;
+            font-weight: 800;
            @include border-green;
             @media (min-width: $mobile-breakpoint){
                 width:7%;
@@ -36,6 +60,8 @@
         &--three {
             margin-left: 13px;
             width: 45px;
+            font-size: 19px;
+            font-weight: 800;
                @include border-lightblue;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -45,6 +71,8 @@
         &--about {
             margin-left: 13px;
             width: 45px;
+            font-size: 19px;
+            font-weight: 800;
                 @include border-green;
                 @media (min-width: $mobile-breakpoint){
                     width: 45px;
@@ -55,6 +83,11 @@
     &__projects  {
         width: 77px;
         @include border-pink;
+        &--projects {
+            width: 77px;
+            border-bottom: 10px $pink solid;
+            line-height: 0.3em;
+        }
         @media (min-width: $mobile-breakpoint){
             width: 77px;
             }
@@ -90,6 +123,7 @@
     &__about  {
         @include border-pink;
         width: 54px;
+
         @media (min-width: $mobile-breakpoint){
             width: 54px;
             }
@@ -117,6 +151,8 @@
             &--about {
                 @include border-green;
                 width: 54px;
+                border-bottom: 10px $green solid;
+                line-height: 0.3em;
                 @media (min-width: $mobile-breakpoint){
                     width: 54px;
                     }
