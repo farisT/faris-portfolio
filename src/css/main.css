@@ -589,7 +589,8 @@ body, html {
   font-weight: 300; }
   @media (max-width: 600px) {
     .project-slider-skills__text--one {
-      padding-left: 30px; } }
+      padding-left: 30px;
+      bottom: 2%; } }
 
 .project-slider-skills__text--two {
   width: 177px;
@@ -1529,7 +1530,7 @@ body, html {
   @media (max-width: 600px) {
     .horizontal-slider-line {
       display: unset;
-      bottom: 9%;
+      bottom: 12%;
       width: 100%;
       position: absolute; } }
 
@@ -1540,7 +1541,7 @@ body, html {
       display: unset;
       width: 20px;
       background: white;
-      bottom: 4.5%;
+      bottom: 8.5%;
       left: 15%;
       position: absolute;
       color: #3e3ec1; } }
@@ -1629,7 +1630,8 @@ body, html {
   @media (max-width: 600px) {
     .slider-container {
       width: 100%;
-      margin-top: 54px; } }
+      margin-top: 54px;
+      z-index: 30; } }
 
 .slider {
   position: relative;
@@ -1660,7 +1662,7 @@ body, html {
   width: 5%;
   z-index: 4;
   position: absolute;
-  left: 49%;
+  left: 47.5%;
   bottom: 18%; }
   @media (min-width: 600px) {
     .arrow-down {

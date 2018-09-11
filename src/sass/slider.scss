@@ -46,7 +46,7 @@
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    bottom: 9%;
+    bottom: 12%;
     width: 100%;
     position: absolute;
     }
@@ -58,7 +58,7 @@
     display: unset;
     width: 20px;
     background: white;
-    bottom: 4.5%;
+    bottom: 8.5%;
     left: 15%;
     position: absolute;
     color:$blue;
@@ -147,6 +147,7 @@ display: none;
   @media (max-width: $mobile-breakpoint){
     width: 100%;
     margin-top: 54px;
+    z-index: 30;
     }
   margin: 0 auto;
   white-space: nowrap;
@@ -190,7 +191,7 @@ display: none;
   z-index: 4;
 
   position:absolute;
-  left: 49%;
+  left: 47.5%;
   bottom:18%;
   @media (min-width: $mobile-breakpoint){
   position: relative;
@@ -507,3 +508,4 @@ display: none;
 .fraction-style {
   font-size:50px;
 }
+
