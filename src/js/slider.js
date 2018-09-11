@@ -63,7 +63,7 @@ arrowUp.addEventListener("click",function() {
 				counterTop = 70;
 				counterLeft = 85;
 				sliderCounter.innerHTML = '<sup class="fraction-style">3</sup ><span class="subfraction-style" >&frasl;</span><sub class="subfraction-style">3</sub></div>';
-				horizontalSliderCounter.innerHTML  = '<sup class="fraction-style">1</sup ><span class="subfraction-style" >&frasl;</span><sub class="subfraction-style">3</sub></div>x';
+				horizontalSliderCounter.innerHTML  = '<sup class="fraction-style">1</sup ><span class="subfraction-style" >&frasl;</span><sub class="subfraction-style">3</sub></div>';
 			}
 		}
 		sliderCounter.style.top = counterTop + '%';

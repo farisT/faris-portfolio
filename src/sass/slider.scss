@@ -46,7 +46,7 @@
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    bottom: 9%;
+    bottom: 11%;
     width: 100%;
     position: absolute;
     }
@@ -56,9 +56,11 @@
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    width: 20px;
+    width: 43px;
     background: white;
-    bottom: 4.5%;
+    bottom: 14%;
+    height: 20px;
+    z-index: 2;
     left: 15%;
     position: absolute;
     color:$blue;
@@ -104,7 +106,8 @@ display: none;
     color: $blue;
     padding-bottom: 5px;
     right: 4.55%;
-    top: 57%;
+    top: 52%;
+
     }
     @media (min-width: $bigscreen-breakpoint){
       position: absolute;
@@ -115,14 +118,14 @@ display: none;
       color: $blue;
       padding-bottom: 5px;
       right: 5.55%;
-      top: 65%;
+      top: 58%;
       }
 }
 .horizontal-slider-line-home {
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    bottom: 3%;
+    bottom: 4%;
     width: 100%;
     position: absolute;
     }
@@ -134,10 +137,13 @@ display: none;
     display: unset;
     width: 43px;
     background: white;
-    bottom: 1%;
+    bottom: 7%;
+    height: 1px;
     left: 15%;
+    z-index: -1;
     position: absolute;
     color:$blue;
+    
     }
 }
 .slider-container {
@@ -403,7 +409,7 @@ display: none;
   }
   &__subtitle-one {
     font-size: 18px;
-    left: 50%;
+    left: 53%;
     top: 65%;
     color: $blue;
     position: absolute;
@@ -455,11 +461,14 @@ display: none;
     font-weight: 800;
     text-align: center;
     vertical-align: middle;
-    line-height: 350px;
+    line-height: 450px;
     color: white;
     font-size: 500px;
     padding-top: 5rem;
     z-index: 3;
+    @media (min-width: $baby-breakpoint){
+      line-height: 350px;
+    }
     @media (min-width: $mobile-breakpoint){
       font-size: 669px;
       line-height: 540px;

@@ -155,7 +155,7 @@ body, html {
     width: 100%;
     display: grid;
     grid-template-columns: auto 25% 25%;
-    margin-top: -1rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
     max-height: 10px;
@@ -598,7 +598,7 @@ body, html {
   width: 177px;
   position: absolute;
   padding-left: 59px;
-  bottom: -77%;
+  bottom: -81%;
   white-space: normal; }
   @media (max-width: 600px) {
     .project-slider-skills--two {
@@ -609,7 +609,7 @@ body, html {
   width: 177px;
   position: absolute;
   padding-left: 59px;
-  bottom: -178%;
+  bottom: -181%;
   white-space: normal; }
   @media (max-width: 600px) {
     .project-slider-skills--three {
@@ -890,10 +890,12 @@ body, html {
         top: 35%;
         transform: translate(-50%, -50%); } }
   .project-page__subtitle-container {
-    padding-left: 1rem; }
+    padding-left: 2rem;
+    padding-right: 2rem; }
     @media (max-width: 360px) {
       .project-page__subtitle-container {
-        padding-left: 0.5rem; } }
+        padding-left: 2rem;
+        padding-right: 2rem; } }
     @media (min-width: 600px) {
       .project-page__subtitle-container {
         padding-left: 0; } }
@@ -905,7 +907,8 @@ body, html {
         font-size: 30px; } }
   .project-page__subtitle-text {
     font-weight: 300;
-    width: 100%; }
+    width: 100%;
+    text-align: justify; }
     @media (min-width: 600px) {
       .project-page__subtitle-text {
         width: 500px; } }
@@ -996,13 +999,13 @@ body, html {
         text-align: center; } }
   .project-page__pink-triangle-one {
     width: 71%;
-    bottom: 61%;
+    bottom: 64%;
     z-index: 2;
     position: absolute; }
     @media (max-width: 360px) {
       .project-page__pink-triangle-one {
         width: 71%;
-        bottom: 62%; } }
+        bottom: 67%; } }
     @media (min-width: 600px) {
       .project-page__pink-triangle-one {
         width: 22%;
@@ -1207,7 +1210,7 @@ body, html {
   left: 0;
   right: 0;
   top: 90%;
-  height: 8%;
+  height: 267px;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -1228,13 +1231,13 @@ body, html {
   margin: 0 -4px 0 0;
   display: inline-block; }
   .project-page-slide__number {
-    font-size: 100px;
+    font-size: 150px;
     text-align: center;
-    color: white;
-    padding-left: 5rem; }
+    vertical-align: middle;
+    color: white; }
     @media (min-width: 600px) {
       .project-page-slide__number {
-        font-size: 300px;
+        font-size: 200px;
         text-align: center;
         color: white;
         padding-left: 20rem; } }
@@ -1255,7 +1258,7 @@ body, html {
       font-weight: 800; }
       @media (min-width: 600px) {
         .project-page-slide__title--two {
-          left: 158%; } }
+          left: 163%; } }
     .project-page-slide__title--three {
       position: absolute;
       left: 255%;
@@ -1510,7 +1513,8 @@ body, html {
   .about-page__text {
     font-size: 18px;
     font-weight: 300;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    text-align: justify; }
   .about-page__triangle-one {
     bottom: 2%;
     width: 100%;
@@ -1526,7 +1530,8 @@ body, html {
     position: absolute; }
 
 .about-faris-title {
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: 45px; }
 
 .vertical-slider__container {
   margin-bottom: 6rem; }
@@ -1567,7 +1572,7 @@ body, html {
   @media (max-width: 600px) {
     .horizontal-slider-line {
       display: unset;
-      bottom: 9%;
+      bottom: 11%;
       width: 100%;
       position: absolute; } }
 
@@ -1576,9 +1581,11 @@ body, html {
   @media (max-width: 600px) {
     .horizontal-slider-counter {
       display: unset;
-      width: 20px;
+      width: 43px;
       background: white;
-      bottom: 4.5%;
+      bottom: 14%;
+      height: 20px;
+      z-index: 2;
       left: 15%;
       position: absolute;
       color: #3e3ec1; } }
@@ -1620,7 +1627,7 @@ body, html {
       color: #3e3ec1;
       padding-bottom: 5px;
       right: 4.55%;
-      top: 57%; } }
+      top: 52%; } }
   @media (min-width: 1550px) {
     .vertical-slider-counter-home {
       position: absolute;
@@ -1631,14 +1638,14 @@ body, html {
       color: #3e3ec1;
       padding-bottom: 5px;
       right: 5.55%;
-      top: 65%; } }
+      top: 58%; } }
 
 .horizontal-slider-line-home {
   display: none; }
   @media (max-width: 600px) {
     .horizontal-slider-line-home {
       display: unset;
-      bottom: 3%;
+      bottom: 4%;
       width: 100%;
       position: absolute; } }
 
@@ -1649,8 +1656,10 @@ body, html {
       display: unset;
       width: 43px;
       background: white;
-      bottom: 1%;
+      bottom: 7%;
+      height: 1px;
       left: 15%;
+      z-index: -1;
       position: absolute;
       color: #3e3ec1; } }
 
@@ -1877,7 +1886,7 @@ body, html {
         transform: translate(-50%, -50%); } }
   .project-slider-page__subtitle-one {
     font-size: 18px;
-    left: 50%;
+    left: 53%;
     top: 65%;
     color: #3e3ec1;
     position: absolute;
@@ -1923,11 +1932,14 @@ body, html {
   font-weight: 800;
   text-align: center;
   vertical-align: middle;
-  line-height: 350px;
+  line-height: 450px;
   color: white;
   font-size: 500px;
   padding-top: 5rem;
   z-index: 3; }
+  @media (min-width: 360px) {
+    .project-slider-number__one {
+      line-height: 350px; } }
   @media (min-width: 600px) {
     .project-slider-number__one {
       font-size: 669px;
