@@ -1545,13 +1545,13 @@ body, html {
       font-size: 20px;
       color: #3e3ec1;
       padding-bottom: 5px;
-      right: 5.55%;
+      right: 2.55%;
       top: 5%; } }
   @media (min-width: 1550px) {
     .vertical-slider-counter {
       display: unset;
       position: absolute;
-      right: 5.55%; } }
+      right: 2.55%; } }
 
 .vertical-slider-line {
   display: none; }
@@ -1559,8 +1559,8 @@ body, html {
     .vertical-slider-line {
       display: unset;
       position: absolute;
-      right: 6%;
-      height: 85vh; } }
+      right: 3%;
+      height: 750px; } }
 
 .horizontal-slider-line {
   display: none; }
@@ -1605,8 +1605,8 @@ body, html {
       position: absolute;
       display: unset;
       right: 6%;
-      bottom: 7%;
-      height: 80vh; } }
+      bottom: 6%;
+      height: 741px; } }
 
 .vertical-slider-counter-home {
   display: none; }
@@ -1936,6 +1936,10 @@ body, html {
     .project-slider-number__one {
       font-size: 669px;
       line-height: 800px; } }
+  @media (min-height: 1330px) {
+    .project-slider-number__one {
+      font-size: 700px;
+      line-height: 1000px; } }
 
 .project-slider-number__two {
   width: 100%;
@@ -1950,6 +1954,10 @@ body, html {
     .project-slider-number__two {
       font-size: 669px;
       line-height: 540px; } }
+  @media (min-height: 1330px) {
+    .project-slider-number__two {
+      font-size: 700px;
+      line-height: 1000px; } }
 
 .project-slider-number__three {
   width: 100%;
@@ -1964,6 +1972,10 @@ body, html {
     .project-slider-number__three {
       font-size: 669px;
       line-height: 540px; } }
+  @media (min-height: 1330px) {
+    .project-slider-number__three {
+      font-size: 700px;
+      line-height: 1000px; } }
 
 .bedrijven-portal-triangle-one {
   position: absolute;

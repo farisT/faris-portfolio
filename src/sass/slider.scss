@@ -19,13 +19,13 @@
     // padding-top: 100px;
     color: $blue;
     padding-bottom: 5px;
-    right: 5.55%;
+    right: 2.55%;
     top: 5%;
   }
   @media (min-width: $bigscreen-breakpoint){
     display: unset;
     position: absolute;
-    right: 5.55%;
+    right: 2.55%;
   }
   
 
@@ -35,8 +35,8 @@
   @media (min-width: $mobile-breakpoint){
     display: unset;
     position: absolute;
-    right: 6%;
-    height: 85vh;
+    right: 3%;
+    height: 750px;
     }
 
   
@@ -89,8 +89,8 @@ display: none;
     position: absolute;
     display: unset;
     right: 6%;
-    bottom: 7%;
-    height: 80vh;
+    bottom: 6%;
+    height: 741px;
     }
 }
 .vertical-slider-counter-home{
@@ -468,6 +468,10 @@ display: none;
       font-size: 669px;
       line-height: 800px;
     }
+    @media (min-height: 1330px){
+      font-size: 700px;
+      line-height: 1000px;
+    }
   
   }
   &__two {
@@ -483,6 +487,10 @@ display: none;
       font-size: 669px;
       line-height: 540px;
     }
+    @media (min-height: 1330px){
+      font-size: 700px;
+      line-height: 1000px;
+    }
   }
   &__three {
     width: 100%;
@@ -496,6 +504,10 @@ display: none;
     @media (min-width: $mobile-breakpoint){
       font-size: 669px;
       line-height: 540px;
+    }
+    @media (min-height: 1330px){
+      font-size: 700px;
+      line-height: 1000px;
     }
   }
 }
