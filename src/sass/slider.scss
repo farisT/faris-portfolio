@@ -14,7 +14,7 @@
     display: unset;
     position: absolute;
     background: white;
-    width: 20px;
+    width: 27px;
     font-size: 20px;
     // padding-top: 100px;
     color: $blue;
@@ -322,7 +322,10 @@ display: none;
 &__side-link-wrapper {
   position: absolute;
   left: 3%;
-  padding-top: 260px;
+  padding-top: 225px;
+  @media (min-width: $bigscreen-breakpoint){
+    padding-top: 450px;
+}
 }
   &__main-title-one {
     font-size: 24px;
@@ -512,4 +515,6 @@ display: none;
 .fraction-style {
   font-size:50px;
 }
-
+.subfraction-style {
+  font-weight: 300;
+}

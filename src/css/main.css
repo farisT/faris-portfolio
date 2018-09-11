@@ -1503,7 +1503,7 @@ body, html {
       display: unset;
       position: absolute;
       background: white;
-      width: 20px;
+      width: 27px;
       font-size: 20px;
       color: #3e3ec1;
       padding-bottom: 5px;
@@ -1770,7 +1770,10 @@ body, html {
   .project-slider-page__side-link-wrapper {
     position: absolute;
     left: 3%;
-    padding-top: 260px; }
+    padding-top: 225px; }
+    @media (min-width: 1550px) {
+      .project-slider-page__side-link-wrapper {
+        padding-top: 450px; } }
   .project-slider-page__main-title-one {
     font-size: 24px;
     font-weight: 800;
@@ -1946,3 +1949,6 @@ body, html {
 
 .fraction-style {
   font-size: 50px; }
+
+.subfraction-style {
+  font-weight: 300; }
