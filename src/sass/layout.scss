@@ -53,6 +53,8 @@ body,html {
 }
 
 .link-container {
+    z-index: 600;
+    position: relative;
     a:visited {
         color: $blue;
     }

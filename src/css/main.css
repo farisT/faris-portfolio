@@ -42,8 +42,11 @@ body, html {
       line-height: 0.3em;
       display: inline-block; }
 
-.link-container a:visited {
-  color: #3e3ec1; }
+.link-container {
+  z-index: 600;
+  position: relative; }
+  .link-container a:visited {
+    color: #3e3ec1; }
 
 .arrow__about {
   position: absolute;
@@ -1212,7 +1215,7 @@ body, html {
   white-space: nowrap; }
   @media (min-width: 600px) {
     .project-slider-container {
-      height: 17%; } }
+      height: 267px; } }
 
 .project-page-slider {
   position: relative;
@@ -1585,14 +1588,15 @@ body, html {
   left: 0;
   right: 0;
   top: 0%;
-  height: 85vh;
+  height: 750px;
   width: 80%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden; }
   @media (max-width: 600px) {
     .slider-container-home {
-      width: 100%; } }
+      width: 100%;
+      height: 85vh; } }
 
 .vertical-slider-line-home {
   display: none; }
@@ -1735,17 +1739,10 @@ body, html {
 
 .arrow-up-home {
   width: 5%;
-  bottom: 47%;
+  bottom: 43%;
   z-index: 4;
   position: absolute;
   left: 47.5%; }
-  @media (max-width: 360px) {
-    .arrow-up-home {
-      width: 5%;
-      bottom: 44%;
-      z-index: 200;
-      position: absolute;
-      left: 47.5%; } }
   @media (min-width: 600px) {
     .arrow-up-home {
       width: 5%;
@@ -1756,7 +1753,7 @@ body, html {
   @media (min-width: 1200px) {
     .arrow-up-home {
       width: 2%;
-      bottom: 43%;
+      bottom: 46%;
       position: absolute;
       left: 50%; } }
   @media (min-width: 1550px) {
@@ -1768,6 +1765,11 @@ body, html {
     .arrow-up-home {
       width: 2%;
       bottom: 46%;
+      left: 50%; } }
+  @media (min-width: 2200px) {
+    .arrow-up-home {
+      width: 2%;
+      bottom: 41%;
       left: 50%; } }
 
 .arrow-down-home {
@@ -1884,7 +1886,7 @@ body, html {
       .project-slider-page__subtitle-one {
         font-size: 18px;
         position: absolute;
-        left: 50%;
+        left: 51%;
         top: 65%;
         transform: translate(-50%, -50%); } }
   .project-slider-page__subtitle-two {
@@ -1930,6 +1932,10 @@ body, html {
     .project-slider-number__one {
       font-size: 669px;
       line-height: 540px; } }
+  @media (min-width: 1550px) {
+    .project-slider-number__one {
+      font-size: 669px;
+      line-height: 800px; } }
 
 .project-slider-number__two {
   width: 100%;
