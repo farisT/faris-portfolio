@@ -20,16 +20,15 @@
     }
     &__number {
         position: absolute;
-        font-size: 400px;
-        top: -15%;
-        left: 31%;
+        font-size: 200px;
+        left: 33%;
         color: rgba(255, 255, 255, 0.5);
+        bottom: 20%;
         @media (min-width: $mobile-breakpoint){
             position: absolute;
             font-size: 514px;
-            margin-top: 80px;
-            /* top: -28%; */
             left: 40%;
+            bottom: 2%;
             }
         @media (min-width: $standard-breakpoint){
             position: absolute;
@@ -54,9 +53,9 @@
                     }
         &--two {
                 position: absolute;
-                font-size: 400px;
-                top: -15%;
-                left: 20%;
+                font-size: 200px;
+                bottom:20%;
+                left: 35%;
                 color: rgba(255, 255, 255, 0.5);
                 @media (min-width: $mobile-breakpoint){
                     position: absolute;
@@ -68,9 +67,9 @@
             }
         &--three {
             position: absolute;
-            font-size: 400px;
-            top: -15%;
-            left: 19%;
+            font-size: 200px;
+            bottom: 15%;
+            left: 33%;
             color: rgba(255, 255, 255, 0.5);
             @media (min-width: $mobile-breakpoint){
                 position: absolute;
@@ -641,7 +640,7 @@
     left: 0; 
     right: 0;
     top: 90%;
-    height: 5%;
+    height: 8%;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;    

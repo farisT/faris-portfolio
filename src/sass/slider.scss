@@ -46,7 +46,7 @@
   display: none;
   @media (max-width: $mobile-breakpoint){
     display: unset;
-    bottom: 12%;
+    bottom: 9%;
     width: 100%;
     position: absolute;
     }
@@ -58,7 +58,7 @@
     display: unset;
     width: 20px;
     background: white;
-    bottom: 8.5%;
+    bottom: 4.5%;
     left: 15%;
     position: absolute;
     color:$blue;
@@ -146,7 +146,7 @@ display: none;
   width: 80%;
   @media (max-width: $mobile-breakpoint){
     width: 100%;
-    margin-top: 54px;
+    margin-top: 65px;
     z-index: 30;
     }
   margin: 0 auto;
@@ -188,14 +188,16 @@ display: none;
 }
 .arrow-down {
   width: 5%;
-  z-index: 4;
+  z-index: 100;
 
   position:absolute;
   left: 47.5%;
-  bottom:18%;
+  bottom:17%;
   @media (min-width: $mobile-breakpoint){
-  position: relative;
+  position: absolute;
   width: 2%;
+  left: 49%;
+  bottom: 17%;
     }
   // bottom: 15%;
   &__container {
@@ -228,7 +230,9 @@ display: none;
   z-index: 4;
   text-align: center;
   display: block;
+  position: relative;
   margin: 0 auto;
+  z-index: 200;
   margin-top: 1rem;
   @media (min-width: $mobile-breakpoint){
     width: 2%;
@@ -497,7 +501,7 @@ display: none;
   z-index: 2;
   width: 63%;
   top: 168%;
-  right: -14%;
+  right: -23%;
   transform: rotate(-10deg);
   @media (min-width: $mobile-breakpoint){
     top: 135%;
