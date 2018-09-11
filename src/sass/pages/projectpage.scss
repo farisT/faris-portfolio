@@ -21,7 +21,7 @@
     &__number {
         position: absolute;
         font-size: 200px;
-        left: 33%;
+        left: 39%;
         color: rgba(255, 255, 255, 0.5);
         bottom: 20%;
         @media (min-width: $mobile-breakpoint){
@@ -61,7 +61,7 @@
                     position: absolute;
                     font-size: 514px;
                     margin-top: 80px;
-                    /* top: -28%; */
+                    top: -28%;
                     left: 40%;
                     }
             }
@@ -75,7 +75,7 @@
                 position: absolute;
                 font-size: 514px;
                 margin-top: 80px;
-                /* top: -28%; */
+                top: -28%;
                 left: 38%;
                 color: rgba(255, 255, 255, 0.5);
                 }
@@ -333,7 +333,7 @@
         left: 12%;
         width: 100px;
         @media (min-width: $standard-breakpoint){
-            top: 34%;
+            top: 10%;
             transform: translate(-50%, -50%);
             z-index: 3;
             width: 200px;
@@ -449,7 +449,7 @@
 
         @media (min-width: $mobile-breakpoint){
             width: 30%;
-            bottom: -21%;
+            bottom: -5%;
             z-index: 2;
             }
     }
@@ -476,7 +476,8 @@
     margin-top: 20px;
     }
     &__wrapper {
-       
+        display: grid;
+        grid-template-columns: 5%;
         @media (min-width: $mobile-breakpoint){
             margin-top: 12rem;
             }

@@ -1,5 +1,8 @@
 .header {
     display: grid;
+    width: 100%;
+    position: relative;
+    z-index: 100;
     grid-template-columns: auto 25% 25%;
         margin-top: 2rem;
     margin-bottom: 2rem;
@@ -15,12 +18,19 @@
         width: 100%;
         display: grid;
         grid-template-columns: auto 25% 25%;
-        margin-top: 2rem;
+        margin-top: -1rem;
         margin-bottom: 2rem;
+        padding-top: 2rem;
         max-height: 10px;
+        padding-bottom: 1rem;
+        background: white;
+        
         @media (min-width: $mobile-breakpoint){
-            margin-top: -3rem;
+            margin-top: -6rem;
             margin-left: 5%;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            background: white;
             }
      
 
@@ -99,8 +109,10 @@
     &__projects  {
         width: 87px;
         @include border-pink;
+        float: right;
         &--projects {
             width: 87px;
+            float: right;
             font-size: 18px;
             border-bottom: 10px $pink solid;
             line-height: 0.3em;
@@ -110,6 +122,7 @@
             }
             &--one {
                 @include border-pink;
+                float: right;
                 width: 87px;
                 @media (min-width: $mobile-breakpoint){
                     width: 87px;
@@ -117,6 +130,7 @@
             }
         &--two {
             @include border-green;
+            float: right;
             width: 87px;
             @media (min-width: $mobile-breakpoint){
                 width: 87px;
@@ -124,6 +138,7 @@
         }
         &--three {
             @include border-lightblue;
+            float: right;
            width: 87px;
             @media (min-width: $mobile-breakpoint){
                width: 87px;
@@ -131,6 +146,7 @@
         }
         &--about {
             @include border-green;
+            float: right;
            width: 87px;
             @media (min-width: $mobile-breakpoint){
                width: 87px;
@@ -140,13 +156,15 @@
     &__about  {
         @include border-pink;
             width: 57px;
-
+            margin-left: 1rem;
         @media (min-width: $mobile-breakpoint){
                 width: 57px;
             }
             &--one {
                 @include border-pink;
                     width: 57px;
+                    margin-left: 1rem;
+
                 @media (min-width: $mobile-breakpoint){
                         width: 57px;
                     }
@@ -154,6 +172,7 @@
             &--two {
                 @include border-green;
                     width: 57px;
+                    margin-left: 1rem;
                 @media (min-width: $mobile-breakpoint){
                         width: 57px;
                     }
@@ -161,6 +180,7 @@
             &--three {
                 @include border-lightblue;
                     width: 57px;
+                    margin-left: 1rem;
                 @media (min-width: $mobile-breakpoint){
                         width: 57px;
                     }
@@ -171,6 +191,7 @@
                 font-size:18px;
                 border-bottom: 10px $green solid;
                 line-height: 0.3em;
+                margin-left: 1rem;
                 @media (min-width: $mobile-breakpoint){
                         width: 57px;
                     }

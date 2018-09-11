@@ -74,11 +74,21 @@
         font-size: 64px;
         font-weight: 800;
         @media (min-width: $mobile-breakpoint){
-            font-size: 165px;
+            font-size: 153px;
+            padding-top: 10rem;
+            line-height: 1;
                 }
+                @media (min-width: $bigscreen-breakpoint){
+                    font-size: 153px;
+                    padding-top: 16rem;
+                    line-height: 1;
+                        }
     }
     &__subtitle-container {
-        width: 67%;
+        width: 100%;
+        @media (min-width: $mobile-breakpoint){
+            width: 482px;
+                }
     }
     &__subtitle {
         @media (min-width: $mobile-breakpoint){
@@ -155,6 +165,7 @@
     white-space: normal;
     @media (max-width: $mobile-breakpoint){
         padding-left: 30px;
+        bottom: 22%;
             }
     }
     &--two{
@@ -166,6 +177,7 @@
     white-space: normal;
     @media (max-width: $mobile-breakpoint){
         padding-left: 30px;
+        bottom: -75%;
             }
     }
     &--three{
@@ -177,6 +189,7 @@
     white-space: normal;
     @media (max-width: $mobile-breakpoint){
         padding-left: 30px;
+        bottom: -176%;
             }
     }
     &__text{
