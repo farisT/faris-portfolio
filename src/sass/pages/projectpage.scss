@@ -20,6 +20,7 @@
     }
     &__number {
         position: absolute;
+        font-weight: 800;
         font-size: 200px;
         left: 39%;
         color: rgba(255, 255, 255, 0.5);
@@ -54,6 +55,7 @@
         &--two {
                 position: absolute;
                 font-size: 200px;
+                font-weight: 800;
                 bottom:20%;
                 left: 35%;
                 color: rgba(255, 255, 255, 0.5);
@@ -68,6 +70,7 @@
         &--three {
             position: absolute;
             font-size: 200px;
+            font-weight: 800;
             bottom: 15%;
             left: 33%;
             color: rgba(255, 255, 255, 0.5);
@@ -314,7 +317,7 @@
            
     }
     &__skills-two {
-        top: 20%;
+        top: 15%;
         transform: translate(-50%, -50%);
         z-index: 3;
         left: 36%;
@@ -366,9 +369,11 @@
         @media (min-width: $mobile-breakpoint){
             position: absolute;
             z-index: 3;
-            right: 8%;
+
             // bottom: 60%; // animate this transition as well
-            bottom: 82%;
+            right: 5%;
+            bottom: 64%;
+
             }
     }
     &__links-three {
@@ -424,7 +429,7 @@
     }
     &__green-triangle-one {
         width: 67%;
-        bottom: 50%;
+        bottom: 58%;
         z-index: 2;
         position: absolute;
         @media (min-width: $mobile-breakpoint){
@@ -440,8 +445,8 @@
         bottom: 4%;
         position: absolute;
     @media (min-width: $mobile-breakpoint){
-        width: 25%;
-        bottom: 31%;
+        bottom: 0%;
+        width: 20%;
 
         }
     }
@@ -645,13 +650,15 @@
     left: 0; 
     right: 0;
     top: 90%;
-    height: 267px;
-    width: 80%;
+    height: 240px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;    
     overflow: hidden;
     white-space: nowrap;
     @media (min-width: $mobile-breakpoint){
+        height: 267px;
+        width: 80%;
         height: 267px;
         }
 }
@@ -668,7 +675,7 @@
     margin: 0 -4px 0 0;
     display: inline-block;
     &__number{
-        font-size: 150px;
+        font-size: 170px;
         text-align: center;
         vertical-align: middle;
         color: white;
@@ -684,7 +691,7 @@
     }
     &__title {
         position: absolute;
-        left: 45%;
+        left: 35%;
         top: 47%;
         color:$blue;
         font-weight: 800;
@@ -693,7 +700,7 @@
             }
         &--two{
             position: absolute;
-            left: 155%;
+            left: 144%;
             top: 47%;
             color:$blue;
             font-weight: 800;
@@ -703,47 +710,48 @@
         }
         &--three {
             position: absolute;
-            left: 255%;
+            left: 239%;
             top: 47%;
             color:$blue;
             font-weight: 800;
             @media (min-width: $mobile-breakpoint){
-                left: 258%;
+                left: 260%;
             }
         }
     }
     &__link {
         position: absolute;
-        left: 45%;
-        top: 67%;
+        left: 42%;
+        top: 59%;
         font-size: 10px;
-        color:$blue;
+        color: $blue;
         font-weight: 300;
+    
         @media (min-width: $mobile-breakpoint){
-            left: 58%;
+            left: 61%;
             top: 55%;
             }
         &--two {
             position: absolute;
-            left: 155%;
-            top: 67%;
+            left: 142%;
+            top: 59%;
             font-size: 10px;
             color:$blue;
             font-weight: 300;
             @media (min-width: $mobile-breakpoint){
-                left: 158%;
+                left: 162%;
                 top: 55%;
             }
         }
         &--three {
             position: absolute;
-            left: 255%;
-            top: 67%;
+            left: 242%;
+            top: 59%;
             font-size: 10px;
             color:$blue;
             font-weight: 300;
             @media (min-width: $mobile-breakpoint){
-                left: 258%;
+                left: 261%;
                 top: 55%;
             }
         }

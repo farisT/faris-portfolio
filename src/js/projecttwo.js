@@ -36,10 +36,10 @@ containerOne.addEventListener('mouseleave', function(){
 containerTwo.addEventListener('mouseenter', function(){
     console.log('entering')
     if(window.innerWidth > 600){
-        linksTwo.style.bottom = '67%';
         greenTriangleTwo.style.transition= '0.2s';
-        greenTriangleTwo.style.width= '30%';
-        greenTriangleTwo.style.bottom= '6%';
+        greenTriangleTwo.style.width= '25%';
+        greenTriangleTwo.style.right= '-10%';
+        greenTriangleTwo.style.bottom= '0%';
         // greenTriangleTwo.style.transform= 'rotate(20deg)';
     }
     
@@ -48,10 +48,10 @@ containerTwo.addEventListener('mouseleave', function(){
     console.log('leaving');
     if(window.innerWidth > 600){
         greenTriangleTwo.style.transition= '0.3s';
-        greenTriangleTwo.style.width= '25%';
-        greenTriangleTwo.style.bottom= '16%';
-        linksTwo.style.bottom = '67%';
-        greenTriangleTwo.style.transform= 'unset';
+        greenTriangleTwo.style.width= '20%';
+        greenTriangleTwo.style.bottom= '0%';
+        greenTriangleTwo.style.right= '0%';
+        // greenTriangleTwo.style.transform= 'unset';
     }
 });
 

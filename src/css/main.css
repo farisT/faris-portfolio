@@ -136,7 +136,7 @@ body, html {
 
 .header {
   display: grid;
-  width: 100%;
+  width: 95%;
   position: relative;
   z-index: 100;
   grid-template-columns: auto 25% 25%;
@@ -152,7 +152,7 @@ body, html {
     z-index: 50;
     margin-left: 0%;
     position: fixed;
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: auto 25% 25%;
     margin-top: 0rem;
@@ -668,6 +668,7 @@ body, html {
         padding-right: 5%; } }
   .project-page__number {
     position: absolute;
+    font-weight: 800;
     font-size: 200px;
     left: 39%;
     color: rgba(255, 255, 255, 0.5);
@@ -702,6 +703,7 @@ body, html {
     .project-page__number--two {
       position: absolute;
       font-size: 200px;
+      font-weight: 800;
       bottom: 20%;
       left: 35%;
       color: rgba(255, 255, 255, 0.5); }
@@ -715,6 +717,7 @@ body, html {
     .project-page__number--three {
       position: absolute;
       font-size: 200px;
+      font-weight: 800;
       bottom: 15%;
       left: 33%;
       color: rgba(255, 255, 255, 0.5); }
@@ -933,7 +936,7 @@ body, html {
         left: 11%;
         width: 200px; } }
   .project-page__skills-two {
-    top: 20%;
+    top: 15%;
     transform: translate(-50%, -50%);
     z-index: 3;
     left: 36%;
@@ -981,8 +984,8 @@ body, html {
       .project-page__links-two {
         position: absolute;
         z-index: 3;
-        right: 8%;
-        bottom: 82%; } }
+        right: 5%;
+        bottom: 64%; } }
   .project-page__links-three {
     position: absolute;
     z-index: 3;
@@ -1028,7 +1031,7 @@ body, html {
         grid-row-start: unset; } }
   .project-page__green-triangle-one {
     width: 67%;
-    bottom: 50%;
+    bottom: 58%;
     z-index: 2;
     position: absolute; }
     @media (min-width: 600px) {
@@ -1044,8 +1047,8 @@ body, html {
     position: absolute; }
     @media (min-width: 600px) {
       .project-page__green-triangle-two {
-        width: 25%;
-        bottom: 31%; } }
+        bottom: 0%;
+        width: 20%; } }
   .project-page__blue-triangle-one {
     width: 90%;
     bottom: 31%;
@@ -1210,14 +1213,16 @@ body, html {
   left: 0;
   right: 0;
   top: 90%;
-  height: 267px;
-  width: 80%;
+  height: 240px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
   overflow: hidden;
   white-space: nowrap; }
   @media (min-width: 600px) {
     .project-slider-container {
+      height: 267px;
+      width: 80%;
       height: 267px; } }
 
 .project-page-slider {
@@ -1231,7 +1236,7 @@ body, html {
   margin: 0 -4px 0 0;
   display: inline-block; }
   .project-page-slide__number {
-    font-size: 150px;
+    font-size: 170px;
     text-align: center;
     vertical-align: middle;
     color: white; }
@@ -1243,7 +1248,7 @@ body, html {
         padding-left: 20rem; } }
   .project-page-slide__title {
     position: absolute;
-    left: 45%;
+    left: 35%;
     top: 47%;
     color: #3e3ec1;
     font-weight: 800; }
@@ -1252,7 +1257,7 @@ body, html {
         left: 58%; } }
     .project-page-slide__title--two {
       position: absolute;
-      left: 155%;
+      left: 144%;
       top: 47%;
       color: #3e3ec1;
       font-weight: 800; }
@@ -1261,45 +1266,45 @@ body, html {
           left: 163%; } }
     .project-page-slide__title--three {
       position: absolute;
-      left: 255%;
+      left: 239%;
       top: 47%;
       color: #3e3ec1;
       font-weight: 800; }
       @media (min-width: 600px) {
         .project-page-slide__title--three {
-          left: 258%; } }
+          left: 260%; } }
   .project-page-slide__link {
     position: absolute;
-    left: 45%;
-    top: 67%;
+    left: 42%;
+    top: 59%;
     font-size: 10px;
     color: #3e3ec1;
     font-weight: 300; }
     @media (min-width: 600px) {
       .project-page-slide__link {
-        left: 58%;
+        left: 61%;
         top: 55%; } }
     .project-page-slide__link--two {
       position: absolute;
-      left: 155%;
-      top: 67%;
+      left: 142%;
+      top: 59%;
       font-size: 10px;
       color: #3e3ec1;
       font-weight: 300; }
       @media (min-width: 600px) {
         .project-page-slide__link--two {
-          left: 158%;
+          left: 162%;
           top: 55%; } }
     .project-page-slide__link--three {
       position: absolute;
-      left: 255%;
-      top: 67%;
+      left: 242%;
+      top: 59%;
       font-size: 10px;
       color: #3e3ec1;
       font-weight: 300; }
       @media (min-width: 600px) {
         .project-page-slide__link--three {
-          left: 258%;
+          left: 261%;
           top: 55%; } }
   .project-page-slide__triangle {
     position: absolute;
@@ -1565,7 +1570,7 @@ body, html {
       display: unset;
       position: absolute;
       right: 3%;
-      height: 750px; } }
+      height: 700px; } }
 
 .horizontal-slider-line {
   display: none; }
@@ -1895,7 +1900,7 @@ body, html {
       .project-slider-page__subtitle-one {
         font-size: 18px;
         position: absolute;
-        left: 51%;
+        left: 51.5%;
         top: 65%;
         transform: translate(-50%, -50%); } }
   .project-slider-page__subtitle-two {
