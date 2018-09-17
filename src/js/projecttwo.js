@@ -38,9 +38,8 @@ containerTwo.addEventListener('mouseenter', function(){
     if(window.innerWidth > 600){
         greenTriangleTwo.style.transition= '0.2s';
         greenTriangleTwo.style.width= '25%';
-        greenTriangleTwo.style.right= '-10%';
+        greenTriangleTwo.style.right= '-6%';
         greenTriangleTwo.style.bottom= '0%';
-        // greenTriangleTwo.style.transform= 'rotate(20deg)';
     }
     
 });
@@ -51,7 +50,6 @@ containerTwo.addEventListener('mouseleave', function(){
         greenTriangleTwo.style.width= '20%';
         greenTriangleTwo.style.bottom= '0%';
         greenTriangleTwo.style.right= '0%';
-        // greenTriangleTwo.style.transform= 'unset';
     }
 });
 

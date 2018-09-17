@@ -676,21 +676,21 @@ body, html {
     @media (min-width: 600px) {
       .project-page__number {
         position: absolute;
-        font-size: 514px;
-        left: 40%;
-        bottom: 2%; } }
+        font-size: 600px;
+        left: 37%;
+        bottom: -14%; } }
     @media (min-width: 1200px) {
       .project-page__number {
         position: absolute;
-        font-size: 514px;
         margin-top: 80px;
-        /* top: -28%; */
-        left: 44%; } }
+        font-size: 600px;
+        top: -28%;
+        left: 41%; } }
     @media (min-width: 1550px) {
       .project-page__number {
         position: absolute;
-        font-size: 514px;
         margin-top: 80px;
+        font-size: 600px;
         /* top: -28%; */
         left: 45.5%; } }
     @media (min-width: 2200px) {
@@ -710,10 +710,17 @@ body, html {
       @media (min-width: 600px) {
         .project-page__number--two {
           position: absolute;
-          font-size: 514px;
+          font-size: 600px;
           margin-top: 80px;
           top: -28%;
-          left: 40%; } }
+          left: 37%; } }
+      @media (min-width: 1550px) {
+        .project-page__number--two {
+          position: absolute;
+          font-size: 600px;
+          margin-top: 80px;
+          top: -28%;
+          left: 41%; } }
     .project-page__number--three {
       position: absolute;
       font-size: 200px;
@@ -724,11 +731,18 @@ body, html {
       @media (min-width: 600px) {
         .project-page__number--three {
           position: absolute;
-          font-size: 514px;
+          font-size: 600px;
           margin-top: 80px;
           top: -28%;
           left: 38%;
           color: rgba(255, 255, 255, 0.5); } }
+      @media (min-width: 1550px) {
+        .project-page__number--three {
+          position: absolute;
+          font-size: 600px;
+          margin-top: 80px;
+          top: -28%;
+          left: 40%; } }
   .project-page__mainphoto {
     object-fit: cover;
     width: 100%; }
@@ -890,7 +904,7 @@ body, html {
       .project-page__main-title {
         font-size: 72px;
         left: 50%;
-        top: 35%;
+        top: 50%;
         transform: translate(-50%, -50%); } }
   .project-page__subtitle-container {
     padding-left: 2rem;

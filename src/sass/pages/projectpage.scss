@@ -27,21 +27,21 @@
         bottom: 20%;
         @media (min-width: $mobile-breakpoint){
             position: absolute;
-            font-size: 514px;
-            left: 40%;
-            bottom: 2%;
+            font-size: 600px;
+            left: 37%;
+            bottom: -14%;
             }
         @media (min-width: $standard-breakpoint){
             position: absolute;
-            font-size: 514px;
             margin-top: 80px;
-            /* top: -28%; */
-            left: 44%;
+            font-size: 600px;
+            top: -28%; 
+            left: 41%;
             }
             @media (min-width: $bigscreen-breakpoint){
                 position: absolute;
-                font-size: 514px;
                 margin-top: 80px;
+                font-size: 600px;
                 /* top: -28%; */
                 left: 45.5%;
                 }
@@ -61,11 +61,18 @@
                 color: rgba(255, 255, 255, 0.5);
                 @media (min-width: $mobile-breakpoint){
                     position: absolute;
-                    font-size: 514px;
+                    font-size: 600px;
                     margin-top: 80px;
                     top: -28%;
-                    left: 40%;
+                    left: 37%;
                     }
+                @media (min-width: $bigscreen-breakpoint){
+                        position: absolute;
+                        font-size: 600px;
+                        margin-top: 80px;
+                        top: -28%;
+                        left: 41%;
+                        }
             }
         &--three {
             position: absolute;
@@ -76,12 +83,19 @@
             color: rgba(255, 255, 255, 0.5);
             @media (min-width: $mobile-breakpoint){
                 position: absolute;
-                font-size: 514px;
+                font-size: 600px;
                 margin-top: 80px;
                 top: -28%;
                 left: 38%;
                 color: rgba(255, 255, 255, 0.5);
                 }
+            @media (min-width: $bigscreen-breakpoint){
+                    position: absolute;
+                    font-size: 600px;
+                    margin-top: 80px;
+                    top: -28%;
+                    left: 40%;
+                    }
         }
 
     }
@@ -258,7 +272,7 @@
         @media (min-width: $mobile-breakpoint){
             font-size: 72px;
             left: 50%;
-            top: 35%;
+            top: 50%;
             transform: translate(-50%, -50%);
             }
 
