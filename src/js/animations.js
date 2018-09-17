@@ -12,6 +12,7 @@ animationTriangle.addEventListener('mouseleave', function(){
     if(window.innerWidth > 600){
         animationTriangle.style.transition= '0.2s';
         animationTriangle.style.transform= 'rotate(0deg)';
-        animationTriangle.style.width= 'unset';
+        animationTriangle.style.width= '42%';
+        animationTriangle.style.left= '7%';
     }
 })
