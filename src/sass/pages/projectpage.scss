@@ -328,6 +328,13 @@
             left: 11%;
             width: 200px;
         }
+        @media (min-width: 2000px){
+            top: 6%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            left: 8%;
+            width: 200px;
+            }
            
     }
     &__skills-two {
@@ -420,9 +427,7 @@
             width: 22%;
             bottom: 41%;
             max-width: 388px;
-
-            }
-   
+            } 
     }
     &__pink-triangle-two {
         width: 64%;

@@ -14,16 +14,18 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <header class="header--fixed">
-        <div>
-            <a class="header__item-links" href="/"><div class="header__name--home">Faris</div></a> 
-        </div>
-        <div>
-            <a class="header__item-links" href="/projects"><div class="header__projects">PROJECTS</div></a>
-        </div>
-        <div>
-            <a class="header__item-links" href="/about"><div class="header__about">ABOUT</div></a>
-        </div>
+    <header class="header">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__links" href="/">Faris</a> 
+            </li>
+            <li class="header__item">
+                <a class="header__links" href="/projects">PROJECTS</a>
+            </li>
+            <li class="header__item">
+                <a class="header__links" href="/about">ABOUT</a>
+            </li>
+        </ul>
     </header>
         <div class="homepage-wrapper">
             <div class="homepage-wrapper__item homepage-nested-grid">
@@ -101,7 +103,6 @@
                         <img src="images/chevron-down.svg" class="arrow-down-home"/>
                         <img src="images/chevron-up.svg" class="arrow-up-home"/>
             </div>
-
         </div>
     </div>
 <script src="js/animations.js"></script>

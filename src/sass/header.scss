@@ -1,15 +1,12 @@
 .header {
-    display: grid;
     width: 95%;
     position: relative;
     z-index: 100;
-    grid-template-columns: auto 25% 25%;
-        margin-top: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     max-height: 10px;
     @media (min-width: $mobile-breakpoint){
-        margin-left: 5%;
-
+        // margin-left: 5%;
         }
     &--fixed {
         z-index: 50;
@@ -197,9 +194,19 @@
                     }
             }
     }
-    &__item-links {
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto 25% 25%;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__links {
         text-decoration: none;
         color: $blue;
+        font-weight: 800;
+        font-size: 20px;
         // line-height: 1em;
         // :visited {
         //     text-decoration: none;
